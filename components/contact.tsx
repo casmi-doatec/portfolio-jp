@@ -19,17 +19,11 @@ export function Contact() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.15 }
     );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
 
@@ -40,9 +34,7 @@ export function Contact() {
     try {
       const response = await fetch("/api/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       });
 
@@ -73,8 +65,13 @@ export function Contact() {
     <section
       ref={sectionRef}
       id="contact"
-      className="py-32 lg:py-40 px-6 lg:px-12"
+      className="py-32 lg:py-44 px-6 lg:px-12 relative"
     >
+      {/* Background decorative */}
+      <div className="absolute bottom-20 left-10 text-[12rem] font-display text-foreground/[0.02] select-none pointer-events-none leading-none">
+        連絡
+      </div>
+
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-12 gap-16 lg:gap-20">
           {/* Left info */}
@@ -85,24 +82,28 @@ export function Contact() {
           >
             <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="h-px w-8 bg-foreground" />
+                <div className="h-px w-8 bg-jp-sakura/60" />
                 <span className="text-[10px] tracking-[0.4em] uppercase text-muted-foreground">
                   Contact
+                </span>
+                <span className="text-xs text-jp-sakura/40 font-display">
+                  お問い合わせ
                 </span>
               </div>
               <h2 className="text-4xl lg:text-6xl font-black tracking-tighter">
                 お問い合わせ
               </h2>
+              <div className="h-[2px] w-16 bg-gradient-to-r from-jp-sakura/60 to-transparent" />
             </div>
 
-            <p className="text-sm lg:text-base text-muted-foreground font-light leading-[2]">
+            <p className="text-sm lg:text-base text-muted-foreground font-light leading-[2.2] font-serif">
               開発のご相談やお見積もりなど、お気軽にご連絡ください。
             </p>
 
             <div className="space-y-5 pt-4">
               {/* Email */}
               <div className="flex items-center gap-4 group">
-                <div className="w-10 h-10 border border-foreground/10 flex items-center justify-center group-hover:border-foreground/30 transition-colors duration-300">
+                <div className="w-10 h-10 border border-foreground/10 flex items-center justify-center group-hover:border-jp-sakura/30 transition-colors duration-500">
                   <svg className="w-4 h-4 text-muted-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
@@ -117,7 +118,7 @@ export function Contact() {
 
               {/* Chatwork */}
               <div className="flex items-center gap-4 group">
-                <div className="w-10 h-10 border border-foreground/10 flex items-center justify-center group-hover:border-foreground/30 transition-colors duration-300">
+                <div className="w-10 h-10 border border-foreground/10 flex items-center justify-center group-hover:border-jp-sakura/30 transition-colors duration-500">
                   <svg className="w-4 h-4 text-muted-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
                   </svg>
@@ -130,6 +131,15 @@ export function Contact() {
                 >
                   Chatwork: casmi3811_
                 </a>
+              </div>
+            </div>
+
+            {/* Decorative zen element */}
+            <div className="pt-8 hidden lg:block">
+              <div className="w-20 h-20 border border-jp-sakura/10 rounded-full flex items-center justify-center animate-float-slow">
+                <div className="w-12 h-12 border border-jp-sakura/[0.06] rounded-full flex items-center justify-center">
+                  <span className="text-xl font-display text-jp-sakura/20">和</span>
+                </div>
               </div>
             </div>
           </div>
@@ -153,7 +163,7 @@ export function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-0 py-3 bg-transparent border-b border-foreground/15 focus:border-foreground focus:outline-none transition-colors duration-300 text-sm"
+                    className="w-full px-0 py-3 bg-transparent border-b border-foreground/10 focus:border-jp-sakura/60 focus:outline-none transition-colors duration-500 text-sm"
                   />
                 </div>
                 <div className="space-y-2">
@@ -167,7 +177,7 @@ export function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-0 py-3 bg-transparent border-b border-foreground/15 focus:border-foreground focus:outline-none transition-colors duration-300 text-sm"
+                    className="w-full px-0 py-3 bg-transparent border-b border-foreground/10 focus:border-jp-sakura/60 focus:outline-none transition-colors duration-500 text-sm"
                   />
                 </div>
               </div>
@@ -183,7 +193,7 @@ export function Contact() {
                   required
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 bg-transparent border-b border-foreground/15 focus:border-foreground focus:outline-none transition-colors duration-300 text-sm"
+                  className="w-full px-0 py-3 bg-transparent border-b border-foreground/10 focus:border-jp-sakura/60 focus:outline-none transition-colors duration-500 text-sm"
                 />
               </div>
 
@@ -198,7 +208,7 @@ export function Contact() {
                   rows={5}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 bg-transparent border-b border-foreground/15 focus:border-foreground focus:outline-none transition-colors duration-300 text-sm resize-none"
+                  className="w-full px-0 py-3 bg-transparent border-b border-foreground/10 focus:border-jp-sakura/60 focus:outline-none transition-colors duration-500 text-sm resize-none"
                 />
               </div>
 
@@ -206,18 +216,21 @@ export function Contact() {
                 <button
                   type="submit"
                   disabled={status === "sending"}
-                  className="text-[11px] tracking-[0.2em] uppercase border border-foreground px-10 py-3.5 hover:bg-foreground hover:text-background transition-all duration-300 disabled:opacity-40 disabled:cursor-not-allowed"
+                  className="group relative text-[11px] tracking-[0.25em] uppercase border border-foreground px-10 py-3.5 hover:bg-foreground hover:text-background transition-all duration-500 disabled:opacity-40 disabled:cursor-not-allowed overflow-hidden"
                 >
-                  {status === "sending"
-                    ? "送信中..."
-                    : status === "success"
-                    ? "送信しました"
-                    : "送信する"}
+                  <span className="relative z-10">
+                    {status === "sending"
+                      ? "送信中..."
+                      : status === "success"
+                      ? "送信しました"
+                      : "送信する"}
+                  </span>
+                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-jp-sakura transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                 </button>
               </div>
 
               {status === "success" && (
-                <p className="text-xs text-muted-foreground">
+                <p className="text-xs text-muted-foreground font-serif">
                   メッセージを受け付けました。折り返しご連絡いたします。
                 </p>
               )}
@@ -231,10 +244,14 @@ export function Contact() {
         </div>
 
         {/* Footer */}
-        <div className="mt-32 pt-8 border-t border-foreground/5">
-          <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground/40 text-center">
-            &copy; 2026 Abdul Hakim
-          </p>
+        <div className="mt-32 pt-8 border-t border-jp-sakura/10">
+          <div className="flex items-center justify-center gap-3">
+            <span className="text-jp-sakura/30 font-display">&#x300C;</span>
+            <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground/40">
+              &copy; 2026 はざめ
+            </p>
+            <span className="text-jp-sakura/30 font-display">&#x300D;</span>
+          </div>
         </div>
       </div>
     </section>

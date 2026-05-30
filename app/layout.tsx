@@ -3,12 +3,9 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-// Using system fonts instead of Google Fonts to avoid timeout issues
-const fontClasses = "font-sans";
-
 export const metadata: Metadata = {
-  title: "Abdul Hakim | AI・フルスタックエンジニア",
-  description: "Abdul Hakimのポートフォリオ - AI・フルスタックエンジニア",
+  title: "はざめ | AI・フルスタックエンジニア",
+  description: "はざめのポートフォリオ - AI・フルスタックエンジニア",
 };
 
 export default function RootLayout({
@@ -18,7 +15,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${fontClasses} antialiased`}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Shippori+Mincho:wght@400;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="font-sans antialiased">
         {children}
         <Analytics />
       </body>

@@ -3,81 +3,90 @@
 
 @custom-variant dark (&:is(.dark *));
 
+/* === Modern Japanese Palette (Washi / Sumi / Sakura) === */
 :root {
-  --background: oklch(0.99 0 0);
-  --foreground: oklch(0.15 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.15 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.15 0 0);
-  --primary: oklch(0.15 0 0);
-  --primary-foreground: oklch(0.99 0 0);
-  --secondary: oklch(0.95 0 0);
-  --secondary-foreground: oklch(0.15 0 0);
-  --muted: oklch(0.93 0 0);
-  --muted-foreground: oklch(0.5 0 0);
-  --accent: oklch(0.15 0 0);
-  --accent-foreground: oklch(0.99 0 0);
+  --background: oklch(0.965 0.008 75);
+  --foreground: oklch(0.18 0.02 260);
+  --card: oklch(0.975 0.005 75);
+  --card-foreground: oklch(0.18 0.02 260);
+  --popover: oklch(0.975 0.005 75);
+  --popover-foreground: oklch(0.18 0.02 260);
+  --primary: oklch(0.25 0.03 260);
+  --primary-foreground: oklch(0.96 0.008 75);
+  --secondary: oklch(0.935 0.012 75);
+  --secondary-foreground: oklch(0.25 0.02 260);
+  --muted: oklch(0.92 0.01 75);
+  --muted-foreground: oklch(0.5 0.015 260);
+  --accent: oklch(0.72 0.12 25);
+  --accent-foreground: oklch(0.96 0.008 75);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.99 0 0);
-  --border: oklch(0.88 0 0);
-  --input: oklch(0.88 0 0);
-  --ring: oklch(0.15 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  --border: oklch(0.88 0.01 75);
+  --input: oklch(0.88 0.01 75);
+  --ring: oklch(0.55 0.08 25);
+  --chart-1: oklch(0.72 0.12 25);
+  --chart-2: oklch(0.6 0.08 260);
+  --chart-3: oklch(0.5 0.06 140);
+  --chart-4: oklch(0.7 0.1 80);
+  --chart-5: oklch(0.65 0.1 350);
+  --radius: 0.25rem;
+  --sidebar: oklch(0.96 0.008 75);
+  --sidebar-foreground: oklch(0.18 0.02 260);
+  --sidebar-primary: oklch(0.25 0.03 260);
+  --sidebar-primary-foreground: oklch(0.96 0.008 75);
+  --sidebar-accent: oklch(0.93 0.012 75);
+  --sidebar-accent-foreground: oklch(0.25 0.02 260);
+  --sidebar-border: oklch(0.9 0.01 75);
+  --sidebar-ring: oklch(0.55 0.08 25);
+
+  /* Japanese accent colors */
+  --jp-sumi: oklch(0.18 0.02 260);
+  --jp-washi: oklch(0.965 0.008 75);
+  --jp-sakura: oklch(0.78 0.08 10);
+  --jp-kincha: oklch(0.7 0.1 80);
+  --jp-ai: oklch(0.45 0.08 240);
+  --jp-matcha: oklch(0.55 0.1 145);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  --background: oklch(0.12 0.02 260);
+  --foreground: oklch(0.93 0.008 75);
+  --card: oklch(0.14 0.02 260);
+  --card-foreground: oklch(0.93 0.008 75);
+  --popover: oklch(0.14 0.02 260);
+  --popover-foreground: oklch(0.93 0.008 75);
+  --primary: oklch(0.93 0.008 75);
+  --primary-foreground: oklch(0.15 0.02 260);
+  --secondary: oklch(0.22 0.02 260);
+  --secondary-foreground: oklch(0.93 0.008 75);
+  --muted: oklch(0.22 0.02 260);
+  --muted-foreground: oklch(0.65 0.01 75);
+  --accent: oklch(0.72 0.12 25);
+  --accent-foreground: oklch(0.12 0.02 260);
+  --border: oklch(0.25 0.02 260);
+  --input: oklch(0.25 0.02 260);
+  --ring: oklch(0.55 0.08 25);
+  --sidebar: oklch(0.16 0.02 260);
+  --sidebar-foreground: oklch(0.93 0.008 75);
+  --sidebar-primary: oklch(0.72 0.12 25);
+  --sidebar-primary-foreground: oklch(0.93 0.008 75);
+  --sidebar-accent: oklch(0.22 0.02 260);
+  --sidebar-accent-foreground: oklch(0.93 0.008 75);
+  --sidebar-border: oklch(0.25 0.02 260);
+  --sidebar-ring: oklch(0.55 0.08 25);
+
+  --jp-sumi: oklch(0.93 0.008 75);
+  --jp-washi: oklch(0.12 0.02 260);
+  --jp-sakura: oklch(0.72 0.1 10);
+  --jp-kincha: oklch(0.65 0.1 80);
+  --jp-ai: oklch(0.55 0.1 240);
+  --jp-matcha: oklch(0.6 0.12 145);
 }
 
 @theme inline {
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  --font-serif: "Times New Roman", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", serif;
-  --font-display: "Arial Rounded MT Bold", "Rounded Mplus 1c", "Hiragino Maru Gothic ProN", sans-serif;
+  --font-sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", system-ui, sans-serif;
+  --font-serif: "Noto Serif JP", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "Times New Roman", serif;
+  --font-display: "Shippori Mincho", "Yu Mincho", "Hiragino Mincho ProN", serif;
   --font-mono: "SF Mono", "Monaco", "Inconsolata", "Roboto Mono", "Courier New", monospace;
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -115,6 +124,12 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-jp-sumi: var(--jp-sumi);
+  --color-jp-washi: var(--jp-washi);
+  --color-jp-sakura: var(--jp-sakura);
+  --color-jp-kincha: var(--jp-kincha);
+  --color-jp-ai: var(--jp-ai);
+  --color-jp-matcha: var(--jp-matcha);
 }
 
 @layer base {
@@ -131,98 +146,108 @@
 
 @layer utilities {
   @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
   }
 
   @keyframes slideUp {
-    from {
-      opacity: 0;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 
   @keyframes slideInLeft {
-    from {
-      opacity: 0;
-      transform: translateX(-30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
   }
 
   @keyframes slideInRight {
-    from {
-      opacity: 0;
-      transform: translateX(30px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
   }
 
-  /* Added scale animation for enhanced visual effects */
   @keyframes scaleIn {
-    from {
-      opacity: 0;
-      transform: scale(0.95);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes brushStroke {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  @keyframes inkDrop {
+    0% { opacity: 0; transform: scale(0); }
+    50% { opacity: 0.6; transform: scale(1.1); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+
+  @keyframes floatSlow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
   }
 
   .animate-fade-in {
     animation: fadeIn 0.8s ease-out forwards;
   }
-
   .animate-slide-up {
     animation: slideUp 0.8s ease-out forwards;
   }
-
   .animate-slide-in-left {
     animation: slideInLeft 0.8s ease-out forwards;
   }
-
   .animate-slide-in-right {
     animation: slideInRight 0.8s ease-out forwards;
   }
-
-  /* Added scale-in animation class */
   .animate-scale-in {
     animation: scaleIn 0.8s ease-out forwards;
   }
-
-  .animation-delay-200 {
-    animation-delay: 0.2s;
-    opacity: 0;
+  .animate-brush-stroke {
+    animation: brushStroke 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  }
+  .animate-ink-drop {
+    animation: inkDrop 0.6s ease-out forwards;
+  }
+  .animate-float-slow {
+    animation: floatSlow 6s ease-in-out infinite;
   }
 
-  .animation-delay-400 {
-    animation-delay: 0.4s;
-    opacity: 0;
+  .animation-delay-200 { animation-delay: 0.2s; opacity: 0; }
+  .animation-delay-400 { animation-delay: 0.4s; opacity: 0; }
+  .animation-delay-600 { animation-delay: 0.6s; opacity: 0; }
+  .animation-delay-800 { animation-delay: 0.8s; opacity: 0; }
+  .animation-delay-1000 { animation-delay: 1.0s; opacity: 0; }
+
+  /* Japanese decorative elements */
+  .jp-border-accent {
+    position: relative;
+  }
+  .jp-border-accent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, var(--jp-sakura), transparent);
   }
 
-  .animation-delay-600 {
-    animation-delay: 0.6s;
-    opacity: 0;
+  .jp-section-divider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .jp-section-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, var(--border), transparent);
   }
 
-  /* Added more animation delay options */
-  .animation-delay-800 {
-    animation-delay: 0.8s;
-    opacity: 0;
+  .text-gradient-sakura {
+    background: linear-gradient(135deg, var(--jp-sakura), var(--jp-kincha));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 }

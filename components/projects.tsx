@@ -11,17 +11,11 @@ export function Projects() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.05 }
     );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
 
@@ -43,7 +37,7 @@ export function Projects() {
       client: "MANABOU株式会社",
       description:
         "React・Node.js・Expressで構築したオンライン講義システムです。WebSocketとWebRTCを使ったライブ配信・双方向のやり取りを実装し、Stripeでのチケット購入、進捗トラッキング、受験時のAI顔認証、自動採点、合格時の修了証発行まで、一連の機能を開発しました。",
-      tags: ["React", "Node.js", "Express", "WebSocket", "WebRTC", "Stripe"],
+      tags: ["React", "Node.js", "Express", "WebSocket", "WebRTC", "Stripe", "AI顔認証"],
       image: "/manabou.png",
     },
     {
@@ -53,7 +47,7 @@ export function Projects() {
       client: "株式会社GoodService",
       description:
         "FlutterとHealth API・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、SalesforceをCRMとして顧客情報を一元管理。FCMでのプッシュ通知も実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
-      tags: ["Flutter", "Firebase", "Salesforce", "FCM"],
+      tags: ["Flutter", "Firebase", "Prisma", "Salesforce", "Health API", "FCM"],
       image: "/moshikatsu.png",
     },
     {
@@ -72,8 +66,8 @@ export function Projects() {
       category: "在庫管理システム",
       client: "BizTech株式会社",
       description:
-        "リユース事業者向けの在庫・買取・売上を一元管理する総合管理システムです。ダッシュボードでは売上・粗利・買取件数・在庫点数をリアルタイムに可視化し、売上／買取推移チャートやカテゴリ別売上分析で経営判断をサポート。買取査定から在庫登録、販売までのワークフローを統合し、Pythonによる売上予測・需要分析のバッチ処理とREST APIによる外部POS連携も実装しました。",
-      tags: ["Next.js", "Laravel", "MySQL", "AWS", "Python", "REST API"],
+        "リユース事業者向けに開発した在庫管理システムです。商品の入荷・出荷・在庫数をリアルタイムで追跡し、ダッシュボードで売上・粗利・在庫回転率などをグラフで可視化。カテゴリ別の売上分析や在庫アラート機能で、仕入れ判断と在庫最適化をサポートします。バーコード読み取りによる入出庫処理、CSV一括インポート、REST APIによる外部POS連携にも対応しています。",
+      tags: ["Next.js", "Laravel", "MySQL", "AWS", "Python", "REST API", "バーコード"],
       image: "/stock.png",
     },
     {
@@ -81,19 +75,21 @@ export function Projects() {
       title: "Okawari",
       category: "Webアプリ",
       client: "非公開",
+      url: "https://okawari-map.jp/",
       description:
-        "Google Maps APIを活用したレストラン検索システムです。現在地や指定エリアからの飲食店検索に加え、目的地までのルート案内機能を実装。Next.jsとTailwind CSSでレスポンシブなUIを構築し、MySQLで店舗データを管理。PWA対応により、スマホのホーム画面からネイティブアプリのように素早くアクセスできます。",
-      tags: ["Next.js", "Tailwind CSS", "MySQL", "PWA"],
+        "「おかわり自由」の飲食店だけを地図上で探せるグルメマップアプリです。OpenStreetMapベースの地図表示に加え、ユーザーが店舗情報を投稿できるタイムライン機能、GPS現在地取得、マイページ機能を実装。PWA対応でスマホのホーム画面からネイティブアプリのようにアクセスでき、Cookie同意バナーやオンボーディングモーダルなどUX面も整備しています。",
+      tags: ["Next.js", "OpenStreetMap", "PWA", "GPS", "Google Analytics"],
       image: "/okawari.png",
     },
     {
       id: 7,
-      title: "相性診断",
-      category: "マッチングサービス",
+      title: "ソウルシンク",
+      category: "相性診断サービス",
       client: "非公開",
+      url: "https://ai-mixer.jp/",
       description:
-        "男女の相性診断ができるマッチングシステムです。Next.jsとRadix UIでアクセシブルかつ直感的なUIを構築し、Tailwind CSSでレスポンシブ対応。Vercelへのデプロイで高速な表示を実現しています。",
-      tags: ["Next.js", "Tailwind CSS", "Radix UI", "Vercel"],
+        "占星術と現代心理学を組み合わせた恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、詳細な性格分析、そして包括的な分析レポートの生成機能を提供。オレンジ×イエローのグラデーション配色で温かみのあるUIに仕上げています。",
+      tags: ["Next.js", "Tailwind CSS", "占星術API", "MBTI", "Vercel"],
       image: "/matching.png",
     },
   ];
@@ -102,8 +98,13 @@ export function Projects() {
     <section
       ref={sectionRef}
       id="projects"
-      className="py-32 lg:py-40 px-6 lg:px-12 bg-secondary/50"
+      className="py-32 lg:py-44 px-6 lg:px-12 bg-secondary/40 relative overflow-hidden"
     >
+      {/* Background decorative */}
+      <div className="absolute top-20 right-10 text-[15rem] font-display text-foreground/[0.015] select-none pointer-events-none leading-none">
+        実績
+      </div>
+
       <div className="max-w-7xl mx-auto">
         <div className="space-y-20">
           {/* Header */}
@@ -113,21 +114,25 @@ export function Projects() {
             }`}
           >
             <div className="flex items-center gap-4">
-              <div className="h-px w-8 bg-foreground" />
+              <div className="h-px w-8 bg-jp-sakura/60" />
               <span className="text-[10px] tracking-[0.4em] uppercase text-muted-foreground">
                 Projects
+              </span>
+              <span className="text-xs text-jp-sakura/40 font-display">
+                開発実績
               </span>
             </div>
             <h2 className="text-4xl lg:text-6xl font-black tracking-tighter">
               開発実績
             </h2>
-            <p className="text-sm lg:text-base text-muted-foreground font-light leading-[2] max-w-2xl pt-2">
+            <div className="h-[2px] w-16 bg-gradient-to-r from-jp-sakura/60 to-transparent" />
+            <p className="text-sm lg:text-base text-muted-foreground font-light leading-[2.2] max-w-2xl pt-2 font-serif">
               これまで多くのお客様に貴重な機会をいただき、AI・Web・SaaS・モバイルアプリと、幅広い領域でプロダクト開発に携わらせていただきました。
             </p>
           </div>
 
           {/* Project list */}
-          <div className="space-y-16 lg:space-y-24">
+          <div className="space-y-16 lg:space-y-28">
             {projects.map((project, index) => (
               <div
                 key={project.id}
@@ -151,9 +156,9 @@ export function Projects() {
                       className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-all duration-500" />
-                    {/* Corner marks */}
-                    <div className="absolute top-3 left-3 w-4 h-4 border-t border-l border-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                    <div className="absolute bottom-3 right-3 w-4 h-4 border-b border-r border-white/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    {/* Corner marks with sakura */}
+                    <div className="absolute top-3 left-3 w-5 h-5 border-t-2 border-l-2 border-jp-sakura/0 group-hover:border-jp-sakura/40 transition-all duration-500" />
+                    <div className="absolute bottom-3 right-3 w-5 h-5 border-b-2 border-r-2 border-jp-sakura/0 group-hover:border-jp-sakura/40 transition-all duration-500" />
                   </div>
                 </button>
 
@@ -165,10 +170,10 @@ export function Projects() {
                 >
                   <div className="space-y-3">
                     <div className="flex items-center gap-3">
-                      <span className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground/60 font-mono">
+                      <span className="text-[10px] tracking-[0.3em] text-jp-sakura/50 font-mono">
                         {String(index + 1).padStart(2, "0")}
                       </span>
-                      <div className="h-px w-4 bg-foreground/20" />
+                      <div className="h-px w-4 bg-jp-sakura/20" />
                       <span className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground">
                         {project.category}
                       </span>
@@ -181,9 +186,10 @@ export function Projects() {
                         {project.client}
                       </p>
                     )}
+                    <div className="h-[2px] w-10 bg-gradient-to-r from-jp-sakura/40 to-transparent" />
                   </div>
 
-                  <p className="text-sm text-muted-foreground font-light leading-[1.9]">
+                  <p className="text-sm text-muted-foreground font-light leading-[2] font-serif">
                     {project.description}
                   </p>
 
@@ -191,12 +197,32 @@ export function Projects() {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-[10px] tracking-wide px-2.5 py-1 border border-foreground/10 text-muted-foreground hover:border-foreground/30 hover:text-foreground transition-all duration-300 cursor-default"
+                        className="text-[10px] tracking-wide px-2.5 py-1 border border-foreground/8 text-muted-foreground hover:border-jp-sakura/30 hover:text-foreground transition-all duration-500 cursor-default"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
+
+                  {"url" in project && project.url && (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-500 group/link pt-2"
+                    >
+                      <span>サイトを見る</span>
+                      <svg
+                        className="w-3.5 h-3.5 transition-transform duration-300 group-hover/link:translate-x-0.5"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                      >
+                        <path d="M7 17L17 7M17 7H7M17 7V17" />
+                      </svg>
+                    </a>
+                  )}
                 </div>
               </div>
             ))}
@@ -207,7 +233,7 @@ export function Projects() {
       {/* Lightbox */}
       {selectedImage !== null && (
         <div
-          className="fixed inset-0 bg-background/95 backdrop-blur-sm z-50 flex items-center justify-center p-4 lg:p-8 animate-fade-in"
+          className="fixed inset-0 bg-background/95 backdrop-blur-md z-50 flex items-center justify-center p-4 lg:p-8 animate-fade-in"
           onClick={() => setSelectedImage(null)}
         >
           <button
@@ -234,7 +260,7 @@ export function Projects() {
                 </span>
                 {projects[selectedImage].client && (
                   <>
-                    <div className="h-px w-3 bg-foreground/20" />
+                    <div className="h-px w-3 bg-jp-sakura/20" />
                     <span className="text-[10px] text-muted-foreground/60">
                       {projects[selectedImage].client}
                     </span>
@@ -253,7 +279,7 @@ export function Projects() {
                     selectedImage > 0 ? selectedImage - 1 : projects.length - 1
                   )
                 }
-                className="text-[11px] tracking-[0.15em] uppercase border border-foreground/20 px-5 py-2 hover:bg-foreground hover:text-background transition-all duration-300"
+                className="text-[11px] tracking-[0.15em] uppercase border border-foreground/20 px-5 py-2 hover:bg-foreground hover:text-background hover:border-foreground transition-all duration-300"
               >
                 Prev
               </button>
@@ -263,7 +289,7 @@ export function Projects() {
                     selectedImage < projects.length - 1 ? selectedImage + 1 : 0
                   )
                 }
-                className="text-[11px] tracking-[0.15em] uppercase border border-foreground/20 px-5 py-2 hover:bg-foreground hover:text-background transition-all duration-300"
+                className="text-[11px] tracking-[0.15em] uppercase border border-foreground/20 px-5 py-2 hover:bg-foreground hover:text-background hover:border-foreground transition-all duration-300"
               >
                 Next
               </button>
