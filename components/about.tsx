@@ -10,17 +10,11 @@ export function About() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
+        if (entry.isIntersecting) setIsVisible(true);
       },
       { threshold: 0.1 }
     );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
 
@@ -28,11 +22,16 @@ export function About() {
     <section
       ref={sectionRef}
       id="about"
-      className="py-32 lg:py-40 px-6 lg:px-12"
+      className="py-32 lg:py-44 px-6 lg:px-12 relative"
     >
+      {/* Background decorative kanji */}
+      <div className="absolute top-20 right-10 text-[12rem] font-display text-foreground/[0.02] select-none pointer-events-none leading-none">
+        紹介
+      </div>
+
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Image — 5 cols */}
+        <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
+          {/* Image */}
           <div
             className={`lg:col-span-5 order-2 lg:order-1 ${
               isVisible ? "animate-scale-in" : "opacity-0"
@@ -46,18 +45,25 @@ export function About() {
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent" />
-                {/* Corner marks */}
-                <div className="absolute top-3 left-3 w-5 h-5 border-t border-l border-foreground/40" />
-                <div className="absolute top-3 right-3 w-5 h-5 border-t border-r border-foreground/40" />
-                <div className="absolute bottom-3 left-3 w-5 h-5 border-b border-l border-foreground/40" />
-                <div className="absolute bottom-3 right-3 w-5 h-5 border-b border-r border-foreground/40" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/30 to-transparent" />
+                {/* Corner marks with sakura accent */}
+                <div className="absolute top-3 left-3 w-6 h-6 border-t-2 border-l-2 border-jp-sakura/30" />
+                <div className="absolute top-3 right-3 w-6 h-6 border-t-2 border-r-2 border-jp-sakura/30" />
+                <div className="absolute bottom-3 left-3 w-6 h-6 border-b-2 border-l-2 border-jp-sakura/30" />
+                <div className="absolute bottom-3 right-3 w-6 h-6 border-b-2 border-r-2 border-jp-sakura/30" />
               </div>
-              <div className="absolute -bottom-3 -right-3 w-full h-full border border-foreground/5 -z-10" />
+              {/* Offset decorative frame */}
+              <div className="absolute -bottom-3 -right-3 w-full h-full border border-jp-sakura/10 -z-10" />
+              {/* Floating label */}
+              <div className="absolute -bottom-6 left-6 bg-background px-4 py-2 border border-border">
+                <span className="text-[9px] tracking-[0.3em] uppercase text-muted-foreground">
+                  Bandung, Indonesia
+                </span>
+              </div>
             </div>
           </div>
 
-          {/* Text — 7 cols */}
+          {/* Text */}
           <div className="lg:col-span-7 space-y-10 order-1 lg:order-2">
             <div
               className={`space-y-4 ${
@@ -65,33 +71,37 @@ export function About() {
               }`}
             >
               <div className="flex items-center gap-4">
-                <div className="h-px w-8 bg-foreground" />
+                <div className="h-px w-8 bg-jp-sakura/60" />
                 <span className="text-[10px] tracking-[0.4em] uppercase text-muted-foreground">
                   About
+                </span>
+                <span className="text-xs text-jp-sakura/40 font-display">
+                  自己紹介
                 </span>
               </div>
               <h2 className="text-4xl lg:text-6xl font-black tracking-tighter">
                 自己紹介
               </h2>
+              <div className="h-[2px] w-16 bg-gradient-to-r from-jp-sakura/60 to-transparent" />
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-6 font-serif">
               <p
-                className={`text-sm lg:text-base text-muted-foreground font-light leading-[2] ${
+                className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"
                 }`}
               >
                 AIとWebシステムの開発を8年以上やってきました。普段はPythonとTypeScriptをメインに、LLMを使った機能の組み込みやSaaS・Webアプリの開発に取り組んでいます。
               </p>
               <p
-                className={`text-sm lg:text-base text-muted-foreground font-light leading-[2] ${
+                className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-400" : "opacity-0"
                 }`}
               >
                 よく使うのはOpenAIやAnthropicのAPI、LangChain、ベクトルDB（PineconeやpgvectorなどでのRAG）あたりです。WebはNext.js・FastAPI・Node.jsで、AI機能を組み込んだサービスを一通り自分で作れるようにしています。
               </p>
               <p
-                className={`text-sm lg:text-base text-muted-foreground font-light leading-[2] ${
+                className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"
                 }`}
               >
@@ -106,9 +116,10 @@ export function About() {
             >
               <a
                 href="#contact"
-                className="inline-flex items-center gap-3 text-xs tracking-[0.2em] uppercase border border-foreground px-8 py-3.5 hover:bg-foreground hover:text-background transition-all duration-300"
+                className="group inline-flex items-center gap-3 text-xs tracking-[0.25em] uppercase border border-foreground px-8 py-3.5 hover:bg-foreground hover:text-background transition-all duration-500"
               >
-                お問い合わせ
+                <span>お問い合わせ</span>
+                <span className="w-0 group-hover:w-6 h-px bg-jp-sakura transition-all duration-500" />
               </a>
             </div>
           </div>
