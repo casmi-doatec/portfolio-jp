@@ -78,8 +78,8 @@ export function Projects() {
       client: "非公開",
       url: "https://okawari-map.jp/",
       description:
-        "「おかわり自由」の飲食店だけを地図上で探せるグルメマップアプリです。OpenStreetMapベースの地図表示に加え、ユーザーが店舗情報を投稿できるタイムライン機能、GPS現在地取得、マイページ機能を実装。PWA対応でスマホのホーム画面からネイティブアプリのようにアクセスでき、Cookie同意バナーやオンボーディングモーダルなどUX面も整備しています。",
-      tags: ["Next.js", "OpenStreetMap", "PWA", "GPS", "Google Analytics"],
+        "「ごはんおかわり無料」の飲食店だけを地図から探せるグルメマップアプリです。OpenStreetMapを使った地図上での店舗検索に加え、ユーザーが新しい店舗を投稿できるタイムライン機能、GPSによる現在地取得、マイページ機能を実装。PWA対応でスマホのホーム画面からワンタップで起動でき、Cookie同意バナー・オンボーディングモーダル・404ページの丼イラストなど、細かなUX設計にもこだわっています。Microsoft Clarityによるヒートマップ分析も導入しています。",
+      tags: ["Next.js", "OpenStreetMap", "PWA", "GPS", "Google Analytics", "Microsoft Clarity"],
       image: "/okawari.png",
     },
     {
@@ -89,8 +89,8 @@ export function Projects() {
       client: "非公開",
       url: "https://ai-mixer.jp/",
       description:
-        "占星術と現代心理学を組み合わせた恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、詳細な性格分析、そして包括的な分析レポートの生成機能を提供。オレンジ×イエローのグラデーション配色で温かみのあるUIに仕上げています。",
-      tags: ["Next.js", "Tailwind CSS", "占星術API", "MBTI", "Vercel"],
+        "「古代の知恵を通じて完璧なマッチを発見」をコンセプトにした、AI駆動型の恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、内面的な相性を明らかにする性格分析、そして関係性を深く理解できる包括的な分析レポートの4つの診断機能を提供。グラデーション背景とSVGアイコンを活用した温かみのあるUI設計で、直感的に診断テストを進められるようにしています。",
+      tags: ["Next.js", "Tailwind CSS", "SVG", "WebP", "Vercel"],
       image: "/matching.png",
     },
   ];
