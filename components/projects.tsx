@@ -52,12 +52,13 @@ export function Projects() {
     },
     {
       id: 4,
-      title: "lajollahale",
+      title: "LA・JOLLA HALE",
       category: "ECサイト",
       client: "リオネ株式会社",
+      url: "https://lajollahale.com/",
       description:
-        "Shopifyで構築した酒類のECサイトです。カスタムテーマの開発と、商品の検索・絞り込み機能を実装しました。決済フローの最適化とUI/UXの改善で、購入完了率の向上につなげています。",
-      tags: ["Shopify", "Liquid", "JavaScript", "E-commerce"],
+        "Shopifyで構築したグローバル対応のECサイトです。カスタムテーマの開発に加え、価格帯フィルタリング、ウィッシュリスト、商品比較機能を実装。Revolution SliderやFotoramaによるリッチな商品ギャラリー、画像ズーム機能、年齢確認ポップアップ、サブスクリプション通知なども組み込み、購入完了率の向上につなげています。日本円対応で、レスポンシブデザインによりモバイル・タブレット・デスクトップすべてに最適化しています。",
+      tags: ["Shopify", "Liquid", "JavaScript", "Slick", "Fotorama", "レスポンシブ"],
       image: "/lajollahale.png",
     },
     {
