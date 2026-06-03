@@ -54,12 +54,6 @@ export function About() {
               </div>
               {/* Offset decorative frame */}
               <div className="absolute -bottom-3 -right-3 w-full h-full border border-jp-sakura/10 -z-10" />
-              {/* Floating label */}
-              <div className="absolute -bottom-6 left-6 bg-background px-4 py-2 border border-border">
-                <span className="text-[9px] tracking-[0.3em] uppercase text-muted-foreground">
-                  Bandung, Indonesia
-                </span>
-              </div>
             </div>
           </div>
 
@@ -91,21 +85,21 @@ export function About() {
                   isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"
                 }`}
               >
-                AIとWebシステムの開発を8年以上やってきました。普段はPythonとTypeScriptをメインに、LLMを使った機能の組み込みやSaaS・Webアプリの開発に取り組んでいます。
+                PythonとTypeScriptを軸に、AIとWebの両方を一人で設計・実装できるフルスタックエンジニアです。OpenAI・Claude APIによるLLMアプリ、LangChain+ベクトルDB（Pinecone・pgvector）でのRAG構築、プロンプトエンジニアリングによる精度チューニングなど、AI技術を実際のプロダクトに落とし込むことを専門としています。
               </p>
               <p
                 className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-400" : "opacity-0"
                 }`}
               >
-                よく使うのはOpenAIやAnthropicのAPI、LangChain、ベクトルDB（PineconeやpgvectorなどでのRAG）あたりです。WebはNext.js・FastAPI・Node.jsで、AI機能を組み込んだサービスを一通り自分で作れるようにしています。
+                Web側はNext.js・FastAPI・Node.js・Laravelで、予約管理システム・在庫管理・ECサイト・SaaSなどを開発。Stripe決済、WebSocket/WebRTCリアルタイム通信、PWA対応まで一気通貫で対応できます。FlutterでのモバイルアプリやSalesforce・Shopify連携の経験もあります。
               </p>
               <p
                 className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"
                 }`}
               >
-                これまでにAI顔認証や自動採点、社内向けのドキュメント検索チャットボット、業務自動化のスクリプトなどを担当してきました。最新の手法を追いかけつつ、実際のプロダクトに落とし込めるかどうかを大切にしています。
+                これまでにAI顔認証、自動採点、相性診断レポート自動生成、社内ドキュメント検索チャットボット、業務自動化スクリプトなど、30以上のプロジェクトを担当してきました。技術選定から設計・実装・運用まで、お客様の「こういうものが欲しい」をそのまま形にします。
               </p>
             </div>
 

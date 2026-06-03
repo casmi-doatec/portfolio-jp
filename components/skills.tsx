@@ -19,34 +19,34 @@ export function Skills() {
 
   const skillCategories = [
     {
-      title: "AI・LLM",
+      title: "AI・LLM・ML",
       kanji: "知",
-      skills: ["OpenAI API", "Claude API", "LangChain", "RAG"],
-    },
-    {
-      title: "ML・画像処理",
-      kanji: "眼",
-      skills: ["Python", "OpenCV"],
-    },
-    {
-      title: "言語",
-      kanji: "語",
-      skills: ["Python", "TypeScript", "JavaScript", "PHP", "Kotlin", "Java", "Ruby"],
+      skills: ["OpenAI API", "Claude API", "LangChain", "RAG", "Pinecone", "pgvector", "OpenCV", "PyTorch", "Whisper"],
     },
     {
       title: "フロントエンド",
       kanji: "面",
-      skills: ["React", "Next.js", "Vue", "Nuxt", "Tailwind CSS"],
+      skills: ["React", "Next.js", "Vue", "Nuxt", "Flutter", "Tailwind CSS", "Three.js"],
     },
     {
       title: "バックエンド",
       kanji: "裏",
-      skills: ["FastAPI", "Node.js", "Laravel", "Ruby on Rails", "Prisma", "MySQL", "PostgreSQL"],
+      skills: ["Python", "FastAPI", "Node.js", "TypeScript", "Laravel", "PHP", "Ruby on Rails"],
     },
     {
-      title: "インフラ・ツール",
+      title: "データベース",
+      kanji: "蓄",
+      skills: ["MySQL", "PostgreSQL", "Firebase", "Prisma", "Redis"],
+    },
+    {
+      title: "インフラ・DevOps",
       kanji: "基",
-      skills: ["AWS", "Google Cloud", "Docker", "Firebase", "Salesforce", "Kintone", "Stripe", "Git"],
+      skills: ["AWS", "Google Cloud", "Docker", "Vercel", "Git", "GitHub Actions"],
+    },
+    {
+      title: "外部サービス連携",
+      kanji: "繋",
+      skills: ["Stripe", "Salesforce", "Kintone", "Shopify", "WebSocket", "WebRTC"],
     },
   ];
 
@@ -139,7 +139,7 @@ export function Skills() {
             </div>
             <div className="w-px h-16 bg-jp-sakura/15" />
             <div className="text-center space-y-2">
-              <p className="text-5xl lg:text-6xl font-black tracking-tighter">8+</p>
+              <p className="text-5xl lg:text-6xl font-black tracking-tighter">12+</p>
               <p className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground">
                 年の実務経験
               </p>
