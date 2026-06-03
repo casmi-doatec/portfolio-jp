@@ -116,22 +116,6 @@ export function Contact() {
                 </a>
               </div>
 
-              {/* Chatwork */}
-              <div className="flex items-center gap-4 group">
-                <div className="w-10 h-10 border border-foreground/10 flex items-center justify-center group-hover:border-jp-sakura/30 transition-colors duration-500">
-                  <svg className="w-4 h-4 text-muted-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                    <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" />
-                  </svg>
-                </div>
-                <a
-                  href="https://www.chatwork.com/casmi3811_"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
-                >
-                  Chatwork: casmi3811_
-                </a>
-              </div>
             </div>
 
             {/* Decorative zen element */}
@@ -248,7 +232,7 @@ export function Contact() {
           <div className="flex items-center justify-center gap-3">
             <span className="text-jp-sakura/30 font-display">&#x300C;</span>
             <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground/40">
-              &copy; 2026 はざめ
+              &copy; 2026 遠藤悠晴
             </p>
             <span className="text-jp-sakura/30 font-display">&#x300D;</span>
           </div>
