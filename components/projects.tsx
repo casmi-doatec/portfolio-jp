@@ -63,7 +63,7 @@ export function Projects() {
     },
     {
       id: 5,
-      title: "Re:Stock",
+      title: "在庫プロ",
       category: "在庫管理システム",
       client: "BizTech株式会社",
       description:
@@ -73,7 +73,7 @@ export function Projects() {
     },
     {
       id: 6,
-      title: "Okawari",
+      title: "おかわりマップ",
       category: "Webアプリ",
       client: "非公開",
       url: "https://okawari-map.jp/",

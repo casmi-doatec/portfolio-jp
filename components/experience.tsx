@@ -19,38 +19,38 @@ export function Experience() {
 
   const expertiseAreas = [
     {
-      title: "LLM・RAGの組み込み",
+      title: "LLM・RAG・AIエージェント",
       description:
-        "OpenAIやClaudeのAPIを使ったチャットボット、社内ドキュメント検索（RAG）、要約・分類などを実装してきました。LangChainとベクトルDBを組み合わせて、業務で実際に使える形に落とし込むのが得意です。",
+        "OpenAI・Claude APIを使ったチャットボット、社内ドキュメント検索（RAG）、要約・分類・レポート自動生成などを実装してきました。LangChainとベクトルDB（Pinecone・pgvector）を組み合わせ、プロンプトエンジニアリングで精度を追い込みながら、業務で実際に使える形に仕上げるのが得意です。",
       number: "01",
       kanji: "言",
     },
     {
-      title: "AI機能を組み込んだWebアプリ",
+      title: "AIを組み込んだプロダクト開発",
       description:
-        "Next.js・FastAPI・Node.jsを中心にしたフルスタック開発に、AI機能を組み込むのが得意です。試験の自動採点やAI顔認証、画像認識を組み込んだサービスなど、UIから推論APIまで一通り自分で作れます。",
+        "フルスタック開発にAI機能をシームレスに統合します。AI顔認証・自動採点・画像認識・相性診断レポート生成など、UIからバックエンドの推論APIまで一気通貫で設計・実装。OpenCV・PyTorch・Whisperを使った画像・音声処理の実装経験もあります。",
       number: "02",
       kanji: "智",
     },
     {
-      title: "Webシステム・ECサイト",
+      title: "Webシステム・SaaS・EC",
       description:
-        "Next.js、Node.js、Laravelでのフルスタック開発も継続して対応しています。予約管理、ECサイト、SaaSなど、Stripe決済やメール配信、リアルタイム機能まで含めて一気通貫で実装できます。",
+        "Next.js・FastAPI・Node.js・Laravelでのフルスタック開発を得意としています。予約管理システム、在庫管理、ECサイト、SaaSなど、Stripe決済・WebSocket/WebRTCリアルタイム通信・PWA対応まで含めて一気通貫で実装できます。",
       number: "03",
       kanji: "匠",
     },
     {
-      title: "MLモデル・自動化",
+      title: "モバイル・外部サービス連携",
       description:
-        "PyTorchやOpenCV、Whisperを使った画像・音声処理の実装経験があります。既存モデルの活用と簡単なファインチューニング、業務自動化スクリプトまで、用途に合わせて選んで作っています。",
+        "FlutterによるiOS/Androidアプリ開発から、Salesforce・Kintone・ShopifyなどのSaaS連携、REST API設計、Firebase認証・FCMプッシュ通知まで対応。既存の業務システムとAI/Webサービスをつなぐ統合開発を行っています。",
       number: "04",
-      kanji: "機",
+      kanji: "繋",
     },
   ];
 
   const stats = [
     { value: "30+", label: "開発プロジェクト" },
-    { value: "8+", label: "年の実務経験" },
+    { value: "12+", label: "年の実務経験" },
     { value: "15+", label: "取引先クライアント" },
   ];
 
