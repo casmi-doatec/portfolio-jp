@@ -1,12 +1,6 @@
 "use client";
 
-import { useState, useEffect, Suspense } from "react";
-import dynamic from "next/dynamic";
-
-const ThreeScene = dynamic(
-  () => import("@/components/three-scene").then((mod) => ({ default: mod.ThreeScene })),
-  { ssr: false }
-);
+import { useState, useEffect } from "react";
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -17,11 +11,6 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 lg:px-12 overflow-hidden">
-      {/* Three.js background */}
-      <Suspense fallback={null}>
-        <ThreeScene className="z-0 opacity-60" />
-      </Suspense>
-
       {/* Subtle washi paper texture overlay */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,transparent_0%,var(--background)_70%)] pointer-events-none z-[1]" />
 
@@ -67,7 +56,7 @@ export function Hero() {
             >
               <div className="space-y-1">
                 <h1 className="text-6xl lg:text-[7rem] font-black tracking-tighter leading-[0.85]">
-                  はざめ
+                  遠藤悠晴
                 </h1>
               </div>
 
