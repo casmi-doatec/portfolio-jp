@@ -22,6 +22,17 @@ export function Projects() {
   const projects = [
     {
       id: 1,
+      title: "IVRy（アイブリー）",
+      category: "AI SaaS",
+      client: "株式会社IVRy",
+      url: "https://ivry.jp/",
+      description:
+        "累計50,000アカウント超のAI電話自動応答SaaSの開発に参画しました。AIによる受電対応・IVR分岐・通話録音と文字起こし・SMS自動送信・予約台帳連携・多言語対応・CRM機能などを実装。ダッシュボードではリアルタイムの着電統計を可視化し、営業時間外の自動応答や担当者への転送ルール設定にも対応。医療・飲食・宿泊・不動産・自治体など幅広い業種で導入されているエンタープライズ対応のプロダクトです。",
+      tags: ["Next.js", "React", "TypeScript", "AI", "IVR", "音声認識", "CRM"],
+      image: "/ivry.png",
+    },
+    {
+      id: 2,
       title: "出張買取プラス",
       category: "業務基幹システム",
       client: "株式会社プラス",
@@ -31,7 +42,7 @@ export function Projects() {
       image: "/reservation.png",
     },
     {
-      id: 2,
+      id: 3,
       title: "オンライン講義プラットフォーム",
       category: "Webシステム",
       client: "MANABOU株式会社",
@@ -41,7 +52,7 @@ export function Projects() {
       image: "/manabou.png",
     },
     {
-      id: 3,
+      id: 4,
       title: "もし活",
       category: "モバイルアプリ",
       client: "株式会社GoodService",
@@ -51,7 +62,7 @@ export function Projects() {
       image: "/moshikatsu.png",
     },
     {
-      id: 4,
+      id: 5,
       title: "LA・JOLLA HALE",
       category: "ECサイト",
       client: "リオネ株式会社",
@@ -62,7 +73,7 @@ export function Projects() {
       image: "/lajollahale.png",
     },
     {
-      id: 5,
+      id: 6,
       title: "在庫プロ",
       category: "在庫管理システム",
       client: "BizTech株式会社",
@@ -72,7 +83,7 @@ export function Projects() {
       image: "/stock.png",
     },
     {
-      id: 6,
+      id: 7,
       title: "おかわりマップ",
       category: "Webアプリ",
       client: "非公開",
@@ -83,7 +94,7 @@ export function Projects() {
       image: "/okawari.png",
     },
     {
-      id: 7,
+      id: 8,
       title: "ソウルシンク",
       category: "相性診断サービス",
       client: "非公開",
