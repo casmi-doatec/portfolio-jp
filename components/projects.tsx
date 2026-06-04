@@ -25,7 +25,6 @@ export function Projects() {
       title: "IVRy（アイブリー）",
       category: "AI SaaS",
       client: "株式会社IVRy",
-      url: "https://ivry.jp/",
       description:
         "累計50,000アカウント超のAI電話自動応答SaaSの開発に参画しました。AIによる受電対応・IVR分岐・通話録音と文字起こし・SMS自動送信・予約台帳連携・多言語対応・CRM機能などを実装。ダッシュボードではリアルタイムの着電統計を可視化し、営業時間外の自動応答や担当者への転送ルール設定にも対応。医療・飲食・宿泊・不動産・自治体など幅広い業種で導入されているエンタープライズ対応のプロダクトです。",
       tags: ["Next.js", "React", "TypeScript", "AI", "IVR", "音声認識", "CRM"],
