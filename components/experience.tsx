@@ -50,7 +50,7 @@ export function Experience() {
 
   const stats = [
     { value: "30+", label: "開発プロジェクト" },
-    { value: "12+", label: "年の実務経験" },
+    { value: "8+", label: "年の実務経験" },
     { value: "15+", label: "取引先クライアント" },
   ];
 

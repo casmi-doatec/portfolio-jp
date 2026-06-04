@@ -139,7 +139,7 @@ export function Skills() {
             </div>
             <div className="w-px h-16 bg-jp-sakura/15" />
             <div className="text-center space-y-2">
-              <p className="text-5xl lg:text-6xl font-black tracking-tighter">12+</p>
+              <p className="text-5xl lg:text-6xl font-black tracking-tighter">8+</p>
               <p className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground">
                 年の実務経験
               </p>

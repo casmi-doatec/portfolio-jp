@@ -99,7 +99,7 @@ export function Hero() {
               }`}
             >
               <p className="text-sm lg:text-base text-muted-foreground font-light leading-[2.2] max-w-xl font-serif">
-                LLM・RAGを活用したAIプロダクトの開発から、Web・SaaS・モバイルアプリまで、12年以上の実務経験で30以上のプロジェクトを手がけてきました。「AIでこういうことしたい」をそのまま形にできるフルスタックエンジニアです。
+                LLM・RAGを活用したAIプロダクトの開発から、Web・SaaS・モバイルアプリまで、8年以上の実務経験で30以上のプロジェクトを手がけてきました。「AIでこういうことしたい」をそのまま形にできるフルスタックエンジニアです。
               </p>
 
               {/* CTA with Japanese styling */}
