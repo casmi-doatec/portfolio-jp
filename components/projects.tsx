@@ -55,7 +55,6 @@ export function Projects() {
       title: "COMSBI（コムスビ）",
       category: "LINE CRM SaaS",
       client: "株式会社JETSTYLE",
-      url: "https://www.comsbi.com/",
       description:
         "700アカウント導入・継続率98%のLINEビジネス向けCRMクラウドサービスの開発に参画しました。LINE公式アカウントと連携した顧客管理、デジタル会員証、ポイントカード、セグメント配信、複数店舗管理、LINEミニアプリなど、集客から顧客育成までに必要な機能をワンストップで提供。ダッシュボードでのデータ分析・可視化機能も実装し、LINE ヤフー Technology Partner（Communication部門）にも認定されているプロダクトです。",
       tags: ["Nuxt.js", "Tailwind CSS", "LINE API", "CRM", "ミニアプリ", "セグメント配信"],
