@@ -52,6 +52,17 @@ export function Projects() {
     },
     {
       id: 4,
+      title: "COMSBI（コムスビ）",
+      category: "LINE CRM SaaS",
+      client: "株式会社JETSTYLE",
+      url: "https://www.comsbi.com/",
+      description:
+        "700アカウント導入・継続率98%のLINEビジネス向けCRMクラウドサービスの開発に参画しました。LINE公式アカウントと連携した顧客管理、デジタル会員証、ポイントカード、セグメント配信、複数店舗管理、LINEミニアプリなど、集客から顧客育成までに必要な機能をワンストップで提供。ダッシュボードでのデータ分析・可視化機能も実装し、LINE ヤフー Technology Partner（Communication部門）にも認定されているプロダクトです。",
+      tags: ["Nuxt.js", "Tailwind CSS", "LINE API", "CRM", "ミニアプリ", "セグメント配信"],
+      image: "/comsbi.png",
+    },
+    {
+      id: 5,
       title: "もし活",
       category: "モバイルアプリ",
       client: "株式会社GoodService",
@@ -61,7 +72,7 @@ export function Projects() {
       image: "/moshikatsu.png",
     },
     {
-      id: 5,
+      id: 6,
       title: "LA・JOLLA HALE",
       category: "ECサイト",
       client: "リオネ株式会社",
@@ -72,7 +83,7 @@ export function Projects() {
       image: "/lajollahale.png",
     },
     {
-      id: 6,
+      id: 7,
       title: "在庫プロ",
       category: "在庫管理システム",
       client: "BizTech株式会社",
@@ -82,7 +93,7 @@ export function Projects() {
       image: "/stock.png",
     },
     {
-      id: 7,
+      id: 8,
       title: "おかわりマップ",
       category: "Webアプリ",
       client: "非公開",
@@ -93,7 +104,7 @@ export function Projects() {
       image: "/okawari.png",
     },
     {
-      id: 8,
+      id: 9,
       title: "ソウルシンク",
       category: "相性診断サービス",
       client: "非公開",
