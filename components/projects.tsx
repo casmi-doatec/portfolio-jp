@@ -24,7 +24,7 @@ export function Projects() {
       id: 1,
       title: "IVRy（アイブリー）",
       category: "AI SaaS",
-      client: "株式会社IVRy",
+      client: "",
       description:
         "累計50,000アカウント超のAI電話自動応答SaaSの開発に参画しました。AIによる受電対応・IVR分岐・通話録音と文字起こし・SMS自動送信・予約台帳連携・多言語対応・CRM機能などを実装。ダッシュボードではリアルタイムの着電統計を可視化し、営業時間外の自動応答や担当者への転送ルール設定にも対応。医療・飲食・宿泊・不動産・自治体など幅広い業種で導入されているエンタープライズ対応のプロダクトです。",
       tags: ["Next.js", "React", "TypeScript", "AI", "IVR", "音声認識", "CRM"],
@@ -34,7 +34,7 @@ export function Projects() {
       id: 2,
       title: "出張買取プラス",
       category: "業務基幹システム",
-      client: "株式会社プラス",
+      client: "",
       description:
         "複数店舗を展開する買取事業者向けの予約管理システムを、要件定義から設計・実装・運用保守まで一貫して担当しました。本部・加盟店・査定スタッフが同時に利用する基幹システムとして、WebSocketによるリアルタイム同期、日／週／月のマルチビューカレンダー、多階層の権限管理、レポート集計、ブラックリスト・重複予約検知などを実装。一括取得から必要最小限のAPI取得方式へ刷新して読み込み速度と安定性を大幅に改善し、PWA対応で現場のスマホ運用にも最適化しています。",
       tags: ["Next.js", "TypeScript", "Prisma", "WebSocket", "PWA", "Google Cloud"],
@@ -44,7 +44,7 @@ export function Projects() {
       id: 3,
       title: "オンライン講義プラットフォーム",
       category: "Webシステム",
-      client: "MANABOU株式会社",
+      client: "",
       description:
         "React・Node.js・Expressで構築したオンライン講義システムです。WebSocketとWebRTCを使ったライブ配信・双方向のやり取りを実装し、Stripeでのチケット購入、進捗トラッキング、受験時のAI顔認証、自動採点、合格時の修了証発行まで、一連の機能を開発しました。",
       tags: ["React", "Node.js", "Express", "WebSocket", "WebRTC", "Stripe", "AI顔認証"],
@@ -54,7 +54,7 @@ export function Projects() {
       id: 4,
       title: "COMSBI（コムスビ）",
       category: "LINE CRM SaaS",
-      client: "非公開",
+      client: "",
       description:
         "700アカウント導入・継続率98%のLINEビジネス向けCRMクラウドサービスの開発に参画しました。LINE公式アカウントと連携した顧客管理、デジタル会員証、ポイントカード、セグメント配信、複数店舗管理、LINEミニアプリなど、集客から顧客育成までに必要な機能をワンストップで提供。ダッシュボードでのデータ分析・可視化機能も実装し、LINE ヤフー Technology Partner（Communication部門）にも認定されているプロダクトです。",
       tags: ["Nuxt.js", "Tailwind CSS", "LINE API", "CRM", "ミニアプリ", "セグメント配信"],
@@ -64,7 +64,7 @@ export function Projects() {
       id: 5,
       title: "もし活",
       category: "モバイルアプリ",
-      client: "株式会社GoodService",
+      client: "",
       description:
         "FlutterとHealth API・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、SalesforceをCRMとして顧客情報を一元管理。FCMでのプッシュ通知も実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
       tags: ["Flutter", "Firebase", "Prisma", "Salesforce", "Health API", "FCM"],
@@ -74,7 +74,7 @@ export function Projects() {
       id: 6,
       title: "LA・JOLLA HALE",
       category: "ECサイト",
-      client: "リオネ株式会社",
+      client: "",
       url: "https://lajollahale.com/",
       description:
         "Shopifyで構築したグローバル対応のECサイトです。カスタムテーマの開発に加え、価格帯フィルタリング、ウィッシュリスト、商品比較機能を実装。Revolution SliderやFotoramaによるリッチな商品ギャラリー、画像ズーム機能、年齢確認ポップアップ、サブスクリプション通知なども組み込み、購入完了率の向上につなげています。日本円対応で、レスポンシブデザインによりモバイル・タブレット・デスクトップすべてに最適化しています。",
@@ -85,7 +85,7 @@ export function Projects() {
       id: 7,
       title: "在庫プロ",
       category: "在庫管理システム",
-      client: "BizTech株式会社",
+      client: "",
       description:
         "リユース事業者向けに開発した在庫管理システムです。商品の入荷・出荷・在庫数をリアルタイムで追跡し、ダッシュボードで売上・粗利・在庫回転率などをグラフで可視化。カテゴリ別の売上分析や在庫アラート機能で、仕入れ判断と在庫最適化をサポートします。バーコード読み取りによる入出庫処理、CSV一括インポート、REST APIによる外部POS連携にも対応しています。",
       tags: ["Next.js", "Laravel", "MySQL", "AWS", "Python", "REST API", "バーコード"],
@@ -95,7 +95,7 @@ export function Projects() {
       id: 8,
       title: "おかわりマップ",
       category: "Webアプリ",
-      client: "非公開",
+      client: "",
       url: "https://okawari-map.jp/",
       description:
         "「ごはんおかわり無料」の飲食店だけを地図から探せるグルメマップアプリです。OpenStreetMapを使った地図上での店舗検索に加え、ユーザーが新しい店舗を投稿できるタイムライン機能、GPSによる現在地取得、マイページ機能を実装。PWA対応でスマホのホーム画面からワンタップで起動でき、Cookie同意バナー・オンボーディングモーダル・404ページの丼イラストなど、細かなUX設計にもこだわっています。Microsoft Clarityによるヒートマップ分析も導入しています。",
@@ -106,7 +106,7 @@ export function Projects() {
       id: 9,
       title: "ソウルシンク",
       category: "相性診断サービス",
-      client: "非公開",
+      client: "",
       url: "https://ai-mixer.jp/",
       description:
         "OpenAI APIを活用したAI駆動型の恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、詳細な性格分析の回答データをLLMに渡し、ユーザーごとにパーソナライズされた相性レポートを自然言語で自動生成。プロンプトエンジニアリングにより占星術・心理学の知見を組み込んだ精度の高い分析結果を返すようチューニングしています。",
