@@ -100,8 +100,38 @@ export function Contact() {
               開発のご相談やお見積もりなど、お気軽にご連絡ください。
             </p>
 
-            <div className="space-y-5 pt-4">
-              {/* Email */}
+            {/* Strengths */}
+            <div className="space-y-4 pt-2">
+              <div className="flex items-center gap-3">
+                <div className="h-px w-6 bg-jp-sakura/40" />
+                <span className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
+                  強み
+                </span>
+              </div>
+              <div className="space-y-3">
+                <div className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 bg-jp-sakura/40 rounded-full mt-1.5 shrink-0" />
+                  <p className="text-sm text-muted-foreground leading-[1.9]">
+                    丁寧なコミュニケーションと確実な納品を心がけています。
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 bg-jp-sakura/40 rounded-full mt-1.5 shrink-0" />
+                  <p className="text-sm text-muted-foreground leading-[1.9]">
+                    要件を的確に汲み取り、最適な技術選定でご提案します。
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-1.5 h-1.5 bg-jp-sakura/40 rounded-full mt-1.5 shrink-0" />
+                  <p className="text-sm text-muted-foreground leading-[1.9]">
+                    Claude Code等を活用した開発自動化・API連携に対応。
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Contact info */}
+            <div className="space-y-5 pt-2">
               <div className="flex items-center gap-4 group">
                 <div className="w-10 h-10 border border-foreground/10 flex items-center justify-center group-hover:border-jp-sakura/30 transition-colors duration-500">
                   <svg className="w-4 h-4 text-muted-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -115,11 +145,31 @@ export function Contact() {
                   casmiyasu3811@gmail.com
                 </a>
               </div>
+            </div>
 
+            {/* Communication tools & working conditions */}
+            <div className="space-y-3 pt-2 border-t border-foreground/5">
+              <div className="flex flex-wrap items-center gap-2 pt-4">
+                {["Google Meet", "Slack", "Chatwork", "LINE"].map((tool) => (
+                  <span key={tool} className="text-[10px] tracking-wide px-2.5 py-1 border border-foreground/8 text-muted-foreground">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+              <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground pt-1">
+                <div className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 bg-jp-sakura/40 rounded-full" />
+                  <span>週30〜40時間（平日9:00〜18:00）</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 bg-jp-sakura/40 rounded-full" />
+                  <span>週末勤務可能</span>
+                </div>
+              </div>
             </div>
 
             {/* Decorative zen element */}
-            <div className="pt-8 hidden lg:block">
+            <div className="pt-4 hidden lg:block">
               <div className="w-20 h-20 border border-jp-sakura/10 rounded-full flex items-center justify-center animate-float-slow">
                 <div className="w-12 h-12 border border-jp-sakura/[0.06] rounded-full flex items-center justify-center">
                   <span className="text-xl font-display text-jp-sakura/20">和</span>
