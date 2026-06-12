@@ -99,7 +99,7 @@ export function Hero() {
               }`}
             >
               <p className="text-sm lg:text-base text-muted-foreground font-light leading-[2.2] max-w-xl font-serif">
-                LLM・RAGを活用したAIプロダクトの開発から、Web・SaaS・モバイルアプリまで、8年以上の実務経験で30以上のプロジェクトを手がけてきました。「AIでこういうことしたい」をそのまま形にできるフルスタックエンジニアです。
+                フロントエンド4年、バックエンド2年、フルスタック2年、計8年のキャリアで30以上のプロジェクトを手がけてきました。AI・Web・SaaS・モバイルまで、ご依頼主様の要件を的確に汲み取り、最適な技術選定でご提案します。
               </p>
 
               {/* CTA with Japanese styling */}
