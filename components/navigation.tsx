@@ -54,8 +54,8 @@ export function Navigation() {
             <span className="text-jp-sakura/40 text-lg font-display select-none">
               &#x300C;
             </span>
-            <span className="text-sm tracking-[0.3em] uppercase font-bold">
-              悠晴
+            <span className="text-sm tracking-[0.2em] uppercase font-bold">
+              DreamHigh
             </span>
             <span className="text-jp-sakura/40 text-lg font-display select-none">
               &#x300D;
