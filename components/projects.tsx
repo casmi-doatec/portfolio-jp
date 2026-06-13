@@ -98,8 +98,8 @@ export function Projects() {
       client: "",
       url: "https://okawari-map.jp/",
       description:
-        "「ごはんおかわり無料」の飲食店だけを地図から探せるグルメマップアプリです。OpenStreetMapを使った地図上での店舗検索に加え、ユーザーが新しい店舗を投稿できるタイムライン機能、GPSによる現在地取得、マイページ機能を実装。PWA対応でスマホのホーム画面からワンタップで起動でき、Cookie同意バナー・オンボーディングモーダル・404ページの丼イラストなど、細かなUX設計にもこだわっています。Microsoft Clarityによるヒートマップ分析も導入しています。",
-      tags: ["Next.js", "OpenStreetMap", "PWA", "GPS", "Google Analytics", "Microsoft Clarity"],
+        "「ごはんおかわり無料」の飲食店だけを地図から探せるグルメマップアプリです。OpenStreetMapを使った地図上での店舗検索に加え、Supabase Authによるユーザー認証、Supabase Database（PostgreSQL）での店舗データ・投稿管理、Supabase Storage での画像アップロード、タイムラインのリアルタイム更新を実装。GPSによる現在地取得、マイページ機能、PWA対応でスマホからワンタップで起動でき、Cookie同意バナー・オンボーディングモーダルなど細かなUX設計にもこだわっています。",
+      tags: ["Next.js", "Supabase", "PostgreSQL", "OpenStreetMap", "PWA", "GPS", "Microsoft Clarity"],
       image: "/okawari.png",
     },
     {
