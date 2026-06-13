@@ -36,7 +36,7 @@ export function Skills() {
     {
       title: "データベース",
       kanji: "蓄",
-      skills: ["MySQL", "PostgreSQL", "Firebase", "Prisma", "Redis"],
+      skills: ["MySQL", "PostgreSQL", "Supabase", "Firebase", "Prisma", "Redis"],
     },
     {
       title: "インフラ・DevOps",
