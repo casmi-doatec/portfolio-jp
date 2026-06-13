@@ -35,7 +35,7 @@ export function Experience() {
     {
       title: "Webシステム・SaaS・EC",
       description:
-        "Next.js・FastAPI・Node.js・Laravelでのフルスタック開発を得意としています。予約管理システム、在庫管理、ECサイト、SaaSなど、Stripe決済・WebSocket/WebRTCリアルタイム通信・PWA対応まで含めて一気通貫で実装できます。",
+        "Next.js・FastAPI・Node.js・Laravelでのフルスタック開発を得意としています。予約管理システム、在庫管理、ECサイト、SaaSなど、Supabase（認証・DB・Storage）・Stripe決済・WebSocket/WebRTCリアルタイム通信・PWA対応まで含めて一気通貫で実装できます。",
       number: "03",
       kanji: "匠",
     },
