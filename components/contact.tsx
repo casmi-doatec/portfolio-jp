@@ -139,10 +139,10 @@ export function Contact() {
                   </svg>
                 </div>
                 <a
-                  href="mailto:casmiyasu3811@gmail.com"
+                  href="mailto:ddreamhhigh@gmail.com"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
                 >
-                  casmiyasu3811@gmail.com
+                  ddreamhhigh@gmail.com
                 </a>
               </div>
             </div>
