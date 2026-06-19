@@ -111,14 +111,21 @@ export function About() {
                   isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"
                 }`}
               >
-                はじめまして。遠藤悠晴と申します。高校生の頃からの夢は、IT業界の第一人者になることでした。
+                はじめまして、遠藤悠晴です。「つくる側」に立ちたいという想いから、高校時代に独学でプログラミングを始めました。以来、コードを書くことがずっと自分の真ん中にあります。
               </p>
               <p
                 className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-400" : "opacity-0"
                 }`}
               >
-                ご依頼主様の要件を的確に汲み取り、最適な技術選定でご提案するという姿勢を大切にしています。フロントエンドエンジニアとして4年、バックエンドエンジニアとして2年、フルスタックエンジニアとして2年、計8年間ITエンジニアとしてのキャリアを積んでまいりました。
+                フロントエンド4年、バックエンド2年、フルスタック2年。計8年のキャリアの中で、AI SaaS・業務システム・ECサイト・モバイルアプリなど30以上のプロダクトを手がけてきました。
+              </p>
+              <p
+                className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
+                  isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"
+                }`}
+              >
+                大切にしているのは、ご依頼主様の「こうしたい」を正確に汲み取り、最適な技術で形にすること。丁寧なコミュニケーションと確実な納品で、安心してお任せいただける関係を築いていきます。
               </p>
             </div>
 
