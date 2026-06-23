@@ -42,6 +42,16 @@ export function Projects() {
     },
     {
       id: 3,
+      title: "invox受取請求書",
+      category: "経理自動化 SaaS",
+      client: "",
+      description:
+        "累計30,000社以上が利用する請求書受領自動化SaaSの開発に参画しました。AI OCRとオペレータ確認を組み合わせた99.9%精度のデータ化、読み取りAIエージェント（自然言語で読み取り箇所を指示）、取り込みAIエージェント（ダウンロード・取り込みの自動化）を実装。freee・マネーフォワード・弥生など50種以上の会計システムとの連携、全銀フォーマット対応の振込データ生成、申請・承認ワークフロー、インボイス制度・電子帳簿保存法への対応も担当しました。",
+      tags: ["AI OCR", "AIエージェント", "SaaS", "会計連携", "電子帳簿保存法", "ワークフロー"],
+      image: "/invox.png",
+    },
+    {
+      id: 4,
       title: "オンライン講義プラットフォーム",
       category: "Webシステム",
       client: "",
@@ -51,7 +61,7 @@ export function Projects() {
       image: "/manabou.png",
     },
     {
-      id: 4,
+      id: 5,
       title: "COMSBI（コムスビ）",
       category: "LINE CRM SaaS",
       client: "",
@@ -61,7 +71,7 @@ export function Projects() {
       image: "/comsbi.png",
     },
     {
-      id: 5,
+      id: 6,
       title: "もし活",
       category: "モバイルアプリ",
       client: "",
@@ -71,7 +81,7 @@ export function Projects() {
       image: "/moshikatsu.png",
     },
     {
-      id: 6,
+      id: 7,
       title: "LA・JOLLA HALE",
       category: "ECサイト",
       client: "",
@@ -82,7 +92,7 @@ export function Projects() {
       image: "/lajollahale.png",
     },
     {
-      id: 7,
+      id: 8,
       title: "在庫プロ",
       category: "在庫管理システム",
       client: "",
@@ -92,7 +102,7 @@ export function Projects() {
       image: "/stock.png",
     },
     {
-      id: 8,
+      id: 9,
       title: "おかわりマップ",
       category: "Webアプリ",
       client: "",
@@ -103,7 +113,7 @@ export function Projects() {
       image: "/okawari.png",
     },
     {
-      id: 9,
+      id: 10,
       title: "ソウルシンク",
       category: "相性診断サービス",
       client: "",
