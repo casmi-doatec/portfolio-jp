@@ -42,8 +42,18 @@ export function Projects() {
     },
     {
       id: 3,
+      title: "COMPASSレンタカー",
+      category: "業務管理システム",
+      client: "",
+      description:
+        "沖縄を拠点とするプレミアムレンタカーサービスの予約・車両・顧客管理システムを開発しました。管理ダッシュボードでは車両別売上チャート、予約ステータス内訳、日別予約件数・売上推移をリアルタイムに可視化。予約管理、車両管理（26台以上）、顧客管理、見積り管理、問い合わせ管理、スケジュール管理、書類管理など業務に必要な機能をワンストップで提供。多言語対応（日本語・英語・中国語）とレスポンシブデザインで、国内外の観光客と管理者の両方に最適化しています。",
+      tags: ["Next.js", "MUI", "TypeScript", "多言語対応", "ダッシュボード", "Vercel"],
+      image: "/compass-admin.png",
+    },
+    {
+      id: 4,
       title: "invox受取請求書",
-      category: "経理自動化 SaaS",
+      category: "経理自動化SaaS",
       client: "",
       description:
         "累計30,000社以上が利用する請求書受領自動化SaaSの開発に参画しました。AI OCRとオペレータ確認を組み合わせた99.9%精度のデータ化、読み取りAIエージェント（自然言語で読み取り箇所を指示）、取り込みAIエージェント（ダウンロード・取り込みの自動化）を実装。freee・マネーフォワード・弥生など50種以上の会計システムとの連携、全銀フォーマット対応の振込データ生成、申請・承認ワークフロー、インボイス制度・電子帳簿保存法への対応も担当しました。",
@@ -51,7 +61,7 @@ export function Projects() {
       image: "/invox.png",
     },
     {
-      id: 4,
+      id: 5,
       title: "オンライン講義プラットフォーム",
       category: "Webシステム",
       client: "",
@@ -61,7 +71,7 @@ export function Projects() {
       image: "/manabou.png",
     },
     {
-      id: 5,
+      id: 6,
       title: "COMSBI（コムスビ）",
       category: "LINE CRM SaaS",
       client: "",
@@ -71,7 +81,7 @@ export function Projects() {
       image: "/comsbi.png",
     },
     {
-      id: 6,
+      id: 7,
       title: "もし活",
       category: "モバイルアプリ",
       client: "",
@@ -81,7 +91,7 @@ export function Projects() {
       image: "/moshikatsu.png",
     },
     {
-      id: 7,
+      id: 8,
       title: "LA・JOLLA HALE",
       category: "ECサイト",
       client: "",
@@ -92,7 +102,7 @@ export function Projects() {
       image: "/lajollahale.png",
     },
     {
-      id: 8,
+      id: 9,
       title: "在庫プロ",
       category: "在庫管理システム",
       client: "",
@@ -102,7 +112,7 @@ export function Projects() {
       image: "/stock.png",
     },
     {
-      id: 9,
+      id: 10,
       title: "おかわりマップ",
       category: "Webアプリ",
       client: "",
@@ -113,7 +123,7 @@ export function Projects() {
       image: "/okawari.png",
     },
     {
-      id: 10,
+      id: 11,
       title: "ソウルシンク",
       category: "相性診断サービス",
       client: "",
