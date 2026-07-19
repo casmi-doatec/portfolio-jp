@@ -22,16 +22,6 @@ export function Projects() {
   const projects = [
     {
       id: 1,
-      title: "IVRy（アイブリー）",
-      category: "AI SaaS",
-      client: "",
-      description:
-        "累計50,000アカウント超のAI電話自動応答SaaSの開発に参画しました。AIによる受電対応・IVR分岐・通話録音と文字起こし・SMS自動送信・予約台帳連携・多言語対応・CRM機能などを実装。ダッシュボードではリアルタイムの着電統計を可視化し、営業時間外の自動応答や担当者への転送ルール設定にも対応。医療・飲食・宿泊・不動産・自治体など幅広い業種で導入されているエンタープライズ対応のプロダクトです。",
-      tags: ["Next.js", "React", "TypeScript", "AI", "IVR", "音声認識", "CRM"],
-      image: "/ivry.png",
-    },
-    {
-      id: 2,
       title: "出張買取プラス",
       category: "業務基幹システム",
       client: "",
@@ -41,7 +31,7 @@ export function Projects() {
       image: "/reservation.png",
     },
     {
-      id: 3,
+      id: 2,
       title: "COMPASSレンタカー",
       category: "業務管理システム",
       client: "",
@@ -51,17 +41,17 @@ export function Projects() {
       image: "/compass-admin.png",
     },
     {
-      id: 4,
-      title: "invox受取請求書",
-      category: "経理自動化SaaS",
+      id: 3,
+      title: "JoBins（ジョビンズ）",
+      category: "人材紹介SaaS",
       client: "",
       description:
-        "累計30,000社以上が利用する請求書受領自動化SaaSの開発に参画しました。AI OCRとオペレータ確認を組み合わせた99.9%精度のデータ化、読み取りAIエージェント（自然言語で読み取り箇所を指示）、取り込みAIエージェント（ダウンロード・取り込みの自動化）を実装。freee・マネーフォワード・弥生など50種以上の会計システムとの連携、全銀フォーマット対応の振込データ生成、申請・承認ワークフロー、インボイス制度・電子帳簿保存法への対応も担当しました。",
-      tags: ["AI OCR", "AIエージェント", "SaaS", "会計連携", "電子帳簿保存法", "ワークフロー"],
-      image: "/invox.png",
+        "エージェント（人材紹介会社）と採用企業・求職者をつなぐクラウド型の人材紹介マネジメントプラットフォームの開発に参画しました。候補者管理（履歴書のAI匿名化処理）、求人検索・スカウト機能、複数社の選考進捗の一元管理、メール・SMS連絡、紹介料の分配管理、即日入金サービス、セミナー管理、Q&A・レビューシステムを実装。エージェント向け・企業向け・求職者向けのマルチドメイン構成で、多言語（日本語・英語）にも対応しています。",
+      tags: ["PHP", "REST API", "Intercom", "Hotjar", "Calendly", "多言語対応"],
+      image: "/placeholder.svg",
     },
     {
-      id: 5,
+      id: 4,
       title: "オンライン講義プラットフォーム",
       category: "Webシステム",
       client: "",
@@ -71,7 +61,7 @@ export function Projects() {
       image: "/manabou.png",
     },
     {
-      id: 6,
+      id: 5,
       title: "COMSBI（コムスビ）",
       category: "LINE CRM SaaS",
       client: "",
@@ -81,7 +71,7 @@ export function Projects() {
       image: "/comsbi.png",
     },
     {
-      id: 7,
+      id: 6,
       title: "もし活",
       category: "モバイルアプリ",
       client: "",
@@ -91,7 +81,7 @@ export function Projects() {
       image: "/moshikatsu.png",
     },
     {
-      id: 8,
+      id: 7,
       title: "LA・JOLLA HALE",
       category: "ECサイト",
       client: "",
@@ -102,7 +92,7 @@ export function Projects() {
       image: "/lajollahale.png",
     },
     {
-      id: 9,
+      id: 8,
       title: "在庫プロ",
       category: "在庫管理システム",
       client: "",
@@ -112,7 +102,7 @@ export function Projects() {
       image: "/stock.png",
     },
     {
-      id: 10,
+      id: 9,
       title: "おかわりマップ",
       category: "Webアプリ",
       client: "",
@@ -123,7 +113,7 @@ export function Projects() {
       image: "/okawari.png",
     },
     {
-      id: 11,
+      id: 10,
       title: "ソウルシンク",
       category: "相性診断サービス",
       client: "",
