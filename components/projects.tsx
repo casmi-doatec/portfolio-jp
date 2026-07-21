@@ -76,7 +76,7 @@ export function Projects() {
       category: "モバイルアプリ",
       client: "",
       description:
-        "FlutterとPrismaを使ったモバイルアプリです。TwilioのProgrammable VoiceとTwiMLを用いて通話の自動制御を実装し、Gather動詞でDTMFトーン入力を受け取るWebhookをFastAPIで構築。Firebaseで認証・リアルタイムDB管理、SalesforceでCRM連携を行い、FCMでプッシュ通知、SendGridでトランザクションメール送信を実装しました。",
+        "FlutterとPrismaを使ったモバイルアプリです。TwilioのProgrammable VoiceとTwiMLで通話フローを制御し、発信者の電話番号を非公開にした上で相手に中継。通話開始から一定時間後に自動音声アナウンスを挿入し、時間超過で自動切断。切断後はDTMFトーン入力による評価収集を行い、結果をFirebaseに保存。FCMでプッシュ通知、SendGridでメール通知を配信し、SalesforceでCRM管理を行いました。",
       tags: ["Flutter", "Firebase", "Twilio", "Salesforce", "FCM", "SendGrid", "Prisma"],
       image: "/moshikatsu.png",
     },
