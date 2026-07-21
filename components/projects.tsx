@@ -76,8 +76,8 @@ export function Projects() {
       category: "モバイルアプリ",
       client: "",
       description:
-        "FlutterとHealth API・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、SalesforceをCRMとして顧客情報を一元管理。FCMでのプッシュ通知も実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
-      tags: ["Flutter", "Firebase", "Prisma", "Salesforce", "Health API", "FCM"],
+        "高齢者向け通話マッチングサービスのバックエンド開発です。Twilioを活用した電話番号中継（番号非公開）・通話の自動切断・切断前の自動音声アナウンス挿入・通話後のDTMFプッシュボタン評価収集を実装。FCMによるプッシュ通知とSendGridでのメール配信も組み込み、Firebaseで認証・リアルタイムデータ管理、SalesforceでCRM連携を行いました。",
+      tags: ["Flutter", "Firebase", "Twilio", "Salesforce", "FCM", "SendGrid", "Prisma"],
       image: "/moshikatsu.png",
     },
     {
