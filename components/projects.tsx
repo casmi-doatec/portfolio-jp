@@ -76,8 +76,8 @@ export function Projects() {
       category: "モバイルアプリ",
       client: "",
       description:
-        "FlutterとPrismaを使ったモバイルアプリです。TwilioのProgrammable VoiceとTwiMLで通話フローを制御し、発信者の電話番号を非公開にした上で相手に中継。通話開始から一定時間後に自動音声アナウンスを挿入し、時間超過で自動切断。切断後はDTMFトーン入力による評価収集を行い、結果をFirebaseに保存。FCMでプッシュ通知、SendGridでメール通知を配信し、SalesforceでCRM管理を行いました。",
-      tags: ["Flutter", "Firebase", "Twilio", "Salesforce", "FCM", "SendGrid", "Prisma"],
+        "FlutterとHealth API・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、KintoneをCRMとして顧客情報を一元管理。FCMでのプッシュ通知も実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
+      tags: ["Flutter", "Firebase", "Prisma", "Kintone", "Health API", "FCM"],
       image: "/moshikatsu.png",
     },
     {
