@@ -76,7 +76,7 @@ export function Projects() {
       category: "モバイルアプリ",
       client: "",
       description:
-        "高齢者向け通話マッチングサービスのバックエンド開発です。Twilioを活用した電話番号中継（番号非公開）・通話の自動切断・切断前の自動音声アナウンス挿入・通話後のDTMFプッシュボタン評価収集を実装。FCMによるプッシュ通知とSendGridでのメール配信も組み込み、Firebaseで認証・リアルタイムデータ管理、SalesforceでCRM連携を行いました。",
+        "FlutterとPrismaを使ったモバイルアプリです。TwilioのProgrammable VoiceとTwiMLを用いて通話の自動制御を実装し、Gather動詞でDTMFトーン入力を受け取るWebhookをFastAPIで構築。Firebaseで認証・リアルタイムDB管理、SalesforceでCRM連携を行い、FCMでプッシュ通知、SendGridでトランザクションメール送信を実装しました。",
       tags: ["Flutter", "Firebase", "Twilio", "Salesforce", "FCM", "SendGrid", "Prisma"],
       image: "/moshikatsu.png",
     },
