@@ -85,7 +85,6 @@ export function Projects() {
       title: "LA・JOLLA HALE",
       category: "ECサイト",
       client: "",
-      url: "https://lajollahale.com/",
       description:
         "Shopifyで構築したグローバル対応のECサイトです。カスタムテーマの開発に加え、価格帯フィルタリング、ウィッシュリスト、商品比較機能を実装。Revolution SliderやFotoramaによるリッチな商品ギャラリー、画像ズーム機能、年齢確認ポップアップ、サブスクリプション通知なども組み込み、購入完了率の向上につなげています。日本円対応で、レスポンシブデザインによりモバイル・タブレット・デスクトップすべてに最適化しています。",
       tags: ["Shopify", "Liquid", "JavaScript", "Slick", "Fotorama", "レスポンシブ"],
@@ -106,7 +105,6 @@ export function Projects() {
       title: "おかわりマップ",
       category: "Webアプリ",
       client: "",
-      url: "https://okawari-map.jp/",
       description:
         "「ごはんおかわり無料」の飲食店だけを地図から探せるグルメマップアプリです。OpenStreetMapを使った地図上での店舗検索に加え、Supabase Authによるユーザー認証、Supabase Database（PostgreSQL）での店舗データ・投稿管理、Supabase Storage での画像アップロード、タイムラインのリアルタイム更新を実装。GPSによる現在地取得、マイページ機能、PWA対応でスマホからワンタップで起動でき、Cookie同意バナー・オンボーディングモーダルなど細かなUX設計にもこだわっています。",
       tags: ["Next.js", "Supabase", "PostgreSQL", "OpenStreetMap", "PWA", "GPS", "Microsoft Clarity"],
@@ -117,7 +115,6 @@ export function Projects() {
       title: "ソウルシンク",
       category: "相性診断サービス",
       client: "",
-      url: "https://ai-mixer.jp/",
       description:
         "OpenAI APIを活用したAI駆動型の恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、詳細な性格分析の回答データをLLMに渡し、ユーザーごとにパーソナライズされた相性レポートを自然言語で自動生成。プロンプトエンジニアリングにより占星術・心理学の知見を組み込んだ精度の高い分析結果を返すようチューニングしています。",
       tags: ["Next.js", "OpenAI API", "LLM", "Tailwind CSS", "Vercel"],
@@ -235,25 +232,6 @@ export function Projects() {
                     ))}
                   </div>
 
-                  {"url" in project && project.url && (
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 text-[11px] tracking-[0.2em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-500 group/link pt-2"
-                    >
-                      <span>サイトを見る</span>
-                      <svg
-                        className="w-3.5 h-3.5 transition-transform duration-300 group-hover/link:translate-x-0.5"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                      >
-                        <path d="M7 17L17 7M17 7H7M17 7V17" />
-                      </svg>
-                    </a>
-                  )}
                 </div>
               </div>
             ))}
