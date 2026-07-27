@@ -91,16 +91,6 @@ export function Projects() {
       image: "/lajollahale.png",
     },
     {
-      id: 8,
-      title: "在庫プロ",
-      category: "在庫管理システム",
-      client: "",
-      description:
-        "リユース事業者向けに開発した在庫管理システムです。商品の入荷・出荷・在庫数をリアルタイムで追跡し、ダッシュボードで売上・粗利・在庫回転率などをグラフで可視化。カテゴリ別の売上分析や在庫アラート機能で、仕入れ判断と在庫最適化をサポートします。バーコード読み取りによる入出庫処理、CSV一括インポート、REST APIによる外部POS連携にも対応しています。",
-      tags: ["Next.js", "Laravel", "MySQL", "AWS", "Python", "REST API", "バーコード"],
-      image: "/stock.png",
-    },
-    {
       id: 9,
       title: "おかわりマップ",
       category: "Webアプリ",
