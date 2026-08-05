@@ -110,6 +110,16 @@ export function Projects() {
       tags: ["Next.js", "OpenAI API", "LLM", "Tailwind CSS", "Vercel"],
       image: "/matching.png",
     },
+    {
+      id: 11,
+      title: "Spelix（スペリックス）",
+      category: "AI英語学習プラットフォーム",
+      client: "",
+      description:
+        "日本人向けのAI英語学習Webアプリです。Next.js・TypeScript・PostgreSQLで構築し、OpenAI APIを活用したAI翻訳・英文校正・AI会話パートナー・発音練習・語彙検索など5つの学習ツールを実装。LLMによる自然言語生成でユーザーの入力に対してネイティブ表現への言い換えやフィードバックをリアルタイムで返す設計にしています。",
+      tags: ["Next.js", "TypeScript", "PostgreSQL", "OpenAI API", "LLM", "React", "Tailwind CSS"],
+      image: "/spelix.png",
+    },
   ];
 
   return (
