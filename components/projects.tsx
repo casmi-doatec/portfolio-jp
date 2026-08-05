@@ -32,6 +32,16 @@ export function Projects() {
     },
     {
       id: 2,
+      title: "Spelix（スペリックス）",
+      category: "AI英語学習プラットフォーム",
+      client: "",
+      description:
+        "日本人向けのAI英語学習Webアプリです。Next.js・TypeScript・PostgreSQLで構築し、OpenAI APIを活用したAI翻訳・英文校正・AI会話パートナー・発音練習・語彙検索など5つの学習ツールを実装。LLMによる自然言語生成でユーザーの入力に対してネイティブ表現への言い換えやフィードバックをリアルタイムで返す設計にしています。",
+      tags: ["Next.js", "TypeScript", "PostgreSQL", "OpenAI API", "LLM", "React", "Tailwind CSS"],
+      image: "/spelix.png",
+    },
+    {
+      id: 3,
       title: "COMPASSレンタカー",
       category: "業務管理システム",
       client: "",
@@ -109,16 +119,6 @@ export function Projects() {
         "OpenAI APIを活用したAI駆動型の恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、詳細な性格分析の回答データをLLMに渡し、ユーザーごとにパーソナライズされた相性レポートを自然言語で自動生成。プロンプトエンジニアリングにより占星術・心理学の知見を組み込んだ精度の高い分析結果を返すようチューニングしています。",
       tags: ["Next.js", "OpenAI API", "LLM", "Tailwind CSS", "Vercel"],
       image: "/matching.png",
-    },
-    {
-      id: 11,
-      title: "Spelix（スペリックス）",
-      category: "AI英語学習プラットフォーム",
-      client: "",
-      description:
-        "日本人向けのAI英語学習Webアプリです。Next.js・TypeScript・PostgreSQLで構築し、OpenAI APIを活用したAI翻訳・英文校正・AI会話パートナー・発音練習・語彙検索など5つの学習ツールを実装。LLMによる自然言語生成でユーザーの入力に対してネイティブ表現への言い換えやフィードバックをリアルタイムで返す設計にしています。",
-      tags: ["Next.js", "TypeScript", "PostgreSQL", "OpenAI API", "LLM", "React", "Tailwind CSS"],
-      image: "/spelix.png",
     },
   ];
 
