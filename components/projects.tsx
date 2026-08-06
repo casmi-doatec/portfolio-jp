@@ -120,6 +120,26 @@ export function Projects() {
       tags: ["Next.js", "OpenAI API", "LLM", "Tailwind CSS", "Vercel"],
       image: "/matching.png",
     },
+    {
+      id: 11,
+      title: "mimi HAIR SALON",
+      category: "美容室Webサイト",
+      client: "",
+      description:
+        "美容室向けのWebサイトをデザインから実装まで一貫して担当しました。スタイリッシュなビジュアルを重視したレイアウトで、メニュー・コンセプト・スタイルギャラリー・ブログ・採用・アクセスの各ページを構築。予約ボタンの固定表示やレスポンシブデザインにより、スマホからの予約導線もスムーズに設計しています。",
+      tags: ["HTML", "CSS", "JavaScript", "WordPress", "レスポンシブ", "UI/UXデザイン"],
+      image: "/mimi-salon.png",
+    },
+    {
+      id: 12,
+      title: "ACOT HAIR SALON",
+      category: "美容室Webサイト",
+      client: "",
+      description:
+        "美容室向けのWebサイトをデザイン・コーディング込みで制作しました。余白と写真を活かしたナチュラルで洗練されたデザインが特徴で、メニュー・コンセプト・ピックアップ・スタイル・採用・ブログページを実装。固定予約ボタン・電話番号表示・レスポンシブ対応で、ユーザーの予約・来店アクションを促す設計にしています。",
+      tags: ["HTML", "CSS", "JavaScript", "WordPress", "レスポンシブ", "UI/UXデザイン"],
+      image: "/acot-salon.png",
+    },
   ];
 
   return (
