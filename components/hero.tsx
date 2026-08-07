@@ -119,20 +119,6 @@ export function Hero() {
                   <span className="inline-block w-6 h-px bg-jp-sakura/50 group-hover:w-12 group-hover:bg-jp-sakura transition-all duration-500" />
                 </a>
               </div>
-
-              {/* NEXT+ Banner */}
-              <iframe
-                src="https://nextplus.link/embed/kHCdQQISlLp_HhChp5ZGU7vmmiv8nYjB?theme=light&design=coupon"
-                title="NEXT+ 近くのお得"
-                loading="lazy"
-                style={{
-                  width: "100%",
-                  maxWidth: "520px",
-                  aspectRatio: "520/162",
-                  border: 0,
-                  display: "block",
-                }}
-              />
             </div>
           </div>
 
