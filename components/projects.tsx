@@ -27,7 +27,7 @@ export function Projects() {
       client: "",
       description:
         "複数店舗を展開する買取事業者向けの予約管理システムを、要件定義から設計・実装・運用保守まで一貫して担当しました。本部・加盟店・査定スタッフが同時に利用する基幹システムとして、WebSocketによるリアルタイム同期、日／週／月のマルチビューカレンダー、多階層の権限管理、レポート集計、ブラックリスト・重複予約検知などを実装。一括取得から必要最小限のAPI取得方式へ刷新して読み込み速度と安定性を大幅に改善し、PWA対応で現場のスマホ運用にも最適化しています。",
-      tags: ["Next.js", "TypeScript", "Prisma", "WebSocket", "PWA", "Google Cloud"],
+      tags: ["Next.js", "TypeScript", "Prisma", "WebSocket", "PWA", "Google Cloud", "Python"],
       image: "/reservation.png",
     },
     {
@@ -47,7 +47,7 @@ export function Projects() {
       client: "",
       description:
         "沖縄を拠点とするプレミアムレンタカーサービスの予約・車両・顧客管理システムを開発しました。管理ダッシュボードでは車両別売上チャート、予約ステータス内訳、日別予約件数・売上推移をリアルタイムに可視化。予約管理、車両管理（26台以上）、顧客管理、見積り管理、問い合わせ管理、スケジュール管理、書類管理など業務に必要な機能をワンストップで提供。多言語対応（日本語・英語・中国語）とレスポンシブデザインで、国内外の観光客と管理者の両方に最適化しています。",
-      tags: ["Next.js", "MUI", "TypeScript", "多言語対応", "ダッシュボード", "Vercel"],
+      tags: ["Next.js", "MUI", "TypeScript", "Python", "多言語対応", "ダッシュボード", "Vercel"],
       image: "/compass-admin.png",
     },
     {
