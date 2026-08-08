@@ -154,28 +154,38 @@ export function Skills() {
                     <div className="h-[2px] w-8 bg-gradient-to-r from-jp-sakura/50 to-transparent group-hover:w-16 transition-all duration-700" />
                   </div>
 
-                  <div className="space-y-3">
-                    {category.skills.map((skill, i) => (
-                      <div key={skill.name} className="space-y-1">
-                        <div className="flex justify-between items-center">
-                          <span className="text-[11px] text-muted-foreground tracking-wide">
+                  <div className="space-y-2.5">
+                    {category.skills.map((skill, i) => {
+                      const filled = Math.round(skill.level / 10);
+                      return (
+                        <div key={skill.name} className="flex items-center gap-3">
+                          <span className="text-[11px] text-muted-foreground tracking-wide w-28 shrink-0">
                             {skill.name}
                           </span>
-                          <span className="text-[10px] text-jp-sakura/60 font-mono">
-                            {skill.level}%
-                          </span>
+                          <div className="flex gap-0.5 flex-1">
+                            {Array.from({ length: 10 }).map((_, seg) => {
+                              const isFilled = isVisible && seg < filled;
+                              const segClass = isFilled
+                                ? seg < 4
+                                  ? "bg-jp-sakura/30"
+                                  : seg < 7
+                                  ? "bg-jp-sakura/60"
+                                  : "bg-jp-sakura/90"
+                                : "bg-foreground/[0.06]";
+                              return (
+                                <div
+                                  key={seg}
+                                  className={`h-2 flex-1 rounded-sm transition-all duration-500 ${segClass}`}
+                                  style={{
+                                    transitionDelay: `${index * 0.08 + i * 0.04 + seg * 0.03}s`,
+                                  }}
+                                />
+                              );
+                            })}
+                          </div>
                         </div>
-                        <div className="h-[2px] w-full bg-foreground/[0.06] rounded-full overflow-hidden">
-                          <div
-                            className="h-full bg-gradient-to-r from-jp-sakura/70 to-jp-sakura/30 rounded-full transition-all duration-1000 ease-out"
-                            style={{
-                              width: isVisible ? `${skill.level}%` : "0%",
-                              transitionDelay: `${index * 0.1 + i * 0.05}s`,
-                            }}
-                          />
-                        </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
               </div>
