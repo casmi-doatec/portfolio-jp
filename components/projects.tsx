@@ -67,7 +67,7 @@ export function Projects() {
       client: "",
       description:
         "全身脱毛サロンを展開する恋肌（koi-hada.jp）のシステムインフラ移行を担当しました。既存のオンプレミス環境からAmazon Web Services（AWS）へのマイグレーションを主導し、EC2・RDS・S3・CloudFront等のサービスを活用してスケーラブルで可用性の高いインフラ構成を実現。サービス無停止での移行を目標に、段階的な切り替えと動作検証を行い、本番環境への移行を完遂しました。",
-      tags: ["AWS", "EC2", "RDS", "S3", "CloudFront", "クラウド移行", "インフラ設計"],
+      tags: ["AWS", "EC2", "RDS", "S3", "Terraform", "クラウド移行", "インフラ設計"],
       image: "/koi-hada.png",
     },
     {
