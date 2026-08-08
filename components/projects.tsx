@@ -42,6 +42,26 @@ export function Projects() {
     },
     {
       id: 3,
+      title: "もし活",
+      category: "モバイルアプリ",
+      client: "",
+      description:
+        "FlutterとHealth API・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、KintoneをCRMとして顧客情報を一元管理。FCMでのプッシュ通知も実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
+      tags: ["Flutter", "Firebase", "Prisma", "Kintone", "Health API", "FCM"],
+      image: "/moshikatsu.png",
+    },
+    {
+      id: 4,
+      title: "LA・JOLLA HALE",
+      category: "ECサイト",
+      client: "",
+      description:
+        "Shopifyで構築したグローバル対応のECサイトです。カスタムテーマの開発に加え、価格帯フィルタリング、ウィッシュリスト、商品比較機能を実装。Revolution SliderやFotoramaによるリッチな商品ギャラリー、画像ズーム機能、年齢確認ポップアップ、サブスクリプション通知なども組み込み、購入完了率の向上につなげています。日本円対応で、レスポンシブデザインによりモバイル・タブレット・デスクトップすべてに最適化しています。",
+      tags: ["Shopify", "Liquid", "JavaScript", "Slick", "Fotorama", "レスポンシブ"],
+      image: "/lajollahale.png",
+    },
+    {
+      id: 5,
       title: "COMPASSレンタカー",
       category: "業務管理システム",
       client: "",
@@ -89,26 +109,6 @@ export function Projects() {
         "700アカウント導入・継続率98%のLINEビジネス向けCRMクラウドサービスの開発に参画しました。LINE公式アカウントと連携した顧客管理、デジタル会員証、ポイントカード、セグメント配信、複数店舗管理、LINEミニアプリなど、集客から顧客育成までに必要な機能をワンストップで提供。ダッシュボードでのデータ分析・可視化機能も実装し、LINE ヤフー Technology Partner（Communication部門）にも認定されているプロダクトです。",
       tags: ["Nuxt.js", "Tailwind CSS", "LINE API", "CRM", "ミニアプリ", "セグメント配信"],
       image: "/comsbi.png",
-    },
-    {
-      id: 6,
-      title: "もし活",
-      category: "モバイルアプリ",
-      client: "",
-      description:
-        "FlutterとHealth API・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、KintoneをCRMとして顧客情報を一元管理。FCMでのプッシュ通知も実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
-      tags: ["Flutter", "Firebase", "Prisma", "Kintone", "Health API", "FCM"],
-      image: "/moshikatsu.png",
-    },
-    {
-      id: 7,
-      title: "LA・JOLLA HALE",
-      category: "ECサイト",
-      client: "",
-      description:
-        "Shopifyで構築したグローバル対応のECサイトです。カスタムテーマの開発に加え、価格帯フィルタリング、ウィッシュリスト、商品比較機能を実装。Revolution SliderやFotoramaによるリッチな商品ギャラリー、画像ズーム機能、年齢確認ポップアップ、サブスクリプション通知なども組み込み、購入完了率の向上につなげています。日本円対応で、レスポンシブデザインによりモバイル・タブレット・デスクトップすべてに最適化しています。",
-      tags: ["Shopify", "Liquid", "JavaScript", "Slick", "Fotorama", "レスポンシブ"],
-      image: "/lajollahale.png",
     },
     {
       id: 9,
