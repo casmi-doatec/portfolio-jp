@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -122,7 +123,7 @@ export function Hero() {
             </div>
           </div>
 
-          {/* Right - decorative kanji column */}
+          {/* Right - avatar */}
           <div
             className={`lg:col-span-4 hidden lg:flex flex-col items-end justify-center gap-6 ${
               isVisible
@@ -130,10 +131,14 @@ export function Hero() {
                 : "opacity-0"
             }`}
           >
-            <div className="writing-vertical flex flex-col items-center gap-8 text-foreground/[0.04] text-8xl font-display select-none">
-              <span>創</span>
-              <span>造</span>
-              <span>力</span>
+            <div className="relative w-72 h-72">
+              <Image
+                src="/avatar-pegasus.png"
+                alt="遠藤悠晴"
+                fill
+                className="object-cover rounded-full"
+                priority
+              />
             </div>
           </div>
         </div>
