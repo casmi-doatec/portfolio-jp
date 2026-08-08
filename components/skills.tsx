@@ -21,32 +21,76 @@ export function Skills() {
     {
       title: "AI・LLM・ML",
       kanji: "知",
-      skills: ["OpenAI API", "Claude API", "LangChain", "RAG", "Pinecone", "pgvector", "OpenCV", "PyTorch", "Whisper"],
+      skills: [
+        { name: "OpenAI API", level: 90 },
+        { name: "Claude API", level: 85 },
+        { name: "RAG", level: 80 },
+        { name: "LangChain", level: 75 },
+        { name: "Whisper", level: 70 },
+        { name: "PyTorch", level: 65 },
+        { name: "pgvector", level: 70 },
+        { name: "Pinecone", level: 68 },
+      ],
     },
     {
       title: "フロントエンド",
       kanji: "面",
-      skills: ["React", "Next.js", "Vue", "Nuxt", "Flutter", "Tailwind CSS", "Three.js"],
+      skills: [
+        { name: "React", level: 95 },
+        { name: "Next.js", level: 95 },
+        { name: "Tailwind CSS", level: 92 },
+        { name: "Vue / Nuxt", level: 80 },
+        { name: "Flutter", level: 75 },
+        { name: "Three.js", level: 68 },
+      ],
     },
     {
       title: "バックエンド",
       kanji: "裏",
-      skills: ["Python", "FastAPI", "Node.js", "TypeScript", "Laravel", "PHP", "Ruby on Rails"],
+      skills: [
+        { name: "TypeScript", level: 92 },
+        { name: "Node.js", level: 88 },
+        { name: "Python", level: 88 },
+        { name: "FastAPI", level: 85 },
+        { name: "Laravel / PHP", level: 78 },
+        { name: "Ruby on Rails", level: 72 },
+      ],
     },
     {
       title: "データベース",
       kanji: "蓄",
-      skills: ["MySQL", "PostgreSQL", "Supabase", "Firebase", "Prisma", "Redis"],
+      skills: [
+        { name: "PostgreSQL", level: 85 },
+        { name: "MySQL", level: 85 },
+        { name: "Prisma", level: 82 },
+        { name: "Firebase", level: 80 },
+        { name: "Supabase", level: 80 },
+        { name: "Redis", level: 75 },
+      ],
     },
     {
       title: "インフラ・DevOps",
       kanji: "基",
-      skills: ["AWS", "Google Cloud", "Docker", "Vercel", "Git", "GitHub Actions"],
+      skills: [
+        { name: "Git / GitHub", level: 92 },
+        { name: "Docker", level: 82 },
+        { name: "AWS", level: 80 },
+        { name: "GitHub Actions", level: 80 },
+        { name: "Vercel", level: 85 },
+        { name: "Google Cloud", level: 78 },
+      ],
     },
     {
       title: "外部サービス連携",
       kanji: "繋",
-      skills: ["Stripe", "Salesforce", "Kintone", "Shopify", "WebSocket", "WebRTC"],
+      skills: [
+        { name: "WebSocket", level: 85 },
+        { name: "Stripe", level: 82 },
+        { name: "WebRTC", level: 78 },
+        { name: "Shopify", level: 78 },
+        { name: "Kintone", level: 75 },
+        { name: "Salesforce", level: 70 },
+      ],
     },
   ];
 
@@ -110,14 +154,27 @@ export function Skills() {
                     <div className="h-[2px] w-8 bg-gradient-to-r from-jp-sakura/50 to-transparent group-hover:w-16 transition-all duration-700" />
                   </div>
 
-                  <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill) => (
-                      <span
-                        key={skill}
-                        className="text-xs px-3 py-1.5 border border-foreground/8 text-muted-foreground hover:border-jp-sakura/30 hover:text-foreground transition-all duration-500 cursor-default"
-                      >
-                        {skill}
-                      </span>
+                  <div className="space-y-3">
+                    {category.skills.map((skill, i) => (
+                      <div key={skill.name} className="space-y-1">
+                        <div className="flex justify-between items-center">
+                          <span className="text-[11px] text-muted-foreground tracking-wide">
+                            {skill.name}
+                          </span>
+                          <span className="text-[10px] text-jp-sakura/60 font-mono">
+                            {skill.level}%
+                          </span>
+                        </div>
+                        <div className="h-[2px] w-full bg-foreground/[0.06] rounded-full overflow-hidden">
+                          <div
+                            className="h-full bg-gradient-to-r from-jp-sakura/70 to-jp-sakura/30 rounded-full transition-all duration-1000 ease-out"
+                            style={{
+                              width: isVisible ? `${skill.level}%` : "0%",
+                              transitionDelay: `${index * 0.1 + i * 0.05}s`,
+                            }}
+                          />
+                        </div>
+                      </div>
                     ))}
                   </div>
                 </div>
