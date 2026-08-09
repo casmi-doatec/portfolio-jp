@@ -42,16 +42,6 @@ export function Projects() {
     },
     {
       id: 3,
-      title: "もし活",
-      category: "モバイルアプリ",
-      client: "",
-      description:
-        "FlutterとHealth API・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、KintoneをCRMとして顧客情報を一元管理。FCMでのプッシュ通知も実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
-      tags: ["Flutter", "Firebase", "Prisma", "Kintone", "Health API", "FCM"],
-      image: "/moshikatsu.png",
-    },
-    {
-      id: 4,
       title: "LA・JOLLA HALE",
       category: "ECサイト",
       client: "",
@@ -59,36 +49,6 @@ export function Projects() {
         "Shopifyで構築したグローバル対応のECサイトです。カスタムテーマの開発に加え、価格帯フィルタリング、ウィッシュリスト、商品比較機能を実装。Revolution SliderやFotoramaによるリッチな商品ギャラリー、画像ズーム機能、年齢確認ポップアップ、サブスクリプション通知なども組み込み、購入完了率の向上につなげています。日本円対応で、レスポンシブデザインによりモバイル・タブレット・デスクトップすべてに最適化しています。",
       tags: ["Shopify", "Liquid", "JavaScript", "Slick", "Fotorama", "レスポンシブ"],
       image: "/lajollahale.png",
-    },
-    {
-      id: 5,
-      title: "LACOCO（ラココ）",
-      category: "ブランドLP・Webサイト改修",
-      client: "",
-      description:
-        "女性専用脱毛サロン「LACOCO」のブランドLP制作・WordPressサイトの改修を担当しました。SHR方式による高速脱毛サービスの特徴、施術の流れ、料金プランなどを整理し、初めて脱毛サロンを検討するユーザーにも分かりやすい構成で設計。ブランドイメージと訴求力を両立したランディングページとして構築しつつ、PHP・WordPressによる既存サイトの不具合修正・機能改修も担当しました。レスポンシブ対応により、スマートフォン・タブレット・PCすべての環境で快適に閲覧できる仕上がりにしています。",
-      tags: ["WordPress", "PHP", "HTML", "CSS", "JavaScript", "レスポンシブ", "LP制作"],
-      image: "/lacoco.png",
-    },
-    {
-      id: 6,
-      title: "COMPASSレンタカー",
-      category: "業務管理システム",
-      client: "",
-      description:
-        "沖縄を拠点とするプレミアムレンタカーサービスの予約・車両・顧客管理システムを開発しました。管理ダッシュボードでは車両別売上チャート、予約ステータス内訳、日別予約件数・売上推移をリアルタイムに可視化。予約管理、車両管理（26台以上）、顧客管理、見積り管理、問い合わせ管理、スケジュール管理、書類管理など業務に必要な機能をワンストップで提供。多言語対応（日本語・英語・中国語）とレスポンシブデザインで、国内外の観光客と管理者の両方に最適化しています。",
-      tags: ["Next.js", "MUI", "TypeScript", "Python", "多言語対応", "ダッシュボード", "Vercel"],
-      image: "/compass-admin.png",
-    },
-    {
-      id: 3,
-      title: "JoBins（ジョビンズ）",
-      category: "人材紹介SaaS",
-      client: "",
-      description:
-        "エージェント・採用企業・求職者をつなぐ人材紹介マネジメントプラットフォームのバックエンド改修に参画しました。C# / .NETで構築されたAPIサーバーのバグ調査・エラー修正を担当し、候補者管理・選考進捗管理・紹介料分配などの機能における不具合を特定して修正。ログ解析やデバッグを通じてシステムの安定性向上に貢献しました。",
-      tags: ["Next.js", "TypeScript", "C# / .NET", "SQL Server", "Entity Framework", "Azure", "REST API", "多言語対応"],
-      image: "/jobins.png",
     },
     {
       id: 4,
@@ -111,37 +71,47 @@ export function Projects() {
       image: "/manabou.png",
     },
     {
-      id: 5,
-      title: "COMSBI（コムスビ）",
-      category: "LINE CRM SaaS",
+      id: 6,
+      title: "もし活",
+      category: "モバイルアプリ",
       client: "",
       description:
-        "700アカウント導入・継続率98%のLINEビジネス向けCRMクラウドサービスの開発に参画しました。LINE公式アカウントと連携した顧客管理、デジタル会員証、ポイントカード、セグメント配信、複数店舗管理、LINEミニアプリなど、集客から顧客育成までに必要な機能をワンストップで提供。ダッシュボードでのデータ分析・可視化機能も実装し、LINE ヤフー Technology Partner（Communication部門）にも認定されているプロダクトです。",
-      tags: ["Nuxt.js", "Tailwind CSS", "LINE API", "CRM", "ミニアプリ", "セグメント配信"],
-      image: "/comsbi.png",
+        "FlutterとHealth API・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、KintoneをCRMとして顧客情報を一元管理。FCMでのプッシュ通知も実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
+      tags: ["Flutter", "Firebase", "Prisma", "Kintone", "Health API", "FCM"],
+      image: "/moshikatsu.png",
+    },
+    {
+      id: 7,
+      title: "LACOCO（ラココ）",
+      category: "ブランドLP・Webサイト改修",
+      client: "",
+      description:
+        "女性専用脱毛サロン「LACOCO」のブランドLP制作・WordPressサイトの改修を担当しました。SHR方式による高速脱毛サービスの特徴、施術の流れ、料金プランなどを整理し、初めて脱毛サロンを検討するユーザーにも分かりやすい構成で設計。ブランドイメージと訴求力を両立したランディングページとして構築しつつ、PHP・WordPressによる既存サイトの不具合修正・機能改修も担当しました。レスポンシブ対応により、スマートフォン・タブレット・PCすべての環境で快適に閲覧できる仕上がりにしています。",
+      tags: ["WordPress", "PHP", "HTML", "CSS", "JavaScript", "レスポンシブ", "LP制作"],
+      image: "/lacoco.png",
+    },
+    {
+      id: 8,
+      title: "COMPASSレンタカー",
+      category: "業務管理システム",
+      client: "",
+      description:
+        "沖縄を拠点とするプレミアムレンタカーサービスの予約・車両・顧客管理システムを開発しました。管理ダッシュボードでは車両別売上チャート、予約ステータス内訳、日別予約件数・売上推移をリアルタイムに可視化。予約管理、車両管理（26台以上）、顧客管理、見積り管理、問い合わせ管理、スケジュール管理、書類管理など業務に必要な機能をワンストップで提供。多言語対応（日本語・英語・中国語）とレスポンシブデザインで、国内外の観光客と管理者の両方に最適化しています。",
+      tags: ["Next.js", "MUI", "TypeScript", "Python", "多言語対応", "ダッシュボード", "Vercel"],
+      image: "/compass-admin.png",
     },
     {
       id: 9,
-      title: "おかわりマップ",
-      category: "Webアプリ",
+      title: "JoBins（ジョビンズ）",
+      category: "人材紹介SaaS",
       client: "",
       description:
-        "「ごはんおかわり無料」の飲食店だけを地図から探せるグルメマップアプリです。OpenStreetMapを使った地図上での店舗検索に加え、Supabase Authによるユーザー認証、Supabase Database（PostgreSQL）での店舗データ・投稿管理、Supabase Storage での画像アップロード、タイムラインのリアルタイム更新を実装。GPSによる現在地取得、マイページ機能、PWA対応でスマホからワンタップで起動でき、Cookie同意バナー・オンボーディングモーダルなど細かなUX設計にもこだわっています。",
-      tags: ["Next.js", "Supabase", "PostgreSQL", "OpenStreetMap", "PWA", "GPS", "Microsoft Clarity"],
-      image: "/okawari.png",
+        "エージェント・採用企業・求職者をつなぐ人材紹介マネジメントプラットフォームのバックエンド改修に参画しました。C# / .NETで構築されたAPIサーバーのバグ調査・エラー修正を担当し、候補者管理・選考進捗管理・紹介料分配などの機能における不具合を特定して修正。ログ解析やデバッグを通じてシステムの安定性向上に貢献しました。",
+      tags: ["Next.js", "TypeScript", "C# / .NET", "SQL Server", "Entity Framework", "Azure", "REST API", "多言語対応"],
+      image: "/jobins.png",
     },
     {
       id: 10,
-      title: "ソウルシンク",
-      category: "相性診断サービス",
-      client: "",
-      description:
-        "OpenAI APIを活用したAI駆動型の恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、詳細な性格分析の回答データをLLMに渡し、ユーザーごとにパーソナライズされた相性レポートを自然言語で自動生成。プロンプトエンジニアリングにより占星術・心理学の知見を組み込んだ精度の高い分析結果を返すようチューニングしています。",
-      tags: ["Next.js", "OpenAI API", "LLM", "Tailwind CSS", "Vercel"],
-      image: "/matching.png",
-    },
-    {
-      id: 11,
       title: "mimi HAIR SALON",
       category: "美容室Webサイト",
       client: "",
@@ -151,7 +121,27 @@ export function Projects() {
       image: "/mimi-salon.png",
     },
     {
+      id: 11,
+      title: "ソウルシンク",
+      category: "相性診断サービス",
+      client: "",
+      description:
+        "OpenAI APIを活用したAI駆動型の恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、詳細な性格分析の回答データをLLMに渡し、ユーザーごとにパーソナライズされた相性レポートを自然言語で自動生成。プロンプトエンジニアリングにより占星術・心理学の知見を組み込んだ精度の高い分析結果を返すようチューニングしています。",
+      tags: ["Next.js", "OpenAI API", "LLM", "Tailwind CSS", "Vercel"],
+      image: "/matching.png",
+    },
+    {
       id: 12,
+      title: "おかわりマップ",
+      category: "Webアプリ",
+      client: "",
+      description:
+        "「ごはんおかわり無料」の飲食店だけを地図から探せるグルメマップアプリです。OpenStreetMapを使った地図上での店舗検索に加え、Supabase Authによるユーザー認証、Supabase Database（PostgreSQL）での店舗データ・投稿管理、Supabase Storage での画像アップロード、タイムラインのリアルタイム更新を実装。GPSによる現在地取得、マイページ機能、PWA対応でスマホからワンタップで起動でき、Cookie同意バナー・オンボーディングモーダルなど細かなUX設計にもこだわっています。",
+      tags: ["Next.js", "Supabase", "PostgreSQL", "OpenStreetMap", "PWA", "GPS", "Microsoft Clarity"],
+      image: "/okawari.png",
+    },
+    {
+      id: 13,
       title: "ACOT HAIR SALON",
       category: "美容室Webサイト",
       client: "",
@@ -159,6 +149,16 @@ export function Projects() {
         "美容室向けのWebサイトをデザイン・コーディング込みで制作しました。余白と写真を活かしたナチュラルで洗練されたデザインが特徴で、メニュー・コンセプト・ピックアップ・スタイル・採用・ブログページを実装。固定予約ボタン・電話番号表示・レスポンシブ対応で、ユーザーの予約・来店アクションを促す設計にしています。",
       tags: ["HTML", "CSS", "JavaScript", "WordPress", "レスポンシブ", "UI/UXデザイン"],
       image: "/acot-salon.png",
+    },
+    {
+      id: 14,
+      title: "COMSBI（コムスビ）",
+      category: "LINE CRM SaaS",
+      client: "",
+      description:
+        "700アカウント導入・継続率98%のLINEビジネス向けCRMクラウドサービスの開発に参画しました。LINE公式アカウントと連携した顧客管理、デジタル会員証、ポイントカード、セグメント配信、複数店舗管理、LINEミニアプリなど、集客から顧客育成までに必要な機能をワンストップで提供。ダッシュボードでのデータ分析・可視化機能も実装し、LINE ヤフー Technology Partner（Communication部門）にも認定されているプロダクトです。",
+      tags: ["Nuxt.js", "Tailwind CSS", "LINE API", "CRM", "ミニアプリ", "セグメント配信"],
+      image: "/comsbi.png",
     },
   ];
 

@@ -19,78 +19,39 @@ export function Skills() {
 
   const skillCategories = [
     {
-      title: "AI・LLM・ML",
-      kanji: "知",
-      skills: [
-        { name: "OpenAI API", level: 90 },
-        { name: "Claude API", level: 85 },
-        { name: "RAG", level: 80 },
-        { name: "LangChain", level: 75 },
-        { name: "Whisper", level: 70 },
-        { name: "PyTorch", level: 65 },
-        { name: "pgvector", level: 70 },
-        { name: "Pinecone", level: 68 },
-      ],
+      title: "AI・LLM",
+      en: "AI / LLM",
+      skills: ["OpenAI API", "Anthropic Claude API", "Google Gemini API", "LangChain", "LangGraph", "RAG", "AI Agent開発", "MCP"],
     },
     {
       title: "フロントエンド",
-      kanji: "面",
-      skills: [
-        { name: "React", level: 95 },
-        { name: "Next.js", level: 95 },
-        { name: "Tailwind CSS", level: 92 },
-        { name: "Vue / Nuxt", level: 80 },
-        { name: "Flutter", level: 75 },
-        { name: "Three.js", level: 68 },
-      ],
+      en: "Frontend",
+      skills: ["React", "TypeScript", "Next.js", "Vue.js"],
     },
     {
       title: "バックエンド",
-      kanji: "裏",
-      skills: [
-        { name: "TypeScript", level: 92 },
-        { name: "Node.js", level: 88 },
-        { name: "Python", level: 88 },
-        { name: "FastAPI", level: 85 },
-        { name: "Laravel / PHP", level: 78 },
-        { name: "Ruby on Rails", level: 72 },
-      ],
+      en: "Backend",
+      skills: ["Python（FastAPI・Django）", "Node.js（NestJS・Express）", "PHP（Laravel）", "Ruby on Rails"],
+    },
+    {
+      title: "モバイルアプリ",
+      en: "Mobile",
+      skills: ["Flutter", "React Native"],
+    },
+    {
+      title: "クラウド・インフラ",
+      en: "Cloud / Infra",
+      skills: ["AWS（EC2・ECS・Lambda・S3・RDS）", "Docker", "Terraform"],
     },
     {
       title: "データベース",
-      kanji: "蓄",
-      skills: [
-        { name: "PostgreSQL", level: 85 },
-        { name: "MySQL", level: 85 },
-        { name: "Prisma", level: 82 },
-        { name: "Firebase", level: 80 },
-        { name: "Supabase", level: 80 },
-        { name: "Redis", level: 75 },
-      ],
+      en: "Database",
+      skills: ["PostgreSQL", "MySQL", "Redis", "Supabase", "Firebase"],
     },
     {
-      title: "インフラ・DevOps",
-      kanji: "基",
-      skills: [
-        { name: "Git / GitHub", level: 92 },
-        { name: "Docker", level: 82 },
-        { name: "AWS", level: 80 },
-        { name: "GitHub Actions", level: 80 },
-        { name: "Vercel", level: 85 },
-        { name: "Google Cloud", level: 78 },
-      ],
-    },
-    {
-      title: "外部サービス連携",
-      kanji: "繋",
-      skills: [
-        { name: "WebSocket", level: 85 },
-        { name: "Stripe", level: 82 },
-        { name: "WebRTC", level: 78 },
-        { name: "Shopify", level: 78 },
-        { name: "Kintone", level: 75 },
-        { name: "Salesforce", level: 70 },
-      ],
+      title: "AI・MLOps",
+      en: "AI / MLOps",
+      skills: ["PyTorch", "TensorFlow", "vLLM", "Model Deployment"],
     },
   ];
 
@@ -128,65 +89,44 @@ export function Skills() {
             <div className="h-[2px] w-16 bg-gradient-to-r from-jp-sakura/60 to-transparent" />
           </div>
 
-          {/* Skills grid - zen garden inspired layout */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-jp-sakura/[0.06]">
+          {/* Skills — horizontal row layout */}
+          <div className="space-y-0 divide-y divide-foreground/[0.06]">
             {skillCategories.map((category, index) => (
               <div
                 key={category.title}
-                className={`bg-background p-8 lg:p-10 group hover:bg-secondary/30 transition-all duration-700 relative overflow-hidden ${
-                  isVisible ? "animate-scale-in" : "opacity-0"
+                className={`grid lg:grid-cols-12 gap-6 lg:gap-12 py-8 lg:py-10 group ${
+                  isVisible ? "animate-slide-up" : "opacity-0"
                 }`}
-                style={{ animationDelay: `${index * 0.1}s` }}
+                style={{ animationDelay: `${index * 0.08}s` }}
               >
-                {/* Kanji watermark */}
-                <span className="absolute -bottom-4 -right-2 text-[7rem] font-display text-foreground/[0.025] select-none group-hover:text-jp-sakura/[0.05] transition-colors duration-700">
-                  {category.kanji}
-                </span>
-
-                <div className="relative space-y-6">
-                  <div className="space-y-3">
-                    <span className="text-[10px] tracking-[0.3em] text-jp-sakura/40 font-mono">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <h3 className="text-lg font-bold tracking-tight">
+                {/* Category label */}
+                <div className="lg:col-span-3 flex lg:flex-col lg:justify-center gap-3 lg:gap-2">
+                  <span className="text-[10px] tracking-[0.3em] text-jp-sakura/40 font-mono self-center lg:self-start">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <div>
+                    <h3 className="text-sm font-bold tracking-tight text-foreground">
                       {category.title}
                     </h3>
-                    <div className="h-[2px] w-8 bg-gradient-to-r from-jp-sakura/50 to-transparent group-hover:w-16 transition-all duration-700" />
+                    <p className="text-[10px] tracking-[0.15em] text-muted-foreground/50 mt-0.5 hidden lg:block">
+                      {category.en}
+                    </p>
                   </div>
+                </div>
 
-                  <div className="space-y-2.5">
-                    {category.skills.map((skill, i) => {
-                      const filled = Math.round(skill.level / 10);
-                      return (
-                        <div key={skill.name} className="flex items-center gap-3">
-                          <span className="text-[11px] text-muted-foreground tracking-wide w-28 shrink-0">
-                            {skill.name}
-                          </span>
-                          <div className="flex gap-0.5 flex-1">
-                            {Array.from({ length: 10 }).map((_, seg) => {
-                              const isFilled = isVisible && seg < filled;
-                              const segClass = isFilled
-                                ? seg < 4
-                                  ? "bg-jp-sakura/30"
-                                  : seg < 7
-                                  ? "bg-jp-sakura/60"
-                                  : "bg-jp-sakura/90"
-                                : "bg-foreground/[0.06]";
-                              return (
-                                <div
-                                  key={seg}
-                                  className={`h-2 flex-1 rounded-sm transition-all duration-500 ${segClass}`}
-                                  style={{
-                                    transitionDelay: `${index * 0.08 + i * 0.04 + seg * 0.03}s`,
-                                  }}
-                                />
-                              );
-                            })}
-                          </div>
-                        </div>
-                      );
-                    })}
-                  </div>
+                {/* Skills */}
+                <div className="lg:col-span-9 flex flex-wrap gap-2 items-center">
+                  {category.skills.map((skill, i) => (
+                    <span
+                      key={skill}
+                      className={`text-[11px] tracking-wide px-3 py-1.5 border border-foreground/[0.08] text-muted-foreground hover:border-jp-sakura/40 hover:text-foreground transition-all duration-500 cursor-default ${
+                        isVisible ? "animate-fade-in" : "opacity-0"
+                      }`}
+                      style={{ animationDelay: `${index * 0.08 + i * 0.04}s` }}
+                    >
+                      {skill}
+                    </span>
+                  ))}
                 </div>
               </div>
             ))}
