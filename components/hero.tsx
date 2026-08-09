@@ -57,7 +57,7 @@ export function Hero() {
             >
               <div className="space-y-1">
                 <h1 className="text-6xl lg:text-[7rem] font-black tracking-tighter leading-[0.85]">
-                  遠藤悠晴
+                  ペガサス 7
                 </h1>
               </div>
 
@@ -134,7 +134,7 @@ export function Hero() {
             <div className="relative w-72 h-72">
               <Image
                 src="/avatar-pegasus.png"
-                alt="遠藤悠晴"
+                alt="ペガサス 7"
                 fill
                 className="object-cover rounded-full"
                 priority

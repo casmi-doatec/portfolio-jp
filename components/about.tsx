@@ -111,7 +111,7 @@ export function About() {
                   isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"
                 }`}
               >
-                はじめまして、遠藤悠晴です。「つくる側」に立ちたいという想いから、高校時代に独学でプログラミングを始めました。以来、コードを書くことがずっと自分の真ん中にあります。
+                はじめまして、ペガサス 7です。「つくる側」に立ちたいという想いから、高校時代に独学でプログラミングを始めました。以来、コードを書くことがずっと自分の真ん中にあります。
               </p>
               <p
                 className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${

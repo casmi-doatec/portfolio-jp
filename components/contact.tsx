@@ -282,7 +282,7 @@ export function Contact() {
           <div className="flex items-center justify-center gap-3">
             <span className="text-jp-sakura/30 font-display">&#x300C;</span>
             <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground/40">
-              &copy; 2026 遠藤悠晴
+              &copy; 2026 ペガサス 7
             </p>
             <span className="text-jp-sakura/30 font-display">&#x300D;</span>
           </div>
