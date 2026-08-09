@@ -62,6 +62,16 @@ export function Projects() {
     },
     {
       id: 5,
+      title: "LACOCO（ラココ）",
+      category: "ブランドLP・Webサイト改修",
+      client: "",
+      description:
+        "女性専用脱毛サロン「LACOCO」のブランドLP制作・WordPressサイトの改修を担当しました。SHR方式による高速脱毛サービスの特徴、施術の流れ、料金プランなどを整理し、初めて脱毛サロンを検討するユーザーにも分かりやすい構成で設計。ブランドイメージと訴求力を両立したランディングページとして構築しつつ、PHP・WordPressによる既存サイトの不具合修正・機能改修も担当しました。レスポンシブ対応により、スマートフォン・タブレット・PCすべての環境で快適に閲覧できる仕上がりにしています。",
+      tags: ["WordPress", "PHP", "HTML", "CSS", "JavaScript", "レスポンシブ", "LP制作"],
+      image: "/lacoco.png",
+    },
+    {
+      id: 6,
       title: "COMPASSレンタカー",
       category: "業務管理システム",
       client: "",
