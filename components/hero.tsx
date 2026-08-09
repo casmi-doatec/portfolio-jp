@@ -40,7 +40,7 @@ export function Hero() {
               {/* Avatar */}
               <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border border-jp-sakura/20">
                 <Image
-                  src="/avatar-pegasus.png"
+                  src="/pegasus4.png"
                   alt="ペガサス 7"
                   fill
                   className="object-cover"
