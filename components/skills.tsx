@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import { SkillsOrbit } from "./skills-orbit";
 
 export function Skills() {
   const [isVisible, setIsVisible] = useState(false);
@@ -89,47 +90,9 @@ export function Skills() {
             <div className="h-[2px] w-16 bg-gradient-to-r from-jp-sakura/60 to-transparent" />
           </div>
 
-          {/* Skills — horizontal row layout */}
-          <div className="space-y-0 divide-y divide-foreground/[0.06]">
-            {skillCategories.map((category, index) => (
-              <div
-                key={category.title}
-                className={`grid lg:grid-cols-12 gap-6 lg:gap-12 py-8 lg:py-10 group ${
-                  isVisible ? "animate-slide-up" : "opacity-0"
-                }`}
-                style={{ animationDelay: `${index * 0.08}s` }}
-              >
-                {/* Category label */}
-                <div className="lg:col-span-3 flex lg:flex-col lg:justify-center gap-3 lg:gap-2">
-                  <span className="text-[10px] tracking-[0.3em] text-jp-sakura/40 font-mono self-center lg:self-start">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <h3 className="text-sm font-bold tracking-tight text-foreground">
-                      {category.title}
-                    </h3>
-                    <p className="text-[10px] tracking-[0.15em] text-muted-foreground/50 mt-0.5 hidden lg:block">
-                      {category.en}
-                    </p>
-                  </div>
-                </div>
-
-                {/* Skills */}
-                <div className="lg:col-span-9 flex flex-wrap gap-2 items-center">
-                  {category.skills.map((skill, i) => (
-                    <span
-                      key={skill}
-                      className={`text-[11px] tracking-wide px-3 py-1.5 border border-foreground/[0.08] text-muted-foreground hover:border-jp-sakura/40 hover:text-foreground transition-all duration-500 cursor-default ${
-                        isVisible ? "animate-fade-in" : "opacity-0"
-                      }`}
-                      style={{ animationDelay: `${index * 0.08 + i * 0.04}s` }}
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
+          {/* Skills — satellite orbit visualization */}
+          <div className={`${isVisible ? "animate-fade-in" : "opacity-0"}`}>
+            <SkillsOrbit />
           </div>
 
           {/* Bottom stat */}
