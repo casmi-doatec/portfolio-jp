@@ -139,7 +139,7 @@ export function Skills() {
             }`}
           >
             <div className="text-center space-y-2">
-              <p className="text-5xl lg:text-6xl font-black tracking-tighter">25+</p>
+              <p className="text-5xl lg:text-6xl font-black tracking-tighter">30+</p>
               <p className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground">
                 フレームワーク・ツール
               </p>
