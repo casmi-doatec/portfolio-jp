@@ -152,6 +152,16 @@ export function Projects() {
     },
     {
       id: 14,
+      title: "D/（ディースリー）",
+      category: "マッチングアプリ",
+      client: "",
+      description:
+        "相席ラウンジと出会いをつなぐマッチングアプリ「D/（ディースリー）」の改修開発に参画しました。Flutter / Dartで構築されたiOS・Androidアプリにおいて、外部API連携の実装・修正を担当。既存機能の安定稼働と品質向上に貢献しました。",
+      tags: ["Flutter", "Dart", "API連携", "iOS", "Android"],
+      image: "/d3.png",
+    },
+    {
+      id: 15,
       title: "COMSBI（コムスビ）",
       category: "LINE CRM SaaS",
       client: "",
