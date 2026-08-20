@@ -29,11 +29,11 @@ export function Hero() {
 
         {/* Avatar — 3/5 inside banner, 2/5 below (translate-y-[40%]) */}
         <div
-          className={`absolute bottom-0 left-6 lg:left-12 translate-y-[40%] z-10 ${
+          className={`absolute bottom-0 left-6 lg:left-12 translate-y-[25%] z-10 ${
             isVisible ? "animate-fade-in" : "opacity-0"
           }`}
         >
-          <div className="relative w-24 h-24 lg:w-36 lg:h-36 rounded-full overflow-hidden border-4 border-background shadow-sm">
+          <div className="relative w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-background shadow-sm">
             <Image src="/real-kasumi.png" alt="かすみ" fill className="object-cover" priority />
           </div>
         </div>
