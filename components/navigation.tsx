@@ -1,26 +1,21 @@
 "use client";
 
 import type React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
     href: string
   ) => {
     e.preventDefault();
-    setIsMobileMenuOpen(false);
+    setIsOpen(false);
+    if (href === "#") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -36,97 +31,82 @@ export function Navigation() {
   ];
 
   return (
-    <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
-        isScrolled
-          ? "bg-background/90 backdrop-blur-xl border-b border-border"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo with Japanese bracket styling */}
+    <>
+      {/* Hamburger button — fixed top-right */}
+      <button
+        onClick={() => setIsOpen((v) => !v)}
+        aria-label="Toggle menu"
+        className="fixed top-6 right-6 z-[60] w-10 h-10 flex flex-col items-center justify-center gap-[5px] bg-background/80 backdrop-blur border border-border hover:border-jp-sakura transition-colors duration-300"
+      >
+        <span
+          className={`w-5 h-px bg-foreground transition-all duration-300 origin-center ${
+            isOpen ? "rotate-45 translate-y-[6px]" : ""
+          }`}
+        />
+        <span
+          className={`w-5 h-px bg-foreground transition-all duration-300 ${
+            isOpen ? "opacity-0" : ""
+          }`}
+        />
+        <span
+          className={`w-5 h-px bg-foreground transition-all duration-300 origin-center ${
+            isOpen ? "-rotate-45 -translate-y-[6px]" : ""
+          }`}
+        />
+      </button>
+
+      {/* Backdrop */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 z-[50]"
+          onClick={() => setIsOpen(false)}
+        />
+      )}
+
+      {/* Dropdown panel */}
+      <div
+        className={`fixed top-0 right-0 z-[55] w-64 h-screen bg-background border-l border-border flex flex-col transition-transform duration-500 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        {/* Logo */}
+        <div className="px-8 pt-16 pb-8 border-b border-border">
           <a
             href="#"
             onClick={(e) => handleNavClick(e, "#")}
-            className="group flex items-center gap-1.5 hover:opacity-70 transition-opacity duration-500"
+            className="flex items-center gap-1.5 hover:opacity-70 transition-opacity duration-300"
           >
-            <span className="text-jp-sakura text-lg font-display select-none">
-              &#x300C;
-            </span>
-            <span className="text-sm tracking-[0.2em] uppercase font-bold">
-              DreamHigh
-            </span>
-            <span className="text-jp-sakura text-lg font-display select-none">
-              &#x300D;
-            </span>
+            <span className="text-jp-sakura text-lg font-display select-none">&#x300C;</span>
+            <span className="text-sm tracking-[0.2em] uppercase font-bold">DreamHigh</span>
+            <span className="text-jp-sakura text-lg font-display select-none">&#x300D;</span>
           </a>
+        </div>
 
-          {/* Desktop nav */}
-          <div className="hidden md:flex items-center gap-0.5">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                onClick={(e) => handleNavClick(e, item.href)}
-                className="relative px-5 py-2 text-[11px] tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors duration-500 group"
-              >
-                <span className="hidden lg:inline text-[9px] text-jp-sakura mr-1.5 font-display">
-                  {item.label}
-                </span>
-                <span className="uppercase">{item.labelEn}</span>
-                <span className="absolute bottom-0 left-5 right-5 h-px bg-jp-sakura scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-              </a>
-            ))}
-          </div>
+        {/* Nav items */}
+        <nav className="flex flex-col px-8 py-8 gap-1 flex-1">
+          {navItems.map((item, i) => (
+            <a
+              key={item.href}
+              href={item.href}
+              onClick={(e) => handleNavClick(e, item.href)}
+              className="group flex items-center gap-3 py-3.5 border-b border-border/50 hover:border-jp-sakura/30 transition-colors duration-300"
+              style={{ animationDelay: `${i * 0.05}s` }}
+            >
+              <span className="text-[10px] text-jp-sakura font-display w-6 shrink-0">{item.label}</span>
+              <span className="text-[11px] tracking-[0.25em] uppercase text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                {item.labelEn}
+              </span>
+            </a>
+          ))}
+        </nav>
 
-          {/* Mobile hamburger */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2"
-            aria-label="Toggle menu"
-          >
-            <div className="w-5 h-4 relative flex flex-col justify-between">
-              <span
-                className={`w-full h-px bg-foreground transition-all duration-300 origin-center ${
-                  isMobileMenuOpen ? "rotate-45 translate-y-[7px]" : ""
-                }`}
-              />
-              <span
-                className={`w-full h-px bg-foreground transition-all duration-300 ${
-                  isMobileMenuOpen ? "opacity-0" : ""
-                }`}
-              />
-              <span
-                className={`w-full h-px bg-foreground transition-all duration-300 origin-center ${
-                  isMobileMenuOpen ? "-rotate-45 -translate-y-[7px]" : ""
-                }`}
-              />
-            </div>
-          </button>
+        {/* Footer */}
+        <div className="px-8 py-6 border-t border-border">
+          <p className="text-[9px] tracking-[0.3em] uppercase text-muted-foreground/60">
+            &copy; 2026 かすみ
+          </p>
         </div>
       </div>
-
-      {/* Mobile menu */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-xl border-b border-jp-sakura/10 animate-fade-in">
-          <div className="px-6 py-6 flex flex-col gap-1">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                onClick={(e) => handleNavClick(e, item.href)}
-                className="flex items-center gap-3 px-4 py-3 text-[11px] tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300"
-              >
-                <span className="text-[10px] text-jp-sakura font-display">
-                  {item.label}
-                </span>
-                <span>{item.labelEn}</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      )}
-    </nav>
+    </>
   );
 }
