@@ -61,7 +61,7 @@ export function Experience() {
       className="py-32 lg:py-44 px-6 lg:px-12 bg-secondary/40 relative overflow-hidden"
     >
       {/* Background decorative */}
-      <div className="absolute top-10 left-10 text-[15rem] font-display text-foreground/[0.015] select-none pointer-events-none leading-none">
+      <div className="absolute top-10 left-10 text-[15rem] font-display text-foreground/[0.04] select-none pointer-events-none leading-none">
         専門
       </div>
 
@@ -96,13 +96,13 @@ export function Experience() {
             {expertiseAreas.map((area, index) => (
               <div
                 key={area.number}
-                className={`relative p-8 lg:p-10 bg-background/80 backdrop-blur-sm border border-foreground/5 hover:border-jp-sakura/20 transition-all duration-700 group ${
+                className={`relative p-8 lg:p-10 bg-background border border-border hover:border-jp-sakura transition-all duration-500 group ${
                   isVisible ? "animate-slide-up" : "opacity-0"
                 }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Kanji watermark */}
-                <span className="absolute top-6 right-8 text-8xl font-display text-foreground/[0.03] select-none group-hover:text-jp-sakura/[0.06] transition-colors duration-700">
+                <span className="absolute top-6 right-8 text-8xl font-display text-foreground/[0.06] select-none group-hover:text-jp-sakura/20 transition-colors duration-700">
                   {area.kanji}
                 </span>
 
