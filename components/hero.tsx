@@ -14,12 +14,13 @@ export function Hero() {
     <section className="relative">
 
       {/* ── Banner + Avatar ── */}
-      <div className="relative w-full h-[220px] lg:h-[340px]">
+      <div className="relative w-full">
         <Image
           src="/pegasus2.png"
           alt="DreamHigh"
-          fill
-          className="object-cover object-center"
+          width={2190}
+          height={718}
+          className="w-full h-auto block"
           priority
         />
 
