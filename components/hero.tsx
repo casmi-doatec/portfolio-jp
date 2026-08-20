@@ -16,20 +16,33 @@ export function Hero() {
       {/* Banner image — full right half background */}
       <div className="absolute inset-y-0 right-0 w-full lg:w-[55%] z-[0]">
         <Image
-          src="/pegasus4.png"
+          src="/pegasus-banner.png"
           alt="Pegasus"
           fill
-          className="object-cover object-center opacity-30 lg:opacity-50"
+          className="object-cover object-center opacity-20 lg:opacity-40"
           priority
         />
-        {/* Fade left edge into background */}
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
-        {/* Fade bottom */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
 
       {/* Top border line */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-jp-sakura via-border to-transparent z-[2]" />
+
+      {/* Avatar — real kasumi */}
+      <div className={`absolute right-8 lg:right-20 top-1/2 -translate-y-1/2 z-[2] hidden lg:block ${isVisible ? "animate-fade-in animation-delay-200" : "opacity-0"}`}>
+        <div className="relative w-56 h-56 lg:w-72 lg:h-72 rounded-full overflow-hidden border-2 border-border">
+          <Image
+            src="/real-kasumi.png"
+            alt="かすみ"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="absolute -bottom-2 -right-2 w-5 h-5 border-b-2 border-r-2 border-jp-sakura" />
+        <div className="absolute -top-2 -left-2 w-5 h-5 border-t-2 border-l-2 border-jp-sakura" />
+      </div>
 
       <div className="relative z-[2] max-w-7xl mx-auto px-6 lg:px-12 min-h-screen flex flex-col justify-center">
 
