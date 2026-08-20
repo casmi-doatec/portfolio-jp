@@ -13,27 +13,29 @@ export function Hero() {
   return (
     <section className="relative">
 
-      {/* ── Banner + Avatar (Lancers profile style) ── */}
-      <div className="relative w-full">
+      {/* ── Banner + Avatar ── */}
+      <div className="relative w-full aspect-[16/5]">
+        <Image
+          src="/pegasus2.png"
+          alt="DreamHigh"
+          fill
+          className="object-contain object-center"
+          priority
+        />
 
-        {/* Full-width banner */}
-        <div className="relative w-full aspect-[16/5]">
-          <Image
-            src="/pegasus2.png"
-            alt="DreamHigh"
-            fill
-            className="object-contain object-center"
-            priority
-          />
-        </div>
+        {/* Lighten overlay */}
+        <div className="absolute inset-0 bg-background/25 pointer-events-none" />
 
-        {/* Avatar — 3/5 inside banner, 2/5 below (translate-y-[40%]) */}
+        {/* Bottom fade */}
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-background/70 to-transparent pointer-events-none" />
+
+        {/* Avatar — right side, vertically centered in banner */}
         <div
-          className={`absolute bottom-0 left-6 lg:left-12 translate-y-[25%] z-10 ${
+          className={`absolute right-6 lg:right-16 top-1/2 -translate-y-1/2 z-10 ${
             isVisible ? "animate-fade-in" : "opacity-0"
           }`}
         >
-          <div className="relative w-32 h-32 lg:w-48 lg:h-48 rounded-full overflow-hidden border-4 border-background shadow-sm">
+          <div className="relative w-28 h-28 lg:w-44 lg:h-44 rounded-full overflow-hidden border-4 border-background shadow-sm">
             <Image src="/real-kasumi.png" alt="かすみ" fill className="object-cover" priority />
           </div>
         </div>
@@ -41,9 +43,7 @@ export function Hero() {
 
       {/* ── Profile content (below banner) ── */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-
-        {/* Spacer for avatar overflow (2/5 of avatar height) */}
-        <div className="pt-14 lg:pt-20 pb-10 lg:pb-16 space-y-6">
+        <div className="pt-6 lg:pt-8 pb-10 lg:pb-16 space-y-6">
 
           {/* Name & title */}
           <div className={`${isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"}`}>
