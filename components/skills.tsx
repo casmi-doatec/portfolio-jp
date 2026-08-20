@@ -90,85 +90,69 @@ export function Skills() {
       id="skills"
       className="py-32 lg:py-44 px-6 lg:px-12 relative"
     >
-      {/* Background decorative */}
       <div className="absolute bottom-20 right-10 text-[12rem] font-display text-foreground/[0.02] select-none pointer-events-none leading-none">
         技術
       </div>
 
       <div className="max-w-7xl mx-auto">
-        <div className="space-y-16">
+        <div className="space-y-20">
 
           {/* Header */}
           <div
-            className={`space-y-4 ${isVisible ? "animate-slide-up" : "opacity-0"}`}
+            className={`grid lg:grid-cols-12 gap-8 items-end ${isVisible ? "animate-slide-up" : "opacity-0"}`}
           >
-            <div className="flex items-center gap-4">
-              <div className="h-px w-8 bg-jp-sakura/60" />
-              <span className="text-[10px] tracking-[0.4em] uppercase text-muted-foreground">
-                Skills
-              </span>
-              <span className="text-xs text-jp-sakura/40 font-display">
-                技術スタック
-              </span>
+            <div className="lg:col-span-6 space-y-4">
+              <div className="flex items-center gap-4">
+                <div className="h-px w-8 bg-jp-sakura/60" />
+                <span className="text-[10px] tracking-[0.4em] uppercase text-muted-foreground">Skills</span>
+                <span className="text-xs text-jp-sakura/40 font-display">技術スタック</span>
+              </div>
+              <h2 className="text-4xl lg:text-6xl font-black tracking-tighter">技術スタック</h2>
+              <div className="h-[2px] w-16 bg-gradient-to-r from-jp-sakura/60 to-transparent" />
             </div>
-            <h2 className="text-4xl lg:text-6xl font-black tracking-tighter">
-              技術スタック
-            </h2>
-            <div className="h-[2px] w-16 bg-gradient-to-r from-jp-sakura/60 to-transparent" />
+            <div className="lg:col-span-6">
+              <p className="text-sm text-muted-foreground font-light leading-[2.2] font-serif">
+                AIからインフラまで、フルスタックで一気通貫して対応できるのが強みです。プロジェクトに合わせて技術を選び、最適な形で組み合わせます。
+              </p>
+            </div>
           </div>
 
-          {/* Bento grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+          {/* Skills rows */}
+          <div className="divide-y divide-foreground/[0.06]">
             {categories.map((cat, i) => (
               <div
                 key={cat.id}
-                className={`${cat.span} group relative bg-background border border-foreground/[0.06] p-7 lg:p-8 flex flex-col gap-5 hover:border-foreground/[0.12] transition-colors duration-500 ${
+                className={`group grid lg:grid-cols-12 gap-6 py-8 lg:py-10 hover:bg-foreground/[0.01] transition-colors duration-500 ${
                   isVisible ? "animate-slide-up" : "opacity-0"
                 }`}
-                style={{
-                  borderTop: `2px solid ${cat.color}`,
-                  animationDelay: `${i * 0.07}s`,
-                }}
+                style={{ animationDelay: `${i * 0.07}s` }}
               >
-                {/* Top row */}
-                <div className="flex items-start justify-between">
+                {/* Left - category info */}
+                <div className="lg:col-span-4 flex items-start gap-5">
+                  <span
+                    className="text-[9px] tracking-[0.35em] font-mono pt-1 shrink-0"
+                    style={{ color: cat.color + "80" }}
+                  >
+                    {cat.id}
+                  </span>
                   <div className="space-y-1">
-                    <span
-                      className="text-[9px] tracking-[0.35em] font-mono"
-                      style={{ color: cat.color + "99" }}
-                    >
-                      {cat.id}
-                    </span>
-                    <h3 className="text-base lg:text-lg font-bold tracking-tight leading-tight">
-                      {cat.title}
-                    </h3>
-                    <p className="text-[9px] tracking-[0.2em] uppercase text-muted-foreground/40">
-                      {cat.en}
-                    </p>
+                    <div
+                      className="w-5 h-[2px] mb-2 transition-all duration-500 group-hover:w-8"
+                      style={{ background: cat.color }}
+                    />
+                    <h3 className="text-base lg:text-lg font-bold tracking-tight">{cat.title}</h3>
+                    <p className="text-[9px] tracking-[0.2em] uppercase text-muted-foreground/40">{cat.en}</p>
                   </div>
-                  {/* Accent dot */}
-                  <div
-                    className="w-2 h-2 rounded-full mt-1 opacity-40 group-hover:opacity-70 transition-opacity duration-500"
-                    style={{ background: cat.color }}
-                  />
                 </div>
 
-                {/* Divider */}
-                <div
-                  className="h-px w-full"
-                  style={{
-                    background: `linear-gradient(to right, ${cat.color}30, transparent)`,
-                  }}
-                />
-
-                {/* Skills */}
-                <div className="flex flex-wrap gap-1.5">
+                {/* Right - skills */}
+                <div className="lg:col-span-8 flex flex-wrap gap-2 items-center">
                   {cat.skills.map((skill) => (
                     <span
                       key={skill}
-                      className="text-[10px] tracking-wide px-2.5 py-1 text-muted-foreground border border-foreground/[0.07] hover:text-foreground transition-colors duration-300 cursor-default"
+                      className="text-[11px] tracking-wide px-3 py-1.5 text-muted-foreground hover:text-foreground transition-colors duration-300 cursor-default"
                       style={{
-                        borderColor: `${cat.color}22`,
+                        borderBottom: `1px solid ${cat.color}30`,
                       }}
                     >
                       {skill}
@@ -181,22 +165,18 @@ export function Skills() {
 
           {/* Bottom stats */}
           <div
-            className={`flex items-center justify-center gap-12 pt-4 ${
+            className={`flex items-center justify-center gap-12 border-t border-foreground/[0.06] pt-12 ${
               isVisible ? "animate-slide-up animation-delay-800" : "opacity-0"
             }`}
           >
             <div className="text-center space-y-2">
-              <p className="text-5xl lg:text-6xl font-black tracking-tighter">30+</p>
-              <p className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground">
-                フレームワーク・ツール
-              </p>
+              <p className="text-5xl lg:text-6xl font-black tracking-tighter">30<span className="text-jp-sakura">+</span></p>
+              <p className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground">フレームワーク・ツール</p>
             </div>
             <div className="w-px h-16 bg-jp-sakura/15" />
             <div className="text-center space-y-2">
-              <p className="text-5xl lg:text-6xl font-black tracking-tighter">8+</p>
-              <p className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground">
-                年の実務経験
-              </p>
+              <p className="text-5xl lg:text-6xl font-black tracking-tighter">8<span className="text-jp-sakura">+</span></p>
+              <p className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground">年の実務経験</p>
             </div>
           </div>
 
