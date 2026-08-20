@@ -39,7 +39,7 @@ export function Navigation() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
         isScrolled
-          ? "bg-background/70 backdrop-blur-xl border-b border-jp-sakura/10"
+          ? "bg-background/90 backdrop-blur-xl border-b border-border"
           : "bg-transparent"
       }`}
     >
@@ -51,13 +51,13 @@ export function Navigation() {
             onClick={(e) => handleNavClick(e, "#")}
             className="group flex items-center gap-1.5 hover:opacity-70 transition-opacity duration-500"
           >
-            <span className="text-jp-sakura/40 text-lg font-display select-none">
+            <span className="text-jp-sakura text-lg font-display select-none">
               &#x300C;
             </span>
             <span className="text-sm tracking-[0.2em] uppercase font-bold">
               DreamHigh
             </span>
-            <span className="text-jp-sakura/40 text-lg font-display select-none">
+            <span className="text-jp-sakura text-lg font-display select-none">
               &#x300D;
             </span>
           </a>
@@ -71,7 +71,7 @@ export function Navigation() {
                 onClick={(e) => handleNavClick(e, item.href)}
                 className="relative px-5 py-2 text-[11px] tracking-[0.2em] text-muted-foreground hover:text-foreground transition-colors duration-500 group"
               >
-                <span className="hidden lg:inline text-[9px] text-jp-sakura/50 mr-1.5 font-display">
+                <span className="hidden lg:inline text-[9px] text-jp-sakura mr-1.5 font-display">
                   {item.label}
                 </span>
                 <span className="uppercase">{item.labelEn}</span>
@@ -118,7 +118,7 @@ export function Navigation() {
                 onClick={(e) => handleNavClick(e, item.href)}
                 className="flex items-center gap-3 px-4 py-3 text-[11px] tracking-[0.15em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300"
               >
-                <span className="text-[10px] text-jp-sakura/60 font-display">
+                <span className="text-[10px] text-jp-sakura font-display">
                   {item.label}
                 </span>
                 <span>{item.labelEn}</span>
