@@ -12,14 +12,10 @@ export function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 lg:px-12 overflow-hidden">
-      {/* Background radial glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_60%_40%,var(--jp-sakura)/0.04,transparent_70%)] pointer-events-none z-[1]" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,transparent_0%,var(--background)_65%)] pointer-events-none z-[1]" />
-
-      {/* Decorative vertical lines */}
+      {/* Structural vertical lines */}
       <div className="absolute inset-0 pointer-events-none z-[1]">
-        <div className="absolute top-0 left-[25%] w-px h-full bg-gradient-to-b from-transparent via-jp-sakura/[0.05] to-transparent" />
-        <div className="absolute top-0 left-[75%] w-px h-full bg-gradient-to-b from-transparent via-jp-sakura/[0.05] to-transparent" />
+        <div className="absolute top-0 left-[25%] w-px h-full bg-gradient-to-b from-transparent via-border to-transparent" />
+        <div className="absolute top-0 left-[75%] w-px h-full bg-gradient-to-b from-transparent via-border to-transparent" />
       </div>
 
       <div className="max-w-7xl w-full relative z-[2]">
@@ -53,7 +49,7 @@ export function Hero() {
           <div className="lg:col-span-7 lg:order-1 space-y-10 relative">
             {/* Sakura accent line */}
             <div
-              className={`absolute -left-6 top-0 w-[2px] h-full bg-gradient-to-b from-jp-sakura/30 via-jp-sakura/10 to-transparent ${
+              className={`absolute -left-6 top-0 w-[3px] h-full bg-gradient-to-b from-jp-sakura via-jp-sakura/40 to-transparent ${
                 isVisible ? "animate-slide-in-left" : "opacity-0"
               }`}
             />
@@ -167,7 +163,7 @@ export function Hero() {
           <span className="text-[9px] tracking-[0.4em] uppercase text-muted-foreground/40 font-display">
             Scroll
           </span>
-          <div className="w-px h-10 bg-gradient-to-b from-jp-sakura/30 to-transparent animate-pulse" />
+          <div className="w-px h-10 bg-gradient-to-b from-jp-sakura to-transparent animate-pulse" />
         </div>
       </div>
     </section>
