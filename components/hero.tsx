@@ -17,12 +17,12 @@ export function Hero() {
       <div className="relative w-full">
 
         {/* Full-width banner */}
-        <div className="relative w-full aspect-[4/1]">
+        <div className="relative w-full aspect-[16/5]">
           <Image
             src="/pegasus2.png"
             alt="DreamHigh"
             fill
-            className="object-cover object-center"
+            className="object-contain object-center"
             priority
           />
         </div>
@@ -33,7 +33,7 @@ export function Hero() {
             isVisible ? "animate-fade-in" : "opacity-0"
           }`}
         >
-          <div className="relative w-24 h-24 lg:w-36 lg:h-36 rounded-full overflow-hidden border-4 border-background shadow-xl">
+          <div className="relative w-24 h-24 lg:w-36 lg:h-36 rounded-full overflow-hidden border-4 border-background shadow-sm">
             <Image src="/real-kasumi.png" alt="かすみ" fill className="object-cover" priority />
           </div>
         </div>
