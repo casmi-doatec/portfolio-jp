@@ -13,17 +13,17 @@ export function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden">
 
-      {/* Banner image — full right half background */}
-      <div className="absolute inset-y-0 right-0 w-full lg:w-[55%] z-[0]">
+      {/* Banner image — full width top */}
+      <div className="absolute inset-0 z-[0]">
         <Image
-          src="/pegasus-banner.png"
-          alt="Pegasus"
+          src="/pegasus2.png"
+          alt="DreamHigh Banner"
           fill
-          className="object-cover object-center opacity-20 lg:opacity-40"
+          className="object-cover object-top opacity-60"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/50 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-background/60" />
       </div>
 
       {/* Top border line */}
