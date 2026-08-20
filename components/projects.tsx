@@ -189,7 +189,7 @@ export function Projects() {
       className="py-32 lg:py-44 px-6 lg:px-12 bg-secondary/40 relative overflow-hidden"
     >
       {/* Background decorative */}
-      <div className="absolute top-20 right-10 text-[15rem] font-display text-foreground/[0.015] select-none pointer-events-none leading-none">
+      <div className="absolute top-20 right-10 text-[15rem] font-display text-foreground/[0.04] select-none pointer-events-none leading-none">
         実績
       </div>
 
@@ -285,7 +285,7 @@ export function Projects() {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-[10px] tracking-wide px-2.5 py-1 border border-foreground/8 text-muted-foreground hover:border-jp-sakura/30 hover:text-foreground transition-all duration-500 cursor-default"
+                        className="text-[10px] tracking-wide px-2.5 py-1 border border-border text-muted-foreground hover:border-jp-sakura hover:text-foreground transition-all duration-300 cursor-default"
                       >
                         {tag}
                       </span>
