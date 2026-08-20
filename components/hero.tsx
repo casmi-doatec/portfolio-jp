@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,36 +24,8 @@ export function Hero() {
       <div className="max-w-7xl w-full relative z-[2]">
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
 
-          {/* Right - avatar (mobile: shown first, centered) */}
-          <div
-            className={`lg:col-span-5 lg:order-2 flex justify-center lg:justify-end ${
-              isVisible ? "animate-fade-in animation-delay-200" : "opacity-0"
-            }`}
-          >
-            <div className="relative">
-              {/* Outer decorative ring */}
-              <div className="absolute inset-0 rounded-full border border-jp-sakura/15 scale-[1.12]" />
-              <div className="absolute inset-0 rounded-full border border-jp-sakura/08 scale-[1.24]" />
-              {/* Glow */}
-              <div className="absolute inset-0 rounded-full bg-jp-sakura/[0.06] blur-2xl scale-125" />
-              {/* Avatar */}
-              <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border border-jp-sakura/20">
-                <Image
-                  src="/pegasus4.png"
-                  alt="ペガサス 7"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-              {/* Corner accent */}
-              <div className="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-jp-sakura/40" />
-              <div className="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-jp-sakura/40" />
-            </div>
-          </div>
-
-          {/* Left content */}
-          <div className="lg:col-span-7 lg:order-1 space-y-10 relative">
+          {/* Content */}
+          <div className="lg:col-span-10 space-y-10 relative">
             {/* Sakura accent line */}
             <div
               className={`absolute -left-6 top-0 w-[2px] h-full bg-gradient-to-b from-jp-sakura/30 via-jp-sakura/10 to-transparent ${
@@ -84,8 +55,7 @@ export function Hero() {
               }`}
             >
               <h1 className="text-5xl lg:text-[6.5rem] font-black tracking-tighter leading-[0.85]">
-                ペガサス
-                <span className="text-jp-sakura"> 7</span>
+                かすみ
               </h1>
               <div className="flex items-center gap-3 pt-2">
                 <span className="text-jp-sakura/40 text-lg font-display select-none">&#x300C;</span>
