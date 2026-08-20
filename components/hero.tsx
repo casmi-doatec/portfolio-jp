@@ -11,160 +11,102 @@ export function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-6 lg:px-12 overflow-hidden">
-      {/* Structural vertical lines */}
-      <div className="absolute inset-0 pointer-events-none z-[1]">
-        <div className="absolute top-0 left-[25%] w-px h-full bg-gradient-to-b from-transparent via-border to-transparent" />
-        <div className="absolute top-0 left-[75%] w-px h-full bg-gradient-to-b from-transparent via-border to-transparent" />
+    <section className="relative min-h-screen overflow-hidden">
+
+      {/* Banner image — full right half background */}
+      <div className="absolute inset-y-0 right-0 w-full lg:w-[55%] z-[0]">
+        <Image
+          src="/pegasus4.png"
+          alt="Pegasus"
+          fill
+          className="object-cover object-center opacity-30 lg:opacity-50"
+          priority
+        />
+        {/* Fade left edge into background */}
+        <div className="absolute inset-0 bg-gradient-to-r from-background via-background/60 to-transparent" />
+        {/* Fade bottom */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
       </div>
 
-      <div className="max-w-7xl w-full relative z-[2]">
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-16 items-center">
+      {/* Top border line */}
+      <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-jp-sakura via-border to-transparent z-[2]" />
 
-          {/* Right - avatar */}
-          <div
-            className={`lg:col-span-5 lg:order-2 flex justify-center lg:justify-end ${
-              isVisible ? "animate-fade-in animation-delay-200" : "opacity-0"
-            }`}
-          >
-            <div className="relative">
-              <div className="absolute inset-0 rounded-full border border-jp-sakura/15 scale-[1.12]" />
-              <div className="absolute inset-0 rounded-full border border-jp-sakura/08 scale-[1.24]" />
-              <div className="absolute inset-0 rounded-full bg-jp-sakura/[0.06] blur-2xl scale-125" />
-              <div className="relative w-64 h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border border-jp-sakura/20">
-                <Image
-                  src="/real-kasumi.png"
-                  alt="かすみ"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-              <div className="absolute -bottom-3 -right-3 w-6 h-6 border-b-2 border-r-2 border-jp-sakura/40" />
-              <div className="absolute -top-3 -left-3 w-6 h-6 border-t-2 border-l-2 border-jp-sakura/40" />
+      <div className="relative z-[2] max-w-7xl mx-auto px-6 lg:px-12 min-h-screen flex flex-col justify-center">
+
+        {/* Top label */}
+        <div className={`flex items-center gap-4 mb-16 ${isVisible ? "animate-slide-up" : "opacity-0"}`}>
+          <div className="h-px w-12 bg-jp-sakura" />
+          <span className="text-[10px] tracking-[0.5em] uppercase text-muted-foreground">Portfolio 2026</span>
+          <span className="text-[10px] text-jp-sakura font-display tracking-widest">作品集</span>
+        </div>
+
+        {/* Main content — left side */}
+        <div className="max-w-xl space-y-8">
+
+          {/* Name */}
+          <div className={`${isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"}`}>
+            <p className="text-[11px] tracking-[0.4em] uppercase text-jp-sakura mb-3">Engineer</p>
+            <h1 className="text-6xl lg:text-[7rem] font-black tracking-tighter leading-[0.88]">
+              かすみ
+            </h1>
+            <p className="text-base lg:text-lg font-display tracking-[0.25em] text-muted-foreground mt-4">
+              AI・フルスタックエンジニア
+            </p>
+          </div>
+
+          {/* Divider */}
+          <div className={`flex items-center gap-0 ${isVisible ? "animate-slide-in-left animation-delay-400" : "opacity-0"}`}>
+            <div className="h-[2px] w-12 bg-jp-sakura" />
+            <div className="h-px flex-1 bg-border" />
+          </div>
+
+          {/* Description */}
+          <p className={`text-sm text-muted-foreground leading-[2.2] font-serif ${isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"}`}>
+            8年・30以上のプロジェクトを経験。AI・Web・SaaS・モバイルまで、要件を的確に汲み取り最適な技術で形にします。
+          </p>
+
+          {/* Stats */}
+          <div className={`flex items-center gap-8 ${isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"}`}>
+            <div>
+              <p className="text-3xl font-black tracking-tighter">8<span className="text-jp-sakura">+</span></p>
+              <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-1">年の実務経験</p>
+            </div>
+            <div className="w-px h-10 bg-border" />
+            <div>
+              <p className="text-3xl font-black tracking-tighter">30<span className="text-jp-sakura">+</span></p>
+              <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-1">プロジェクト</p>
+            </div>
+            <div className="w-px h-10 bg-border" />
+            <div>
+              <p className="text-3xl font-black tracking-tighter">7<span className="text-jp-sakura">+</span></p>
+              <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-1">技術領域</p>
             </div>
           </div>
 
-          {/* Left content */}
-          <div className="lg:col-span-7 lg:order-1 space-y-10 relative">
-            {/* Sakura accent line */}
-            <div
-              className={`absolute -left-6 top-0 w-[3px] h-full bg-gradient-to-b from-jp-sakura via-jp-sakura/40 to-transparent ${
-                isVisible ? "animate-slide-in-left" : "opacity-0"
-              }`}
-            />
-
-            {/* Top label */}
-            <div
-              className={`flex items-center gap-4 ${
-                isVisible ? "animate-slide-up" : "opacity-0"
-              }`}
+          {/* CTA */}
+          <div className={`flex items-center gap-8 ${isVisible ? "animate-slide-up animation-delay-800" : "opacity-0"}`}>
+            <a
+              href="#projects"
+              className="group relative text-xs tracking-[0.25em] uppercase px-10 py-4 bg-jp-sakura text-white hover:bg-foreground hover:text-background transition-all duration-300"
             >
-              <div className="h-px w-12 bg-gradient-to-r from-jp-sakura to-transparent" />
-              <span className="text-[10px] tracking-[0.5em] uppercase text-muted-foreground font-light">
-                Portfolio 2026
-              </span>
-              <span className="text-[10px] text-jp-sakura/40 font-display tracking-widest">
-                作品集
-              </span>
-            </div>
-
-            {/* Name */}
-            <div
-              className={`space-y-3 ${
-                isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"
-              }`}
+              実績を見る
+            </a>
+            <a
+              href="#contact"
+              className="text-xs tracking-[0.25em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-300 group flex items-center gap-3"
             >
-              <h1 className="text-5xl lg:text-[6.5rem] font-black tracking-tighter leading-[0.85]">
-                かすみ
-              </h1>
-              <div className="flex items-center gap-3 pt-2">
-                <span className="text-jp-sakura/40 text-lg font-display select-none">&#x300C;</span>
-                <p className="text-sm lg:text-base font-display tracking-[0.3em] text-muted-foreground">
-                  AI・フルスタックエンジニア
-                </p>
-                <span className="text-jp-sakura/40 text-lg font-display select-none">&#x300D;</span>
-              </div>
-            </div>
-
-            {/* Divider */}
-            <div
-              className={`relative h-px ${
-                isVisible ? "animate-slide-in-left animation-delay-400" : "opacity-0"
-              }`}
-            >
-              <div className="h-px w-full bg-gradient-to-r from-border to-transparent" />
-              <div className="absolute top-0 left-0 h-[2px] w-32 bg-gradient-to-r from-jp-sakura/70 to-transparent" />
-            </div>
-
-            {/* Description */}
-            <div
-              className={`space-y-3 ${
-                isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"
-              }`}
-            >
-              <p className="text-sm lg:text-base text-muted-foreground font-light leading-[2.2] max-w-lg font-serif">
-                フロントエンド4年、バックエンド2年、フルスタック2年、計8年のキャリアで30以上のプロジェクトを手がけてきました。AI・Web・SaaS・モバイルまで、ご依頼主様の要件を的確に汲み取り、最適な技術選定でご提案します。
-              </p>
-            </div>
-
-            {/* Stats row */}
-            <div
-              className={`flex items-center gap-8 ${
-                isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"
-              }`}
-            >
-              <div>
-                <p className="text-3xl font-black tracking-tighter">8<span className="text-jp-sakura">+</span></p>
-                <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-1">年の実務経験</p>
-              </div>
-              <div className="w-px h-10 bg-jp-sakura/15" />
-              <div>
-                <p className="text-3xl font-black tracking-tighter">30<span className="text-jp-sakura">+</span></p>
-                <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-1">プロジェクト</p>
-              </div>
-              <div className="w-px h-10 bg-jp-sakura/15" />
-              <div>
-                <p className="text-3xl font-black tracking-tighter">7<span className="text-jp-sakura">+</span></p>
-                <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-1">技術領域</p>
-              </div>
-            </div>
-
-            {/* CTA */}
-            <div
-              className={`flex items-center gap-8 ${
-                isVisible ? "animate-slide-up animation-delay-800" : "opacity-0"
-              }`}
-            >
-              <a
-                href="#projects"
-                className="group relative text-xs tracking-[0.25em] uppercase px-10 py-4 border border-foreground/80 hover:bg-foreground hover:text-background transition-all duration-500 overflow-hidden"
-              >
-                <span className="relative z-10">実績を見る</span>
-                <span className="absolute bottom-0 left-0 w-full h-[2px] bg-jp-sakura transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-              </a>
-              <a
-                href="#contact"
-                className="text-xs tracking-[0.25em] uppercase text-muted-foreground hover:text-foreground transition-colors duration-500 group flex items-center gap-3"
-              >
-                <span>お問い合わせ</span>
-                <span className="inline-block w-6 h-px bg-jp-sakura/50 group-hover:w-12 group-hover:bg-jp-sakura transition-all duration-500" />
-              </a>
-            </div>
+              <span>お問い合わせ</span>
+              <span className="inline-block w-6 h-px bg-jp-sakura group-hover:w-12 transition-all duration-300" />
+            </a>
           </div>
         </div>
 
-        {/* Bottom scroll indicator */}
-        <div
-          className={`absolute -bottom-16 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 ${
-            isVisible ? "animate-fade-in animation-delay-1000" : "opacity-0"
-          }`}
-        >
-          <span className="text-[9px] tracking-[0.4em] uppercase text-muted-foreground/40 font-display">
-            Scroll
-          </span>
+        {/* Scroll indicator */}
+        <div className={`flex flex-col items-start gap-3 mt-20 ${isVisible ? "animate-fade-in animation-delay-1000" : "opacity-0"}`}>
+          <span className="text-[9px] tracking-[0.4em] uppercase text-muted-foreground font-display">Scroll</span>
           <div className="w-px h-10 bg-gradient-to-b from-jp-sakura to-transparent animate-pulse" />
         </div>
+
       </div>
     </section>
   );
