@@ -162,6 +162,16 @@ export function Projects() {
     },
     {
       id: 15,
+      title: "基幹データ連携型 Excel VBA 業務システム",
+      category: "業務システム開発",
+      client: "",
+      description:
+        "受発注・在庫集計・帳票自動化を軸とした基幹データ連携型のExcel VBA業務システムの開発リーダーを担当しました。Access・SQL ServerとのADO/ODBC連携、月次約50万行の大量データ高速処理、既存マクロのリファクタリング、AIコーディング支援ツールの導入まで対応。5部門・約120名が利用するシステムを4名チームで構築・運用しています。",
+      tags: ["VBA", "Excel", "Access", "SQL Server", "ADO", "Power Query", "SQL", "VBScript", "Git", "GitHub Copilot"],
+      image: "",
+    },
+    {
+      id: 16,
       title: "COMSBI（コムスビ）",
       category: "LINE CRM SaaS",
       client: "",
