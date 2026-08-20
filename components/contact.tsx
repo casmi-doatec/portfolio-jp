@@ -148,7 +148,7 @@ export function Contact() {
             </div>
 
             {/* Communication tools & working conditions */}
-            <div className="space-y-3 pt-2 border-t border-foreground/5">
+            <div className="space-y-3 pt-2 border-t border-border">
               <div className="flex flex-wrap items-center gap-2 pt-4">
                 {["Google Meet", "Slack", "Chatwork", "LINE"].map((tool) => (
                   <span key={tool} className="text-[10px] tracking-wide px-2.5 py-1 border border-foreground/8 text-muted-foreground">
@@ -168,14 +168,6 @@ export function Contact() {
               </div>
             </div>
 
-            {/* Decorative zen element */}
-            <div className="pt-4 hidden lg:block">
-              <div className="w-20 h-20 border border-jp-sakura/10 rounded-full flex items-center justify-center animate-float-slow">
-                <div className="w-12 h-12 border border-jp-sakura/[0.06] rounded-full flex items-center justify-center">
-                  <span className="text-xl font-display text-jp-sakura/20">和</span>
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Right form */}
@@ -197,7 +189,7 @@ export function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-0 py-3 bg-transparent border-b border-foreground/10 focus:border-jp-sakura/60 focus:outline-none transition-colors duration-500 text-sm"
+                    className="w-full px-0 py-3 bg-transparent border-b border-border focus:border-jp-sakura focus:outline-none transition-colors duration-300 text-sm"
                   />
                 </div>
                 <div className="space-y-2">
@@ -211,7 +203,7 @@ export function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-0 py-3 bg-transparent border-b border-foreground/10 focus:border-jp-sakura/60 focus:outline-none transition-colors duration-500 text-sm"
+                    className="w-full px-0 py-3 bg-transparent border-b border-border focus:border-jp-sakura focus:outline-none transition-colors duration-300 text-sm"
                   />
                 </div>
               </div>
@@ -227,7 +219,7 @@ export function Contact() {
                   required
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 bg-transparent border-b border-foreground/10 focus:border-jp-sakura/60 focus:outline-none transition-colors duration-500 text-sm"
+                  className="w-full px-0 py-3 bg-transparent border-b border-border focus:border-jp-sakura focus:outline-none transition-colors duration-300 text-sm"
                 />
               </div>
 
@@ -242,7 +234,7 @@ export function Contact() {
                   rows={5}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 bg-transparent border-b border-foreground/10 focus:border-jp-sakura/60 focus:outline-none transition-colors duration-500 text-sm resize-none"
+                  className="w-full px-0 py-3 bg-transparent border-b border-border focus:border-jp-sakura focus:outline-none transition-colors duration-300 text-sm resize-none"
                 />
               </div>
 
@@ -278,13 +270,13 @@ export function Contact() {
         </div>
 
         {/* Footer */}
-        <div className="mt-32 pt-8 border-t border-jp-sakura/10">
+        <div className="mt-32 pt-8 border-t border-border">
           <div className="flex items-center justify-center gap-3">
-            <span className="text-jp-sakura/30 font-display">&#x300C;</span>
-            <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground/40">
-              &copy; 2026 ペガサス 7
+            <span className="text-jp-sakura font-display">&#x300C;</span>
+            <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
+              &copy; 2026 かすみ
             </p>
-            <span className="text-jp-sakura/30 font-display">&#x300D;</span>
+            <span className="text-jp-sakura font-display">&#x300D;</span>
           </div>
         </div>
       </div>
