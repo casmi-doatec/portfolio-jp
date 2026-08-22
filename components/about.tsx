@@ -111,21 +111,21 @@ export function About() {
                   isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"
                 }`}
               >
-                はじめまして、かすみです。「つくる側」に立ちたいという想いから、高校時代に独学でプログラミングを始めました。以来、コードを書くことがずっと自分の真ん中にあります。
+                フルスタック・AIエンジニアとして、設計から実装・テスト・運用まで一通り担当してきました。ただコードを書くだけじゃなく、ビジネス要件や現場の制約もちゃんと踏まえた上で、長く使えるプロダクトを作ることを大切にしています。
               </p>
               <p
                 className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-400" : "opacity-0"
                 }`}
               >
-                フロントエンド4年、バックエンド2年、フルスタック2年。計8年のキャリアの中で、AI SaaS・業務システム・ECサイト・モバイルアプリなど30以上のプロダクトを手がけてきました。
+                バックエンドをメインに、Java・Python・PHP（Laravel）・Node.jsでのAPI設計・実装の経験が豊富です。AI分野ではLLMやOpenAI APIを活用したチャットボット・AIツールの開発に力を入れており、RAGやLangChainを使ったワークフロー設計、業界特化型のLLMモデル構築、OCR特化サービスまで実務ベースで幅広く対応しています。
               </p>
               <p
                 className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"
                 }`}
               >
-                大切にしているのは、ご依頼主様の「こうしたい」を正確に汲み取り、最適な技術で形にすること。丁寧なコミュニケーションと確実な納品で、安心してお任せいただける関係を築いていきます。
+                フロントエンドはReact・Next.jsをメインに、保守しやすいUI設計と使い勝手のいいUX作りが得意です。インフラはAWSでの設計・構築・運用に対応しており、スケーラビリティ・可用性・コストのバランスを取りながら、安定したプロダクト運用を支えています。
               </p>
             </div>
 
