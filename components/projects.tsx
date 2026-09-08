@@ -24,6 +24,7 @@ export function Projects() {
       id: 1,
       title: "出張買取プラス",
       category: "業務基幹システム",
+      type: "system",
       client: "",
       description:
         "複数店舗を展開する買取事業者向けの予約管理システムを、要件定義から設計・実装・運用保守まで一貫して担当しました。本部・加盟店・査定スタッフが同時に利用する基幹システムとして、WebSocketによるリアルタイム同期、日／週／月のマルチビューカレンダー、多階層の権限管理、レポート集計、ブラックリスト・重複予約検知などを実装。一括取得から必要最小限のAPI取得方式へ刷新して読み込み速度と安定性を大幅に改善し、PWA対応で現場のスマホ運用にも最適化しています。",
@@ -31,19 +32,10 @@ export function Projects() {
       image: "/reservation.png",
     },
     {
-      id: 2,
-      title: "Spelix（スペリックス）",
-      category: "AI英語学習プラットフォーム",
-      client: "",
-      description:
-        "日本人向けのAI英語学習Webアプリです。Next.js・TypeScript・PostgreSQLで構築し、OpenAI APIを活用したAI翻訳・英文校正・AI会話パートナー・発音練習・語彙検索など5つの学習ツールを実装。LLMによる自然言語生成でユーザーの入力に対してネイティブ表現への言い換えやフィードバックをリアルタイムで返す設計にしています。",
-      tags: ["Next.js", "TypeScript", "PostgreSQL", "OpenAI API", "LLM", "Tailwind CSS"],
-      image: "/spelix.png",
-    },
-    {
       id: 3,
       title: "LA・JOLLA HALE",
       category: "ECサイト",
+      type: "website",
       client: "",
       description:
         "Shopifyで構築したグローバル対応ECサイトのデザイン・実装を担当しました。ブランドイメージを反映したカスタムテーマを設計し、Stripeによる決済機能を組み込んで安全・スムーズな購入フローを実現。価格帯フィルタリング、ウィッシュリスト、商品比較機能を実装し、Revolution SliderやFotoramaによるリッチな商品ギャラリー、画像ズーム機能、年齢確認ポップアップ、サブスクリプション通知なども組み込んでコンバージョン率の向上につなげています。日本円対応で、レスポンシブデザインによりモバイル・タブレット・デスクトップすべてに最適化しています。",
@@ -51,19 +43,10 @@ export function Projects() {
       image: "/lajollahale.png",
     },
     {
-      id: 4,
-      title: "恋肌（Koi-hada）",
-      category: "クラウド移行・インフラ",
-      client: "",
-      description:
-        "全身脱毛サロンを展開する恋肌（koi-hada.jp）のシステムインフラ移行を担当しました。既存のオンプレミス環境からAmazon Web Services（AWS）へのマイグレーションを主導し、EC2・RDS・S3・CloudFront等のサービスを活用してスケーラブルで可用性の高いインフラ構成を実現。サービス無停止での移行を目標に、段階的な切り替えと動作検証を行い、本番環境への移行を完遂しました。",
-      tags: ["AWS", "EC2", "RDS", "S3", "Terraform", "クラウド移行", "インフラ設計"],
-      image: "/koi-hada.png",
-    },
-    {
       id: 5,
       title: "オンライン講義プラットフォーム",
       category: "Webシステム",
+      type: "system",
       client: "",
       description:
         "React・Node.js・Expressで構築したオンライン講義プラットフォームです。WebSocketとWebRTCによるライブ配信・双方向コミュニケーションを実装し、講師と受講者がリアルタイムで交流できる環境を構築。Stripeによるチケット購入、受講進捗トラッキング、試験時のAI顔認証（不正防止）、自動採点エンジン、合格者への修了証自動発行まで一貫して開発しました。",
@@ -74,6 +57,7 @@ export function Projects() {
       id: 6,
       title: "もし活",
       category: "モバイルアプリ",
+      type: "mobile",
       client: "",
       description:
         "FlutterとTwilio SendGrid・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、KintoneをCRMとして顧客情報を一元管理。Twilio SendGridによるメール通知配信とFCMでのプッシュ通知を実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
@@ -81,29 +65,10 @@ export function Projects() {
       image: "/moshikatsu.png",
     },
     {
-      id: 7,
-      title: "LACOCO（ラココ）",
-      category: "ブランドLP・Webサイト改修",
-      client: "",
-      description:
-        "女性専用脱毛サロン「LACOCO」のブランドLP制作・WordPressサイトの改修を担当しました。SHR方式による高速脱毛サービスの特徴、施術の流れ、料金プランなどを整理し、初めて脱毛サロンを検討するユーザーにも分かりやすい構成で設計。ブランドイメージと訴求力を両立したランディングページとして構築しつつ、PHP・WordPressによる既存サイトの不具合修正・機能改修も担当しました。レスポンシブ対応により、スマートフォン・タブレット・PCすべての環境で快適に閲覧できる仕上がりにしています。",
-      tags: ["WordPress", "PHP", "HTML", "CSS", "JavaScript", "レスポンシブ", "LP制作"],
-      image: "/lacoco.png",
-    },
-    {
-      id: 8,
-      title: "COMPASSレンタカー",
-      category: "業務管理システム",
-      client: "",
-      description:
-        "沖縄を拠点とするプレミアムレンタカーサービスの予約・車両・顧客管理システムを開発しました。バックエンドはRuby on Railsで構築し、予約管理・車両管理（26台以上）・顧客管理・見積り管理・問い合わせ管理・スケジュール管理・書類管理など業務に必要な機能をワンストップで提供。管理ダッシュボードでは車両別売上チャート、予約ステータス内訳、日別予約件数・売上推移をリアルタイムに可視化。多言語対応（日本語・英語・中国語）とレスポンシブデザインで、国内外の観光客と管理者の両方に最適化しています。",
-      tags: ["Next.js", "MUI", "TypeScript", "Ruby on Rails", "多言語対応", "ダッシュボード", "Vercel"],
-      image: "/compass-admin.png",
-    },
-    {
       id: 9,
       title: "JoBins（ジョビンズ）",
       category: "人材紹介SaaS",
+      type: "system",
       client: "",
       description:
         "エージェント・採用企業・求職者をつなぐ人材紹介マネジメントプラットフォームのバックエンド改修に参画しました。C# / .NETで構築されたAPIサーバーのバグ調査・エラー修正を担当し、候補者管理・選考進捗管理・紹介料分配などの機能における不具合を特定して修正。ログ解析やデバッグを通じてシステムの安定性向上に貢献しました。",
@@ -114,6 +79,7 @@ export function Projects() {
       id: 10,
       title: "mimi HAIR SALON",
       category: "美容室Webサイト",
+      type: "website",
       client: "",
       description:
         "美容室向けのWebサイトをデザインから実装まで一貫して担当しました。スタイリッシュなビジュアルを重視したレイアウトで、メニュー・コンセプト・スタイルギャラリー・ブログ・採用・アクセスの各ページを構築。予約ボタンの固定表示やレスポンシブデザインにより、スマホからの予約導線もスムーズに設計しています。",
@@ -124,6 +90,7 @@ export function Projects() {
       id: 11,
       title: "ソウルシンク",
       category: "相性診断サービス",
+      type: "system",
       client: "",
       description:
         "OpenAI APIを活用したAI駆動型の恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、詳細な性格分析の回答データをLLMに渡し、ユーザーごとにパーソナライズされた相性レポートを自然言語で自動生成。プロンプトエンジニアリングにより占星術・心理学の知見を組み込んだ精度の高い分析結果を返すようチューニングしています。",
@@ -134,6 +101,7 @@ export function Projects() {
       id: 12,
       title: "おかわりマップ",
       category: "Webアプリ",
+      type: "system",
       client: "",
       description:
         "「ごはんおかわり無料」の飲食店だけを地図から探せるグルメマップアプリです。OpenStreetMapを使った地図上での店舗検索に加え、Supabase Authによるユーザー認証、Supabase Database（PostgreSQL）での店舗データ・投稿管理、Supabase Storage での画像アップロード、タイムラインのリアルタイム更新を実装。GPSによる現在地取得、マイページ機能、PWA対応でスマホからワンタップで起動でき、Cookie同意バナー・オンボーディングモーダルなど細かなUX設計にもこだわっています。",
@@ -144,6 +112,7 @@ export function Projects() {
       id: 13,
       title: "ACOT HAIR SALON",
       category: "美容室Webサイト",
+      type: "website",
       client: "",
       description:
         "美容室向けのWebサイトをデザイン・コーディング込みで制作しました。余白と写真を活かしたナチュラルで洗練されたデザインが特徴で、メニュー・コンセプト・ピックアップ・スタイル・採用・ブログページを実装。固定予約ボタン・電話番号表示・レスポンシブ対応で、ユーザーの予約・来店アクションを促す設計にしています。",
@@ -151,35 +120,22 @@ export function Projects() {
       image: "/acot-salon.png",
     },
     {
-      id: 14,
-      title: "D/（ディースリー）",
-      category: "マッチングアプリ",
-      client: "",
-      description:
-        "相席ラウンジと出会いをつなぐマッチングアプリ「D/（ディースリー）」の改修開発に参画しました。Flutter / Dartで構築されたiOS・Androidアプリにおいて、外部API連携の実装・修正を担当。既存機能の安定稼働と品質向上に貢献しました。",
-      tags: ["Flutter", "Dart", "API連携", "iOS", "Android"],
-      image: "/d3.png",
-    },
-    {
       id: 15,
       title: "基幹データ連携型 Excel VBA 業務システム",
       category: "業務システム開発",
+      type: "system",
       client: "",
       description:
         "受発注・在庫集計・帳票自動化を軸とした基幹データ連携型のExcel VBA業務システムの開発リーダーを担当しました。Access・SQL ServerとのADO/ODBC連携、月次約50万行の大量データ高速処理、既存マクロのリファクタリング、AIコーディング支援ツールの導入まで対応。5部門・約120名が利用するシステムを4名チームで構築・運用しています。",
       tags: ["VBA", "Excel", "Access", "SQL Server", "ADO", "Power Query", "SQL", "VBScript", "Git", "GitHub Copilot"],
       image: "",
     },
-    {
-      id: 16,
-      title: "COMSBI（コムスビ）",
-      category: "LINE CRM SaaS",
-      client: "",
-      description:
-        "700アカウント導入・継続率98%のLINEビジネス向けCRMクラウドサービスの開発に参画しました。LINE公式アカウントと連携した顧客管理、デジタル会員証、ポイントカード、セグメント配信、複数店舗管理、LINEミニアプリなど、集客から顧客育成までに必要な機能をワンストップで提供。ダッシュボードでのデータ分析・可視化機能も実装し、LINE ヤフー Technology Partner（Communication部門）にも認定されているプロダクトです。",
-      tags: ["Nuxt.js", "Tailwind CSS", "LINE API", "CRM", "ミニアプリ", "セグメント配信"],
-      image: "/comsbi.png",
-    },
+  ];
+
+  const categoryGroups: { key: string; en: string; jp: string }[] = [
+    { key: "system", en: "Web System", jp: "Webシステム" },
+    { key: "website", en: "Web Site", jp: "Webサイト" },
+    { key: "mobile", en: "Mobile", jp: "モバイル" },
   ];
 
   return (
@@ -219,82 +175,109 @@ export function Projects() {
             </p>
           </div>
 
-          {/* Project list */}
-          <div className="space-y-16 lg:space-y-28">
-            {projects.map((project, index) => (
-              <div
-                key={project.id}
-                className={`grid lg:grid-cols-12 gap-8 lg:gap-12 items-center ${
-                  isVisible ? "animate-slide-up" : "opacity-0"
-                }`}
-                style={{ animationDelay: `${index * 0.15}s` }}
-              >
-                {/* Image */}
-                <button
-                  onClick={() => setSelectedImage(index)}
-                  className={`lg:col-span-7 relative overflow-hidden bg-background group ${
-                    index % 2 === 1 ? "lg:order-2" : ""
-                  }`}
-                >
-                  <div className="relative aspect-[16/10] w-full">
-                    <Image
-                      src={project.image || "/placeholder.svg"}
-                      alt={project.title}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-all duration-500" />
-                    {/* Corner marks with sakura */}
-                    <div className="absolute top-3 left-3 w-5 h-5 border-t-2 border-l-2 border-jp-sakura/0 group-hover:border-jp-sakura/40 transition-all duration-500" />
-                    <div className="absolute bottom-3 right-3 w-5 h-5 border-b-2 border-r-2 border-jp-sakura/0 group-hover:border-jp-sakura/40 transition-all duration-500" />
-                  </div>
-                </button>
+          {/* Project list, grouped by type */}
+          <div className="space-y-24 lg:space-y-32">
+            {categoryGroups.map((group) => {
+              const groupProjects = projects.filter((p) => p.type === group.key);
+              if (groupProjects.length === 0) return null;
 
-                {/* Info */}
-                <div
-                  className={`lg:col-span-5 space-y-5 ${
-                    index % 2 === 1 ? "lg:order-1" : ""
-                  }`}
-                >
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-3">
-                      <span className="text-[10px] tracking-[0.3em] text-jp-sakura/50 font-mono">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <div className="h-px w-4 bg-jp-sakura/20" />
-                      <span className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground">
-                        {project.category}
-                      </span>
-                    </div>
-                    <h3 className="text-2xl lg:text-3xl font-bold tracking-tight">
-                      {project.title}
-                    </h3>
-                    {project.client && (
-                      <p className="text-xs text-muted-foreground/60 tracking-wide">
-                        {project.client}
-                      </p>
-                    )}
-                    <div className="h-[2px] w-10 bg-gradient-to-r from-jp-sakura/40 to-transparent" />
+              return (
+                <div key={group.key} className="space-y-16 lg:space-y-28">
+                  {/* Category heading */}
+                  <div
+                    className={`flex items-center gap-5 ${
+                      isVisible ? "animate-slide-up" : "opacity-0"
+                    }`}
+                  >
+                    <span className="text-2xl lg:text-3xl font-black tracking-tight whitespace-nowrap">
+                      {group.jp}
+                    </span>
+                    <span className="text-[10px] tracking-[0.3em] uppercase text-jp-sakura/50 font-mono whitespace-nowrap">
+                      {group.en}
+                    </span>
+                    <div className="h-px flex-1 bg-border" />
                   </div>
 
-                  <p className="text-sm text-muted-foreground font-light leading-[2] font-serif">
-                    {project.description}
-                  </p>
-
-                  <div className="flex flex-wrap gap-1.5 pt-2">
-                    {project.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="text-[10px] tracking-wide px-2.5 py-1 border border-border text-muted-foreground hover:border-jp-sakura hover:text-foreground transition-all duration-300 cursor-default"
+                  {groupProjects.map((project, groupIndex) => {
+                    const index = projects.findIndex((p) => p.id === project.id);
+                    return (
+                      <div
+                        key={project.id}
+                        className={`grid lg:grid-cols-12 gap-8 lg:gap-12 items-center ${
+                          isVisible ? "animate-slide-up" : "opacity-0"
+                        }`}
+                        style={{ animationDelay: `${groupIndex * 0.15}s` }}
                       >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
+                        {/* Image */}
+                        <button
+                          onClick={() => setSelectedImage(index)}
+                          className={`lg:col-span-7 relative overflow-hidden bg-background group ${
+                            groupIndex % 2 === 1 ? "lg:order-2" : ""
+                          }`}
+                        >
+                          <div className="relative aspect-[16/10] w-full">
+                            <Image
+                              src={project.image || "/placeholder.svg"}
+                              alt={project.title}
+                              fill
+                              className="object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-all duration-500" />
+                            {/* Corner marks with sakura */}
+                            <div className="absolute top-3 left-3 w-5 h-5 border-t-2 border-l-2 border-jp-sakura/0 group-hover:border-jp-sakura/40 transition-all duration-500" />
+                            <div className="absolute bottom-3 right-3 w-5 h-5 border-b-2 border-r-2 border-jp-sakura/0 group-hover:border-jp-sakura/40 transition-all duration-500" />
+                          </div>
+                        </button>
 
+                        {/* Info */}
+                        <div
+                          className={`lg:col-span-5 space-y-5 ${
+                            groupIndex % 2 === 1 ? "lg:order-1" : ""
+                          }`}
+                        >
+                          <div className="space-y-3">
+                            <div className="flex items-center gap-3">
+                              <span className="text-[10px] tracking-[0.3em] text-jp-sakura/50 font-mono">
+                                {String(groupIndex + 1).padStart(2, "0")}
+                              </span>
+                              <div className="h-px w-4 bg-jp-sakura/20" />
+                              <span className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground">
+                                {project.category}
+                              </span>
+                            </div>
+                            <h3 className="text-2xl lg:text-3xl font-bold tracking-tight">
+                              {project.title}
+                            </h3>
+                            {project.client && (
+                              <p className="text-xs text-muted-foreground/60 tracking-wide">
+                                {project.client}
+                              </p>
+                            )}
+                            <div className="h-[2px] w-10 bg-gradient-to-r from-jp-sakura/40 to-transparent" />
+                          </div>
+
+                          <p className="text-sm text-muted-foreground font-light leading-[2] font-serif">
+                            {project.description}
+                          </p>
+
+                          <div className="flex flex-wrap gap-1.5 pt-2">
+                            {project.tags.map((tag) => (
+                              <span
+                                key={tag}
+                                className="text-[10px] tracking-wide px-2.5 py-1 border border-border text-muted-foreground hover:border-jp-sakura hover:text-foreground transition-all duration-300 cursor-default"
+                              >
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

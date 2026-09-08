@@ -21,28 +21,28 @@ export function Experience() {
     {
       title: "LLM・RAG・AIエージェント",
       description:
-        "OpenAI・Claude APIを使ったチャットボット、社内ドキュメント検索（RAG）、要約・分類・レポート自動生成などを実装してきました。LangChainとベクトルDB（Pinecone・pgvector）を組み合わせ、プロンプトエンジニアリングで精度を追い込みながら、業務で実際に使える形に仕上げるのが得意です。",
+        "OpenAI・Claude APIを使ったチャットボットや社内ドキュメント検索（RAG）、要約・分類・レポート自動生成など幅広く実装してきました。LangChainやPinecone・pgvectorと組み合わせながらプロンプトを調整して精度を上げ、現場で実際に使えるレベルに仕上げるのが得意です。",
       number: "01",
       kanji: "言",
     },
     {
       title: "AIを組み込んだプロダクト開発",
       description:
-        "フルスタック開発にAI機能をシームレスに統合します。AI顔認証・自動採点・画像認識・相性診断レポート生成など、UIからバックエンドの推論APIまで一気通貫で設計・実装。OpenCV・PyTorch・Whisperを使った画像・音声処理の実装経験もあります。",
+        "WebアプリにAI機能をそのまま組み込みます。AI顔認証・自動採点・画像認識・相性診断レポートなど、UIからバックエンドの推論APIまで一人でまとめて設計・実装してきました。OpenCV・PyTorch・Whisperを使った画像・音声処理の経験もあります。",
       number: "02",
       kanji: "智",
     },
     {
       title: "Webシステム・SaaS・EC",
       description:
-        "Next.js・FastAPI・Node.js・Laravelでのフルスタック開発を得意としています。予約管理システム、在庫管理、ECサイト、SaaSなど、Supabase（認証・DB・Storage）・Stripe決済・WebSocket/WebRTCリアルタイム通信・PWA対応まで含めて一気通貫で実装できます。",
+        "Next.js・FastAPI・Node.js・Laravelを使ったフルスタック開発が得意です。予約管理・在庫管理・ECサイト・SaaSなど、Supabase（認証・DB・Storage）・Stripe決済・WebSocket/WebRTCリアルタイム通信・PWAまで、必要な機能をまとめて実装します。",
       number: "03",
       kanji: "匠",
     },
     {
       title: "モバイル・外部サービス連携",
       description:
-        "FlutterによるiOS/Androidアプリ開発から、Salesforce・Kintone・ShopifyなどのSaaS連携、REST API設計、Firebase認証・FCMプッシュ通知まで対応。既存の業務システムとAI/Webサービスをつなぐ統合開発を行っています。",
+        "FlutterでのiOS/Androidアプリ開発をはじめ、Salesforce・Kintone・ShopifyなどのSaaS連携、REST API設計、Firebase認証・FCMプッシュ通知まで対応しています。既存の業務システムとAI・Webサービスをつなぐ統合開発も得意です。",
       number: "04",
       kanji: "繋",
     },
@@ -87,7 +87,7 @@ export function Experience() {
             </h2>
             <div className="h-[2px] w-16 bg-gradient-to-r from-jp-sakura/60 to-transparent" />
             <p className="text-sm lg:text-base text-muted-foreground font-light leading-[2.2] max-w-2xl pt-2 font-serif">
-              AI機能の実装からWebアプリの開発まで、まとめて対応できるのが持ち味です。「AIを使ってこういうことしたい」をそのまま形にできます。
+              AIを絡めたプロダクト開発を、設計からリリースまでまるっと見れるのが強みです。「こういうのAIでできないかな？」という段階から一緒に考えます。
             </p>
           </div>
 
