@@ -161,7 +161,7 @@ export function Projects() {
       description:
         "化粧品・ホビーブランドを展開するライフスタイルカンパニー株式会社のコーポレートサイトにて、デザインからWordPressでのコーディング、ドメイン設定、デプロイまで一貫して担当しました。",
       tags: ["WordPress", "UI/UXデザイン"],
-      image: "",
+      image: "/lifestyle-co.png",
     },
   ];
 
