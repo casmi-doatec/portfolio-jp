@@ -139,7 +139,7 @@ export function Projects() {
       description:
         "発酵科学スキンケアブランドのECサイトにて、フロントエンド開発を担当しました。Next.js・Reactでの実装に加え、CMSと連携した商品情報・ジャーナル記事の管理を行い、更新のしやすさと表示速度を両立したサイト構築に対応しています。",
       tags: ["Next.js", "React", "CMS"],
-      image: "/fas-jp.png",
+      image: "/fas-girl.png",
     },
     {
       id: 17,
