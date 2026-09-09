@@ -139,7 +139,7 @@ export function Projects() {
       description:
         "発酵科学スキンケアブランドのECサイトにて、フロントエンド開発を担当しました。Next.js・Reactでの実装に加え、CMSと連携した商品情報・ジャーナル記事の管理を行い、更新のしやすさと表示速度を両立したサイト構築に対応しています。",
       tags: ["Next.js", "React", "CMS"],
-      image: "",
+      image: "/fas-jp.png",
     },
     {
       id: 17,
@@ -150,7 +150,7 @@ export function Projects() {
       description:
         "コニカミノルタが提供する学校向けAI学習プラットフォーム「tomoLinks」の公式サイトにて、WordPressでの構築・リリース対応を担当しました。ドメイン設定や公開後の不具合修正まで一貫して対応しています。",
       tags: ["WordPress"],
-      image: "",
+      image: "/tomolinks.png",
     },
     {
       id: 18,
