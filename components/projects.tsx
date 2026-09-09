@@ -130,6 +130,39 @@ export function Projects() {
       tags: ["VBA", "Excel", "Access", "SQL Server", "ADO", "Power Query", "SQL", "VBScript", "Git", "GitHub Copilot"],
       image: "",
     },
+    {
+      id: 16,
+      title: "FAS",
+      category: "ECサイト",
+      type: "website",
+      client: "",
+      description:
+        "発酵科学スキンケアブランドのECサイトにて、フロントエンド開発を担当しました。Next.js・Reactでの実装に加え、CMSと連携した商品情報・ジャーナル記事の管理を行い、更新のしやすさと表示速度を両立したサイト構築に対応しています。",
+      tags: ["Next.js", "React", "CMS"],
+      image: "",
+    },
+    {
+      id: 17,
+      title: "tomoLinks",
+      category: "教育プラットフォームWebサイト",
+      type: "website",
+      client: "",
+      description:
+        "コニカミノルタが提供する学校向けAI学習プラットフォーム「tomoLinks」の公式サイトにて、WordPressでの構築・リリース対応を担当しました。ドメイン設定や公開後の不具合修正まで一貫して対応しています。",
+      tags: ["WordPress"],
+      image: "",
+    },
+    {
+      id: 18,
+      title: "ライフスタイルカンパニー",
+      category: "コーポレートサイト",
+      type: "website",
+      client: "",
+      description:
+        "化粧品・ホビーブランドを展開するライフスタイルカンパニー株式会社のコーポレートサイトにて、デザインからWordPressでのコーディング、ドメイン設定、デプロイまで一貫して担当しました。",
+      tags: ["WordPress", "UI/UXデザイン"],
+      image: "",
+    },
   ];
 
   const categoryGroups: { key: string; en: string; jp: string }[] = [
