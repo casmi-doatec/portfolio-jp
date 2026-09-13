@@ -27,6 +27,7 @@ export function Navigation() {
     { href: "#experience", label: "専門", labelEn: "Expertise" },
     { href: "#skills", label: "技術", labelEn: "Skills" },
     { href: "#projects", label: "実績", labelEn: "Projects" },
+    { href: "/graph", label: "図表", labelEn: "Graph Demo" },
     { href: "#contact", label: "連絡", labelEn: "Contact" },
   ];
 
@@ -84,20 +85,27 @@ export function Navigation() {
 
         {/* Nav items */}
         <nav className="flex flex-col px-8 py-8 gap-1 flex-1">
-          {navItems.map((item, i) => (
-            <a
-              key={item.href}
-              href={item.href}
-              onClick={(e) => handleNavClick(e, item.href)}
-              className="group flex items-center gap-3 py-3.5 border-b border-border/50 hover:border-jp-sakura/30 transition-colors duration-300"
-              style={{ animationDelay: `${i * 0.05}s` }}
-            >
-              <span className="text-[10px] text-jp-sakura font-display w-6 shrink-0">{item.label}</span>
-              <span className="text-[11px] tracking-[0.25em] uppercase text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                {item.labelEn}
-              </span>
-            </a>
-          ))}
+          {navItems.map((item, i) => {
+            const isRoute = !item.href.startsWith("#");
+            return (
+              <a
+                key={item.href}
+                href={item.href}
+                onClick={
+                  isRoute
+                    ? () => setIsOpen(false)
+                    : (e) => handleNavClick(e, item.href)
+                }
+                className="group flex items-center gap-3 py-3.5 border-b border-border/50 hover:border-jp-sakura/30 transition-colors duration-300"
+                style={{ animationDelay: `${i * 0.05}s` }}
+              >
+                <span className="text-[10px] text-jp-sakura font-display w-6 shrink-0">{item.label}</span>
+                <span className="text-[11px] tracking-[0.25em] uppercase text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                  {item.labelEn}
+                </span>
+              </a>
+            );
+          })}
         </nav>
 
         {/* Footer */}
