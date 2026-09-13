@@ -37,7 +37,7 @@ export default function GraphPage() {
           <div className="h-[2px] w-16 bg-gradient-to-r from-jp-sakura/60 to-transparent" />
 
           <p className="text-sm lg:text-base text-muted-foreground font-serif font-light leading-[2.2] max-w-3xl">
-            Supabase(PostgreSQL)上に蓄積された工程管理・在庫管理データを、Rechartsを用いてBIダッシュボード形式で可視化するデモページです。EDI連携・cronバッチで日々更新されるデータを想定し、「工程別の進捗件数の推移」「在庫数量の推移」「当日完了件数」の3種のグラフをサンプル実装しています（表示データはすべてダミーです）。
+            Supabase(PostgreSQL)上に蓄積された工程管理・在庫管理データを、Rechartsを用いてBIダッシュボード形式で可視化するデモページです。EDI連携・cronバッチで日々更新されるデータを想定し、「工程別進捗件数の推移」「品目別在庫数量の推移」「実績/目標比較」「不良要因の内訳」「工程別稼働率」「生産数量と不良率の複合グラフ」など、折れ線・積み上げ面・棒・ドーナツ・レーダー・複合の6種のグラフをサンプル実装しています（表示データはすべてダミーです）。
           </p>
         </div>
 
