@@ -60,8 +60,8 @@ export function Projects() {
       type: "mobile",
       client: "",
       description:
-        "FlutterとTwilio SendGrid・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、KintoneをCRMとして顧客情報を一元管理。Twilio SendGridによるメール通知配信とFCMでのプッシュ通知を実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
-      tags: ["Flutter", "Firebase", "Prisma", "Kintone", "Twilio SendGrid", "FCM"],
+        "FlutterとTwilio SendGrid・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、SalesforceをCRMとして顧客情報を一元管理。Twilio SendGridによるメール通知配信とFCMでのプッシュ通知を実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
+      tags: ["Flutter", "Firebase", "Prisma", "Salesforce", "Twilio SendGrid", "FCM"],
       image: "/moshikatsu.png",
     },
     {
