@@ -28,7 +28,7 @@ export function Projects() {
       client: "",
       description:
         "複数店舗を展開する買取事業者向けの予約管理システムを、要件定義から設計・実装・運用保守まで一貫して担当しました。本部・加盟店・査定スタッフが同時に利用する基幹システムとして、WebSocketによるリアルタイム同期、日／週／月のマルチビューカレンダー、多階層の権限管理、レポート集計、ブラックリスト・重複予約検知などを実装。一括取得から必要最小限のAPI取得方式へ刷新して読み込み速度と安定性を大幅に改善し、PWA対応で現場のスマホ運用にも最適化しています。",
-      tags: ["Next.js", "TypeScript", "Prisma", "WebSocket", "PWA", "Google Cloud", "Python"],
+      tags: ["Next.js", "TypeScript", "Prisma", "WebSocket", "PWA","PostgreSql", "Google Cloud", "Python"],
       image: "/reservation.png",
     },
     {
@@ -94,7 +94,7 @@ export function Projects() {
       client: "",
       description:
         "OpenAI APIを活用したAI駆動型の恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、詳細な性格分析の回答データをLLMに渡し、ユーザーごとにパーソナライズされた相性レポートを自然言語で自動生成。プロンプトエンジニアリングにより占星術・心理学の知見を組み込んだ精度の高い分析結果を返すようチューニングしています。",
-      tags: ["Next.js", "OpenAI API", "LLM", "Tailwind CSS", "Vercel"],
+      tags: ["Next.js","Python", "OpenAI API", "LLM", "Tailwind CSS", "SQL"],
       image: "/matching.png",
     },
     {
