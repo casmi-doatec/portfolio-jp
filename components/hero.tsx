@@ -37,7 +37,7 @@ export function Hero() {
           }`}
         >
           <div className="relative w-28 h-28 lg:w-44 lg:h-44 rounded-full overflow-hidden border-4 border-background shadow-sm">
-            <Image src="/real-kasumi.png" alt="かすみ" fill className="object-cover" priority />
+            <Image src="/casmi.jpg" alt="かすみ" fill className="object-cover" priority />
           </div>
         </div>
       </div>

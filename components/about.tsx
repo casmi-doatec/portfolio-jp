@@ -68,7 +68,7 @@ export function About() {
             <div className="relative group">
               <div className="relative aspect-[4/5] w-full overflow-hidden">
                 <Image
-                  src="/kasumi.png"
+                  src="/real-kasumi.png"
                   alt="かすみ"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
