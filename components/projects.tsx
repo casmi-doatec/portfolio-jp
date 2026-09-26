@@ -51,7 +51,14 @@ export function Projects() {
         "複数店舗を展開する買取事業者向けの予約管理システムを、要件定義から設計・実装・運用保守まで一貫して担当しました。本部・加盟店・査定スタッフが同時に利用する基幹システムとして、WebSocketによるリアルタイム同期、日／週／月のマルチビューカレンダー、多階層の権限管理、レポート集計、ブラックリスト・重複予約検知などを実装。一括取得から必要最小限のAPI取得方式へ刷新して読み込み速度と安定性を大幅に改善し、PWA対応で現場のスマホ運用にも最適化しています。",
       tags: ["Next.js", "TypeScript", "Prisma", "WebSocket", "PWA","PostgreSql", "Google Cloud", "Python"],
       image: "/reservation.png",
-      gallery: [{ src: "/reservation.png", caption: "" }],
+      gallery: [
+        { src: "/reservation/Screenshot_1.png", caption: "ログイン画面。本部・加盟店・査定スタッフそれぞれの権限でアクセスします。" },
+        { src: "/reservation/Screenshot_2.png", caption: "予約カレンダー画面。日／週／月のマルチビューでリアルタイムに予約状況を確認できます。" },
+        { src: "/reservation/Screenshot_3.png", caption: "予約詳細・編集画面。査定スタッフの割り当てやステータス管理を行います。" },
+        { src: "/reservation/Screenshot_4.png", caption: "レポート集計画面。店舗別・期間別の実績を自動集計します。" },
+        { src: "/reservation/Screenshot_5.png", caption: "権限管理画面。本部・加盟店・スタッフの多階層アクセス制御を設定します。" },
+        { src: "/reservation/Screenshot_6.png", caption: "ブラックリスト・重複予約検知画面。トラブル防止のための管理機能です。" },
+      ],
     },
     {
       id: 3,
@@ -63,7 +70,11 @@ export function Projects() {
         "Shopifyで構築したグローバル対応ECサイトのデザイン・実装を担当しました。ブランドイメージを反映したカスタムテーマを設計し、Stripeによる決済機能を組み込んで安全・スムーズな購入フローを実現。価格帯フィルタリング、ウィッシュリスト、商品比較機能を実装し、Revolution SliderやFotoramaによるリッチな商品ギャラリー、画像ズーム機能、年齢確認ポップアップ、サブスクリプション通知なども組み込んでコンバージョン率の向上につなげています。日本円対応で、レスポンシブデザインによりモバイル・タブレット・デスクトップすべてに最適化しています。",
       tags: ["Shopify", "Liquid", "JavaScript", "Stripe", "ECサイト設計", "Fotorama", "レスポンシブ"],
       image: "/lajollahale.png",
-      gallery: [{ src: "/lajollahale.png", caption: "" }],
+      gallery: [
+        { src: "/shopify/1.png", caption: "トップページ。ブランドイメージを反映したカスタムテーマを設計しています。" },
+        { src: "/shopify/2.png", caption: "商品一覧・価格帯フィルタリング画面。Fotoramaによるリッチな商品ギャラリーを実装しています。" },
+        { src: "/shopify/3.png", caption: "商品詳細・購入フロー。Stripeによる決済を組み込み、安全でスムーズな購入体験を実現しています。" },
+      ],
     },
     {
       id: 5,
@@ -75,7 +86,11 @@ export function Projects() {
         "React・Node.js・Expressで構築したオンライン講義プラットフォームです。WebSocketとWebRTCによるライブ配信・双方向コミュニケーションを実装し、講師と受講者がリアルタイムで交流できる環境を構築。Stripeによるチケット購入、受講進捗トラッキング、試験時のAI顔認証（不正防止）、自動採点エンジン、合格者への修了証自動発行まで一貫して開発しました。",
       tags: ["React", "Node.js", "Express", "WebSocket", "WebRTC", "Stripe", "AI顔認証"],
       image: "/manabou.png",
-      gallery: [{ src: "/manabou.png", caption: "" }],
+      gallery: [
+        { src: "/online-lecture/1.png", caption: "ライブ配信画面。WebRTCによる双方向の講義配信を実装しています。" },
+        { src: "/online-lecture/2.png", caption: "チケット購入・受講進捗トラッキング画面。Stripe決済と連携しています。" },
+        { src: "/online-lecture/3.png", caption: "AI顔認証による受験画面。不正防止と自動採点・修了証発行までを一貫して実装しています。" },
+      ],
     },
     {
       id: 6,
@@ -87,7 +102,12 @@ export function Projects() {
         "FlutterとTwilio SendGrid・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、SalesforceをCRMとして顧客情報を一元管理。Twilio SendGridによるメール通知配信とFCMでのプッシュ通知を実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
       tags: ["Flutter", "Firebase", "Prisma", "Salesforce", "Twilio SendGrid", "FCM"],
       image: "/moshikatsu.png",
-      gallery: [{ src: "/moshikatsu.png", caption: "" }],
+      gallery: [
+        { src: "/moshikatsu/1.png", caption: "アプリのホーム画面。Firebaseでユーザー認証とリアルタイムデータ管理を行っています。" },
+        { src: "/moshikatsu/2.png", caption: "ヘルスケア情報の入力・管理画面です。" },
+        { src: "/moshikatsu/3.png", caption: "通知設定画面。Twilio SendGridでのメール配信とFCMでのプッシュ通知に対応しています。" },
+        { src: "/moshikatsu/4.png", caption: "マイページ画面。Salesforceと連携した顧客情報を一元管理しています。" },
+      ],
     },
     {
       id: 9,
@@ -123,7 +143,10 @@ export function Projects() {
         "OpenAI APIを活用したAI駆動型の恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、詳細な性格分析の回答データをLLMに渡し、ユーザーごとにパーソナライズされた相性レポートを自然言語で自動生成。プロンプトエンジニアリングにより占星術・心理学の知見を組み込んだ精度の高い分析結果を返すようチューニングしています。",
       tags: ["Next.js","Python", "OpenAI API", "LLM", "Tailwind CSS", "SQL"],
       image: "/matching.png",
-      gallery: [{ src: "/matching.png", caption: "" }],
+      gallery: [
+        { src: "/matching/1.png", caption: "診断入力画面。星座・MBTI・性格分析の回答を入力します。" },
+        { src: "/matching/2.png", caption: "相性レポート画面。OpenAI APIでパーソナライズされた分析結果を自然言語で生成しています。" },
+      ],
     },
     {
       id: 12,
@@ -135,7 +158,10 @@ export function Projects() {
         "「ごはんおかわり無料」の飲食店だけを地図から探せるグルメマップアプリです。OpenStreetMapを使った地図上での店舗検索に加え、Supabase Authによるユーザー認証、Supabase Database（PostgreSQL）での店舗データ・投稿管理、Supabase Storage での画像アップロード、タイムラインのリアルタイム更新を実装。GPSによる現在地取得、マイページ機能、PWA対応でスマホからワンタップで起動でき、Cookie同意バナー・オンボーディングモーダルなど細かなUX設計にもこだわっています。",
       tags: ["Next.js", "Supabase", "PostgreSQL", "OpenStreetMap", "PWA", "GPS", "Microsoft Clarity"],
       image: "/okawari.png",
-      gallery: [{ src: "/okawari.png", caption: "" }],
+      gallery: [
+        { src: "/map/1.png", caption: "地図画面。OpenStreetMapを使ってGPSによる現在地から近隣店舗を検索できます。" },
+        { src: "/map/2.png", caption: "店舗投稿・マイページ画面。Supabase Storageで画像をアップロードできます。" },
+      ],
     },
     {
       id: 13,
@@ -148,6 +174,72 @@ export function Projects() {
       tags: ["HTML", "CSS", "JavaScript", "WordPress", "レスポンシブ", "UI/UXデザイン"],
       image: "/acot-salon.png",
       gallery: [{ src: "/acot-salon.png", caption: "" }],
+    },
+    {
+      id: 19,
+      title: "アパレルECアプリ",
+      category: "モバイルアプリ",
+      type: "mobile",
+      client: "",
+      description:
+        "アパレルブランド向けのECモバイルアプリのUI設計・実装に携わりました。カテゴリ別の商品ナビゲーション、絞り込み・並べ替え機能、カラー・サイズ選択付きの商品一覧、キーワード検索・画像検索に対応し、ブラック基調のスタイリッシュなデザインでブランドの世界観を表現しています。",
+      tags: ["React Native", "UI/UXデザイン", "EC"],
+      image: "/other-apps/1.png",
+      gallery: [
+        { src: "/other-apps/1.png", caption: "商品一覧・カテゴリナビゲーション画面。絞り込み・並べ替えに対応しています。" },
+        { src: "/other-apps/2.png", caption: "商品詳細画面。カラー・サイズ選択やカート機能を実装しています。" },
+        { src: "/other-apps/3.png", caption: "検索・お気に入り画面です。" },
+        { src: "/other-apps/4.png", caption: "マイページ・アカウント管理画面です。" },
+      ],
+    },
+    {
+      id: 20,
+      title: "Re:Stock",
+      category: "在庫管理システム",
+      type: "system",
+      client: "",
+      description:
+        "リユース・買取事業者向けの在庫統合管理システムです。買取査定の登録から在庫管理、売上分析までを一元化。品目ごとのカテゴリ・状態管理、買取履歴の一覧・ステータス管理、査定サマリーの自動集計を実装し、複数店舗での在庫状況をリアルタイムに把握できるようにしています。",
+      tags: ["Next.js", "TypeScript", "在庫管理", "ダッシュボード設計"],
+      image: "/stock/1.png",
+      gallery: [
+        { src: "/stock/1.png", caption: "買取査定画面。商品登録と査定サマリーの自動集計を行います。" },
+        { src: "/stock/2.png", caption: "在庫管理画面。品目・カテゴリ別の在庫状況を一覧で確認できます。" },
+        { src: "/stock/3.png", caption: "売上分析ダッシュボード画面です。" },
+      ],
+    },
+    {
+      id: 21,
+      title: "SEO順位トラッキング自動化",
+      category: "業務自動化",
+      type: "system",
+      client: "",
+      description:
+        "Google Apps Scriptを使ったSEO順位の自動計測・レポーティングツールです。対象URLの検索順位を定期取得してスプレッドシートに自動集計し、週間・国別（米国・カナダ・イギリス・オーストラリアなど）のランキング推移をグラフ化。手作業での順位チェック・レポート作成の工数を削減しています。",
+      tags: ["Google Apps Script", "Google Sheets", "SEO", "業務自動化"],
+      image: "/GAS/1.png",
+      gallery: [
+        { src: "/GAS/1.png", caption: "URLと平均掲載順位の推移シート。週次の順位データを自動取得・集計しています。" },
+        { src: "/GAS/2.png", caption: "国別（米国・カナダ・イギリスなど）の週間ランキングシートです。" },
+        { src: "/GAS/3.png", caption: "サマリーダッシュボード。全体の順位動向をグラフで可視化しています。" },
+      ],
+    },
+    {
+      id: 22,
+      title: "業界別LP・コーポレートサイト デザイン",
+      category: "Webデザイン",
+      type: "website",
+      client: "",
+      description:
+        "Figmaを使った業界別Webデザインの制作実績です。美容室サイト、採用（リクルート）サイト、転職・退職サポート向けLP、ヘルスケア領域のコーポレートサイトなど、業種ごとの特性に合わせたデザイン設計を行っています。",
+      tags: ["Figma", "UI/UXデザイン", "コーポレートサイト", "LP制作"],
+      image: "/design/4.png",
+      gallery: [
+        { src: "/design/4.png", caption: "美容室サイトのデザイン。ナチュラルで洗練された雰囲気を意識し、スタイルギャラリーやブログ導線を設計しています。" },
+        { src: "/design/6.png", caption: "採用（リクルート）サイトのデザイン。企業紹介からスタッフ紹介、募集要項まで一気通貫で設計しています。" },
+        { src: "/design/3.jpg", caption: "転職・退職サポートサービスのLPデザイン。候補者の不安に寄り添う構成と、申し込み導線を意識して設計しています。" },
+        { src: "/design/7.png", caption: "ヘルスケア領域のコーポレートサイトデザイン。信頼感のあるダークトーンを基調に、代表紹介・知見・お問い合わせ導線を設計しています。" },
+      ],
     },
     {
       id: 15,
