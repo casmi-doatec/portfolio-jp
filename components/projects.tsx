@@ -242,6 +242,87 @@ export function Projects() {
       ],
     },
     {
+      id: 23,
+      title: "THE PERSONAL GYM",
+      category: "パーソナルジムWebサイト",
+      type: "website",
+      client: "",
+      description:
+        "全国展開するパーソナルジムのコーポレートサイトを、デザインからWordPressでの実装まで一貫して担当しました。料金一覧・店舗一覧・ビフォーアフター・お客様の声・採用情報など複数コンテンツを整理し、無料カウンセリング予約への導線を軸としたレイアウトで構成しています。",
+      tags: ["WordPress", "UI/UXデザイン", "レスポンシブ"],
+      image: "/gym/1.png",
+      gallery: [
+        { src: "/gym/1.png", caption: "トップページ。無料カウンセリング予約への導線を軸にレイアウトを設計しています。" },
+        { src: "/gym/2.png", caption: "店舗一覧セクション。各店舗の住所・アクセス・お問い合わせ導線を整理しています。" },
+        { src: "/gym/3.png", caption: "特徴紹介セクション。トレーニング風景を大きく見せるビジュアル構成にしています。" },
+        { src: "/gym/4.png", caption: "店舗詳細カード。写真・営業時間・お問い合わせボタンをまとめています。" },
+      ],
+    },
+    {
+      id: 24,
+      title: "Luna.S Clinic",
+      category: "美容皮膚科Webサイト",
+      type: "website",
+      client: "",
+      description:
+        "美容皮膚科クリニックのコーポレートサイトを、デザインからWordPressでの実装まで一貫して担当しました。ドクター紹介・料金表・症例一覧・採用情報を整理し、清潔感と信頼感を両立したビジュアルでWEB予約への導線を設計しています。",
+      tags: ["WordPress", "UI/UXデザイン", "レスポンシブ"],
+      image: "/luna-s-clinic/1.png",
+      gallery: [
+        { src: "/luna-s-clinic/1.png", caption: "トップページ。WEB予約ボタンを常時表示し、予約導線を意識した構成にしています。" },
+        { src: "/luna-s-clinic/2.png", caption: "メニューセクション。お悩み別に施術メニューを分類し、探しやすく整理しています。" },
+        { src: "/luna-s-clinic/3.png", caption: "採用情報・予約カレンダーセクション。募集要項と空き状況を同じ画面で確認できます。" },
+      ],
+    },
+    {
+      id: 25,
+      title: "BIANCA",
+      category: "美容皮膚科Webサイト",
+      type: "website",
+      client: "",
+      description:
+        "美容医療クリニックのコーポレートサイトを、デザインからWordPressでの実装まで一貫して担当しました。スキン・美容外科・美容婦人科・再生医療など多岐にわたる診療科目をカテゴリ別に整理し、来院実績・患者数・症例数などの実績値を見せることで信頼感を高める構成にしています。",
+      tags: ["WordPress", "UI/UXデザイン", "レスポンシブ"],
+      image: "/bianca-clinic/1.png",
+      gallery: [
+        { src: "/bianca-clinic/1.png", caption: "トップページ。診療科目のカテゴリ整理と実績数値の見せ方を工夫しています。" },
+        { src: "/bianca-clinic/2.png", caption: "施術紹介セクション。動画コンテンツを用いたスライダー形式で構成しています。" },
+        { src: "/bianca-clinic/3.png", caption: "ドクター紹介セクション。監修医師の実績・提携ブランドを見せる構成にしています。" },
+      ],
+    },
+    {
+      id: 27,
+      title: "L'Oréal Paris Japan",
+      category: "化粧品ブランドWebサイト",
+      type: "website",
+      client: "",
+      description:
+        "化粧品ブランドの日本向け公式サイトを、デザインからWordPressでの実装まで一貫して担当しました。新商品のキャンペーンページ、商品ラインナップ、ブランドのサステナビリティに関する取り組みなど、複数のコンテンツを統一感のあるビジュアルで構成しています。",
+      tags: ["WordPress", "UI/UXデザイン", "レスポンシブ"],
+      image: "/loreal/1.png",
+      gallery: [
+        { src: "/loreal/1.png", caption: "トップページ。新商品キャンペーンをメインビジュアルに据えた構成にしています。" },
+        { src: "/loreal/2.png", caption: "商品ラインナップセクション。カラーバリエーションを一覧で見せる構成にしています。" },
+        { src: "/loreal/3.png", caption: "ブランドの取り組み紹介セクション。サステナビリティに関するメッセージを打ち出しています。" },
+      ],
+    },
+    {
+      id: 26,
+      title: "with.is",
+      category: "マッチングアプリWebサイト",
+      type: "website",
+      client: "",
+      description:
+        "恋活・婚活マッチングアプリのコーポレートサイトの開発に携わりました。診断コンテンツや料金プラン、恋愛コラムなど複数の導線を整理し、アプリダウンロードへの転換を意識したランディング構成に対応しています。",
+      tags: ["WordPress", "UI/UXデザイン", "レスポンシブ"],
+      image: "/with-is/1.png",
+      gallery: [
+        { src: "/with-is/1.png", caption: "トップページ。アプリダウンロードへの導線を軸に構成しています。" },
+        { src: "/with-is/2.png", caption: "実績紹介セクション。会員数・マッチング率などの数値を強調したビジュアル構成にしています。" },
+        { src: "/with-is/3.png", caption: "安心・安全機能の紹介セクション。監視体制や本人確認などの機能をアイコンとセットで整理しています。" },
+      ],
+    },
+    {
       id: 15,
       title: "基幹データ連携型 Excel VBA 業務システム",
       category: "業務システム開発",
