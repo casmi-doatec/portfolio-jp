@@ -210,18 +210,18 @@ export function Projects() {
     },
     {
       id: 21,
-      title: "SEO順位トラッキング自動化",
+      title: "検索順位スクレイピング自動化",
       category: "業務自動化",
       type: "system",
       client: "",
       description:
-        "Google Apps Scriptを使ったSEO順位の自動計測・レポーティングツールです。対象URLの検索順位を定期取得してスプレッドシートに自動集計し、週間・国別（米国・カナダ・イギリス・オーストラリアなど）のランキング推移をグラフ化。手作業での順位チェック・レポート作成の工数を削減しています。",
-      tags: ["Google Apps Script", "Google Sheets", "SEO", "業務自動化"],
+        "Google Apps Scriptを使った検索順位のスクレイピング・レポーティングツールです。対象URLの検索順位を定期的にスクレイピングしてスプレッドシートに自動集計し、週次のランキング推移をグラフ化。手作業での順位チェック・レポート作成の工数を削減しています。",
+      tags: ["Google Apps Script", "Webスクレイピング", "Google Sheets", "業務自動化"],
       image: "/GAS/1.png",
       gallery: [
-        { src: "/GAS/1.png", caption: "URLと平均掲載順位の推移シート。週次の順位データを自動取得・集計しています。" },
-        { src: "/GAS/2.png", caption: "国別（米国・カナダ・イギリスなど）の週間ランキングシートです。" },
-        { src: "/GAS/3.png", caption: "サマリーダッシュボード。全体の順位動向をグラフで可視化しています。" },
+        { src: "/GAS/1.png", caption: "Google Apps Scriptによるスクレイピング結果の集計シート。" },
+        { src: "/GAS/2.png", caption: "Google Sheets上での週次データ集計。" },
+        { src: "/GAS/3.png", caption: "自動生成されたランキング推移グラフ。" },
       ],
     },
     {
