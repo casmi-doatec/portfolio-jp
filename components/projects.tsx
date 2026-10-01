@@ -323,6 +323,35 @@ export function Projects() {
       ],
     },
     {
+      id: 28,
+      title: "QUOREA FX",
+      category: "AI自動売買プラットフォーム",
+      type: "system",
+      client: "",
+      description:
+        "AIによる投資戦略を誰もが手軽に利用できる外国為替証拠金取引（FX）・暗号資産・CFDの自動売買CtoCプラットフォームです。PHP（Yiiフレームワーク）で構築された堅牢なバックエンドと、AWS ALB配下のApache環境で安定稼働。プラットフォーム上の売買ロボットをAIが自動採点する仕組みにより、ユーザーが質の高いbotを簡単に選定できる設計になっています。",
+      tags: ["PHP", "Yii Framework", "jQuery", "AWS", "Apache", "FX", "AI自動売買"],
+      image: "/quorea.png",
+      gallery: [
+        { src: "/quorea/1.png", caption: "トップページ。AIによる自動売買戦略とロボット選定の価値訴求を行っています。" },
+        { src: "/quorea/2.png", caption: "課題訴求セクション。FXトレーダーが抱える悩みを整理し、サービスへの導線を設計しています。" },
+      ],
+    },
+    {
+      id: 29,
+      title: "comorebi",
+      category: "訪問看護スケジュール管理システム",
+      type: "system",
+      client: "",
+      description:
+        "訪問看護ステーション向けのスケジュール管理プラットフォームです。Next.js（App Router・Turbopack）とReact Server Componentsで構築し、本部・事業所スタッフがログインしてスケジュールを一元管理できるB2B SaaSとして設計しています。Vercel上でのホスティングにより高速な表示とスムーズな認証フローを実現しています。",
+      tags: ["Next.js", "React", "TypeScript", "Turbopack", "Vercel"],
+      image: "/comorebi.png",
+      gallery: [
+        { src: "/comorebi/1.png", caption: "ログイン画面。訪問看護ステーションのスタッフ・管理者向けの認証画面です。" },
+      ],
+    },
+    {
       id: 15,
       title: "基幹データ連携型 Excel VBA 業務システム",
       category: "業務システム開発",
