@@ -119,7 +119,11 @@ export function Projects() {
         "エージェント・採用企業・求職者をつなぐ人材紹介マネジメントプラットフォームのバックエンド改修に参画しました。C# / .NETで構築されたAPIサーバーのバグ調査・エラー修正を担当し、候補者管理・選考進捗管理・紹介料分配などの機能における不具合を特定して修正。ログ解析やデバッグを通じてシステムの安定性向上に貢献しました。",
       tags: ["Next.js", "TypeScript", "C# / .NET", "SQL Server", "Entity Framework", "Azure", "REST API", "多言語対応"],
       image: "/jobins.png",
-      gallery: [{ src: "/jobins.png", caption: "" }],
+      gallery: [
+        { src: "/jobins.png", caption: "" },
+        { src: "/jobins-site/1.png", caption: "トップページ。求人データベースや候補者管理など、人材紹介に必要な機能を訴求しています。" },
+        { src: "/jobins-site/2.png", caption: "機能紹介セクション。求人データベース・選考管理・候補者管理・求人管理の4機能をタブで整理しています。" },
+      ],
     },
     {
       id: 10,
@@ -131,7 +135,11 @@ export function Projects() {
         "美容室向けのWebサイトをデザインから実装まで一貫して担当しました。スタイリッシュなビジュアルを重視したレイアウトで、メニュー・コンセプト・スタイルギャラリー・ブログ・採用・アクセスの各ページを構築。予約ボタンの固定表示やレスポンシブデザインにより、スマホからの予約導線もスムーズに設計しています。",
       tags: ["HTML", "CSS", "JavaScript", "WordPress", "レスポンシブ", "UI/UXデザイン"],
       image: "/mimi-salon.png",
-      gallery: [{ src: "/mimi-salon.png", caption: "" }],
+      gallery: [
+        { src: "/mimi-salon.png", caption: "" },
+        { src: "/mimi/1.png", caption: "トップページ。スタイリッシュなビジュアルで世界観を表現しています。" },
+        { src: "/mimi/2.png", caption: "スタイルギャラリーセクション。スタッフの実績写真とコンセプトメッセージを配置しています。" },
+      ],
     },
     {
       id: 11,
@@ -161,6 +169,7 @@ export function Projects() {
       gallery: [
         { src: "/map/1.png", caption: "地図画面。OpenStreetMapを使ってGPSによる現在地から近隣店舗を検索できます。" },
         { src: "/map/2.png", caption: "店舗投稿・マイページ画面。Supabase Storageで画像をアップロードできます。" },
+        { src: "/map/3.png", caption: "店舗一覧・検索画面。カテゴリ別に絞り込み、オンボーディングモーダルで使い方を案内しています。" },
       ],
     },
     {
@@ -335,6 +344,7 @@ export function Projects() {
       gallery: [
         { src: "/quorea/1.png", caption: "トップページ。AIによる自動売買戦略とロボット選定の価値訴求を行っています。" },
         { src: "/quorea/2.png", caption: "課題訴求セクション。FXトレーダーが抱える悩みを整理し、サービスへの導線を設計しています。" },
+        { src: "/quorea/3.png", caption: "デモトレード・料金セクション。登録不要で自動売買ロボットを体験できる導線を設けています。" },
       ],
     },
     {
