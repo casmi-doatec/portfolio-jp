@@ -138,7 +138,7 @@ export function Projects() {
       gallery: [
         { src: "/mimi-salon.png", caption: "" },
         { src: "/mimi/1.png", caption: "トップページ。スタイリッシュなビジュアルで世界観を表現しています。" },
-        { src: "/mimi/2.png", caption: "スタイルギャラリーセクション。スタッフの実績写真とコンセプトメッセージを配置しています。" },
+        { src: "/mimi/2.png", caption: "MENUページ。カット・カラー・パーマ・トリートメントなど施術メニューをカテゴリ別に整理しています。" },
       ],
     },
     {
@@ -186,19 +186,19 @@ export function Projects() {
     },
     {
       id: 19,
-      title: "アパレルECアプリ",
+      title: "モバイルアプリ制作実績",
       category: "モバイルアプリ",
       type: "mobile",
       client: "",
       description:
-        "アパレルブランド向けのECモバイルアプリのUI設計・実装に携わりました。カテゴリ別の商品ナビゲーション、絞り込み・並べ替え機能、カラー・サイズ選択付きの商品一覧、キーワード検索・画像検索に対応し、ブラック基調のスタイリッシュなデザインでブランドの世界観を表現しています。",
-      tags: ["React Native", "UI/UXデザイン", "EC"],
+        "複数のモバイルアプリ開発に携わった実績です。アパレルブランド向けECアプリでは、カテゴリ別の商品ナビゲーション、絞り込み・並べ替え機能、カラー・サイズ選択付きの商品一覧、キーワード検索・画像検索を実装し、ブラック基調のスタイリッシュなデザインでブランドの世界観を表現しました。美容系コンテンツアプリでは動画フィード・お気に入り管理機能を、マッチングアプリではFlutterによるクロスプラットフォーム実装・WebSocketを使ったリアルタイムチャット・Stripe決済による課金機能を担当。愚痴投稿アプリではオンボーディング設計とガチャ要素のUI実装を行いました。",
+      tags: ["React Native", "Flutter", "Stripe", "WebSocket", "UI/UXデザイン", "EC"],
       image: "/other-apps/1.png",
       gallery: [
-        { src: "/other-apps/1.png", caption: "商品一覧・カテゴリナビゲーション画面。絞り込み・並べ替えに対応しています。" },
-        { src: "/other-apps/2.png", caption: "商品詳細画面。カラー・サイズ選択やカート機能を実装しています。" },
-        { src: "/other-apps/3.png", caption: "検索・お気に入り画面です。" },
-        { src: "/other-apps/4.png", caption: "マイページ・アカウント管理画面です。" },
+        { src: "/other-apps/1.png", caption: "アパレルECアプリ。商品一覧・カテゴリナビゲーション画面で、絞り込み・並べ替えに対応しています。" },
+        { src: "/other-apps/2.png", caption: "美容系コンテンツアプリ「BU」。動画フィードとマイページでのお気に入り管理機能です。" },
+        { src: "/other-apps/3.png", caption: "マッチングアプリ。Flutter・WebSocketによるユーザー一覧とリアルタイムチャット画面です。" },
+        { src: "/other-apps/4.png", caption: "愚痴投稿アプリ「呪PANDA」。投稿機能とガチャ要素を組み込んだオンボーディング画面です。" },
       ],
     },
     {
@@ -279,8 +279,8 @@ export function Projects() {
       image: "/luna-s-clinic/1.png",
       gallery: [
         { src: "/luna-s-clinic/1.png", caption: "トップページ。WEB予約ボタンを常時表示し、予約導線を意識した構成にしています。" },
-        { src: "/luna-s-clinic/2.png", caption: "メニューセクション。お悩み別に施術メニューを分類し、探しやすく整理しています。" },
         { src: "/luna-s-clinic/3.png", caption: "採用情報・予約カレンダーセクション。募集要項と空き状況を同じ画面で確認できます。" },
+        { src: "/luna-s-clinic/2.png", caption: "メニューセクション。お悩み別に施術メニューを分類し、探しやすく整理しています。" },
       ],
     },
     {
@@ -292,11 +292,11 @@ export function Projects() {
       description:
         "美容医療クリニックのコーポレートサイトを、デザインからWordPressでの実装まで一貫して担当しました。スキン・美容外科・美容婦人科・再生医療など多岐にわたる診療科目をカテゴリ別に整理し、来院実績・患者数・症例数などの実績値を見せることで信頼感を高める構成にしています。",
       tags: ["WordPress", "UI/UXデザイン", "レスポンシブ"],
-      image: "/bianca-clinic/1.png",
+      image: "/bianca-clinic/2.png",
       gallery: [
-        { src: "/bianca-clinic/1.png", caption: "トップページ。診療科目のカテゴリ整理と実績数値の見せ方を工夫しています。" },
         { src: "/bianca-clinic/2.png", caption: "施術紹介セクション。動画コンテンツを用いたスライダー形式で構成しています。" },
         { src: "/bianca-clinic/3.png", caption: "ドクター紹介セクション。監修医師の実績・提携ブランドを見せる構成にしています。" },
+        { src: "/bianca-clinic/1.png", caption: "トップページ。診療科目のカテゴリ整理と実績数値の見せ方を工夫しています。" },
       ],
     },
     {
@@ -323,12 +323,12 @@ export function Projects() {
       client: "",
       description:
         "恋活・婚活マッチングアプリのコーポレートサイトの開発に携わりました。診断コンテンツや料金プラン、恋愛コラムなど複数の導線を整理し、アプリダウンロードへの転換を意識したランディング構成に対応しています。",
-      tags: ["WordPress", "UI/UXデザイン", "レスポンシブ"],
+      tags: ["WordPress", "UI/UXデザイン", "レスポンシブ", "マッチングアプリ"],
       image: "/with-is/1.png",
       gallery: [
-        { src: "/with-is/1.png", caption: "トップページ。アプリダウンロードへの導線を軸に構成しています。" },
-        { src: "/with-is/2.png", caption: "実績紹介セクション。会員数・マッチング率などの数値を強調したビジュアル構成にしています。" },
-        { src: "/with-is/3.png", caption: "安心・安全機能の紹介セクション。監視体制や本人確認などの機能をアイコンとセットで整理しています。" },
+        { src: "/with-is/1.png", caption: "トップページ。マッチング実績No.1を訴求するメインビジュアルで構成しています。" },
+        { src: "/with-is/2.png", caption: "実績紹介セクション。マッチング組数や恋愛スタイル診断など独自機能を強調しています。" },
+        { src: "/with-is/3.png", caption: "成婚・カップル紹介セクション。「withが選ばれる3つの理由」で信頼感を訴求しています。" },
       ],
     },
     {
@@ -362,6 +362,22 @@ export function Projects() {
       ],
     },
     {
+      id: 30,
+      title: "Hotels.com（日本版）",
+      category: "旅行予約プラットフォーム",
+      type: "website",
+      client: "",
+      description:
+        "Expedia Group が運営するグローバル旅行予約サービスの日本版サイト開発に携わりました。フロントエンドはReact・TypeScriptで構築し、目的地・チェックイン日・人数を条件に宿泊施設をリアルタイム検索できる検索フォーム、会員向け割引バッジ付きのホテルカード一覧、写真ギャラリー・周辺ガイド・レビュースコアを統合したホテル詳細ページを実装。バックエンドはNode.jsで構築し、在庫・料金データのリアルタイム取得APIや会員ステータスに応じた動的価格表示ロジックを担当しました。",
+      tags: ["React", "TypeScript", "Node.js", "React Router", "AWS", "Google Sign-In", "REST API", "レスポンシブ"],
+      image: "/jp-hotels/1.png",
+      gallery: [
+        { src: "/jp-hotels/1.png", caption: "トップページ。目的地・日程・人数で宿泊施設をリアルタイム検索できる導線を実装しています。" },
+        { src: "/jp-hotels/2.png", caption: "ホテル一覧画面。会員特典バッジ付きの価格カードと、アプリダウンロード誘導を組み込んでいます。" },
+        { src: "/jp-hotels/3.png", caption: "ホテル詳細ページ。写真ギャラリー・料金比較・周辺ガイド・レビュースコアを1画面に統合しています。" },
+      ],
+    },
+    {
       id: 15,
       title: "基幹データ連携型 Excel VBA 業務システム",
       category: "業務システム開発",
@@ -382,8 +398,12 @@ export function Projects() {
       description:
         "発酵科学スキンケアブランドのECサイトにて、フロントエンド開発を担当しました。Next.js・Reactでの実装に加え、CMSと連携した商品情報・ジャーナル記事の管理を行い、更新のしやすさと表示速度を両立したサイト構築に対応しています。",
       tags: ["Next.js", "React", "CMS"],
-      image: "/fas-girl.png",
-      gallery: [{ src: "/fas-girl.png", caption: "" }],
+      image: "/fas.png",
+      gallery: [
+        { src: "/fas/1.png", caption: "ブランドトップページ。「FAS」のロゴタイプに商品ビジュアルを重ねた演出です。" },
+        { src: "/fas/2.png", caption: "トップページ。Product・About・Storeなど、EC導線となるナビゲーションを構成しています。" },
+        { src: "/fas/3.png", caption: "Topicsセクション。新商品・限定商品やイベント情報を一覧で発信しています。" },
+      ],
     },
     {
       id: 17,
@@ -392,10 +412,14 @@ export function Projects() {
       type: "website",
       client: "",
       description:
-        "コニカミノルタが提供する学校向けAI学習プラットフォーム「tomoLinks」の公式サイトにて、WordPressでの構築・リリース対応を担当しました。ドメイン設定や公開後の不具合修正まで一貫して対応しています。",
-      tags: ["WordPress"],
+        "コニカミノルタが提供する学校向けAI学習プラットフォーム「tomoLinks」の公式サイトにて、デザインからWordPressでの構築・リリースまで一貫して担当しました。ドメイン設定や公開後の不具合修正にも対応しています。",
+      tags: ["WordPress", "UI/UXデザイン", "サイトリリース", "ドメイン設定"],
       image: "/tomolinks.png",
-      gallery: [{ src: "/tomolinks.png", caption: "" }],
+      gallery: [
+        { src: "/tomolinks/1.png", caption: "トップページ。AIと教育データで学びをサポートする製品コンセプトを訴求しています。" },
+        { src: "/tomolinks/2.png", caption: "機能紹介セクション。生成AI活用支援機能とAIドリル機能を並べて紹介しています。" },
+        { src: "/tomolinks/3.png", caption: "オールインワン機能の紹介図。AIドリルから生成AI活用まで、提供機能を一枚で整理しています。" },
+      ],
     },
     {
       id: 18,
@@ -405,9 +429,13 @@ export function Projects() {
       client: "",
       description:
         "化粧品・ホビーブランドを展開するライフスタイルカンパニー株式会社のコーポレートサイトにて、デザインからWordPressでのコーディング、ドメイン設定、デプロイまで一貫して担当しました。",
-      tags: ["WordPress", "UI/UXデザイン"],
+      tags: ["WordPress", "UI/UXデザイン", "サイトリリース", "ドメイン設定"],
       image: "/lifestyle-co.png",
-      gallery: [{ src: "/lifestyle-co.png", caption: "" }],
+      gallery: [
+        { src: "/lifestyle-co/1.png", caption: "トップページ。「世界のトレンドをもっと身近に」をコンセプトにしたメインビジュアルです。" },
+        { src: "/lifestyle-co/2.png", caption: "COSMETICSセクション。自社化粧品ブランドと店舗展開を紹介しています。" },
+        { src: "/lifestyle-co/3.png", caption: "HOBBYセクション。ホビーブランド「TOKOTOYZ」のコンセプトを紹介しています。" },
+      ],
     },
   ];
 

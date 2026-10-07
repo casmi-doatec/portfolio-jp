@@ -54,36 +54,17 @@ export function Hero() {
 
           {/* Description */}
           <p className={`text-sm text-muted-foreground leading-[2] font-serif max-w-2xl ${isVisible ? "animate-slide-up animation-delay-400" : "opacity-0"}`}>
-            8年・30以上のプロジェクトを経験。AI・Web・SaaS・モバイルまで、要件を的確に汲み取り最適な技術で形にします。
+            AI・Web・SaaS・モバイルまで、要件を的確に汲み取り最適な技術で形にします。
           </p>
 
-          {/* Stats + CTA row */}
-          <div className={`flex flex-wrap items-center gap-8 pt-2 ${isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"}`}>
-            <div className="flex items-center gap-8">
-              <div>
-                <p className="text-2xl font-black tracking-tighter">8<span className="text-jp-sakura">+</span></p>
-                <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-0.5">年の実務経験</p>
-              </div>
-              <div className="w-px h-8 bg-border" />
-              <div>
-                <p className="text-2xl font-black tracking-tighter">30<span className="text-jp-sakura">+</span></p>
-                <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-0.5">プロジェクト</p>
-              </div>
-              <div className="w-px h-8 bg-border" />
-              <div>
-                <p className="text-2xl font-black tracking-tighter">7<span className="text-jp-sakura">+</span></p>
-                <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-0.5">技術領域</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-4 ml-auto">
-              <a href="#projects" className="text-xs tracking-[0.25em] uppercase px-8 py-3 bg-jp-sakura text-white hover:bg-foreground hover:text-background transition-all duration-300">
-                実績を見る
-              </a>
-              <a href="#contact" className="text-xs tracking-[0.25em] uppercase px-8 py-3 border border-border hover:border-foreground transition-colors duration-300">
-                お問い合わせ
-              </a>
-            </div>
+          {/* CTA row */}
+          <div className={`flex flex-wrap items-center gap-4 pt-2 ${isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"}`}>
+            <a href="#projects" className="text-xs tracking-[0.25em] uppercase px-8 py-3 bg-jp-sakura text-white hover:bg-foreground hover:text-background transition-all duration-300">
+              実績を見る
+            </a>
+            <a href="#contact" className="text-xs tracking-[0.25em] uppercase px-8 py-3 border border-border hover:border-foreground transition-colors duration-300">
+              お問い合わせ
+            </a>
           </div>
 
         </div>

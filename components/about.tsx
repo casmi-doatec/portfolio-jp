@@ -129,26 +129,6 @@ export function About() {
               </p>
             </div>
 
-            {/* Career timeline */}
-            <div
-              className={`grid grid-cols-3 gap-4 pt-2 ${
-                isVisible ? "animate-slide-up animation-delay-800" : "opacity-0"
-              }`}
-            >
-              <div className="border-t-2 border-jp-sakura/30 pt-4 space-y-1">
-                <p className="text-2xl font-black">4<span className="text-sm font-normal text-muted-foreground ml-1">年</span></p>
-                <p className="text-[10px] tracking-[0.1em] text-muted-foreground uppercase">Frontend</p>
-              </div>
-              <div className="border-t-2 border-jp-sakura/20 pt-4 space-y-1">
-                <p className="text-2xl font-black">2<span className="text-sm font-normal text-muted-foreground ml-1">年</span></p>
-                <p className="text-[10px] tracking-[0.1em] text-muted-foreground uppercase">Backend</p>
-              </div>
-              <div className="border-t-2 border-jp-sakura/40 pt-4 space-y-1">
-                <p className="text-2xl font-black">2<span className="text-sm font-normal text-muted-foreground ml-1">年</span></p>
-                <p className="text-[10px] tracking-[0.1em] text-muted-foreground uppercase">Full-Stack</p>
-              </div>
-            </div>
-
             <div
               className={`${
                 isVisible ? "animate-slide-up animation-delay-1000" : "opacity-0"

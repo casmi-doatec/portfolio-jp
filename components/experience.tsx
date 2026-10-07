@@ -48,12 +48,6 @@ export function Experience() {
     },
   ];
 
-  const stats = [
-    { value: "30+", label: "開発プロジェクト" },
-    { value: "8+", label: "年の実務経験" },
-    { value: "15+", label: "取引先クライアント" },
-  ];
-
   return (
     <section
       ref={sectionRef}
@@ -125,26 +119,6 @@ export function Experience() {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Stats */}
-          <div
-            className={`${
-              isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"
-            }`}
-          >
-            <div className="grid grid-cols-3 gap-8 border-t border-jp-sakura/10 pt-12">
-              {stats.map((stat) => (
-                <div key={stat.label} className="text-center space-y-2">
-                  <p className="text-4xl lg:text-5xl font-black tracking-tighter">
-                    {stat.value}
-                  </p>
-                  <p className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>

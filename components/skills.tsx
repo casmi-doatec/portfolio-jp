@@ -133,22 +133,6 @@ export function Skills() {
           <div className="border-t border-border" />
         </div>
 
-        {/* Stats row */}
-        <div className={`mt-20 grid grid-cols-3 gap-px bg-border ${isVisible ? "animate-slide-up animation-delay-800" : "opacity-0"}`}>
-          <div className="bg-background px-8 py-10 flex flex-col justify-center">
-            <p className="text-4xl lg:text-5xl font-black tracking-tighter">8<span className="text-jp-sakura">+</span></p>
-            <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-2">年の実務経験</p>
-          </div>
-          <div className="bg-background px-8 py-10 flex flex-col justify-center">
-            <p className="text-4xl lg:text-5xl font-black tracking-tighter">30<span className="text-jp-sakura">+</span></p>
-            <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-2">プロジェクト</p>
-          </div>
-          <div className="bg-background px-8 py-10 flex flex-col justify-center">
-            <p className="text-4xl lg:text-5xl font-black tracking-tighter">7<span className="text-jp-sakura">+</span></p>
-            <p className="text-[10px] tracking-[0.2em] uppercase text-muted-foreground mt-2">技術領域</p>
-          </div>
-        </div>
-
       </div>
     </section>
   );
