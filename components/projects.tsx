@@ -365,16 +365,16 @@ export function Projects() {
       id: 30,
       title: "Hotels.com（日本版）",
       category: "旅行予約プラットフォーム",
-      type: "website",
+      type: "system",
       client: "",
       description:
         "Expedia Group が運営するグローバル旅行予約サービスの日本版サイト開発に携わりました。フロントエンドはReact・TypeScriptで構築し、目的地・チェックイン日・人数を条件に宿泊施設をリアルタイム検索できる検索フォーム、会員向け割引バッジ付きのホテルカード一覧、写真ギャラリー・周辺ガイド・レビュースコアを統合したホテル詳細ページを実装。バックエンドはNode.jsで構築し、在庫・料金データのリアルタイム取得APIや会員ステータスに応じた動的価格表示ロジックを担当しました。",
       tags: ["React", "TypeScript", "Node.js", "React Router", "AWS", "Google Sign-In", "REST API", "レスポンシブ"],
-      image: "/jp-hotels/1.png",
+      image: "/jp-hotels/jp-hotels-1.png",
       gallery: [
-        { src: "/jp-hotels/1.png", caption: "トップページ。目的地・日程・人数で宿泊施設をリアルタイム検索できる導線を実装しています。" },
-        { src: "/jp-hotels/2.png", caption: "ホテル一覧画面。会員特典バッジ付きの価格カードと、アプリダウンロード誘導を組み込んでいます。" },
-        { src: "/jp-hotels/3.png", caption: "ホテル詳細ページ。写真ギャラリー・料金比較・周辺ガイド・レビュースコアを1画面に統合しています。" },
+        { src: "/jp-hotels/jp-hotels-1.png", caption: "トップページ。目的地・日程・人数で宿泊施設をリアルタイム検索できる導線を実装しています。" },
+        { src: "/jp-hotels/jp-hotels-2.png", caption: "ホテル一覧画面。会員特典バッジ付きの価格カードと、アプリダウンロード誘導を組み込んでいます。" },
+        { src: "/jp-hotels/jp-hotels-3.png", caption: "ホテル詳細ページ。写真ギャラリー・料金比較・周辺ガイド・レビュースコアを1画面に統合しています。" },
       ],
     },
     {
