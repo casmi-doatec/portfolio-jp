@@ -16,8 +16,8 @@ export function Hero() {
       {/* ── Banner + Avatar ── */}
       <div className="relative w-full">
         <Image
-          src="/pegasus2.png"
-          alt="DreamHigh"
+          src="/dream-high-pastel-blossom-utopia.png"
+          alt="Dream High Pastel Blossom Utopia"
           width={2190}
           height={718}
           className="w-full h-auto block"
@@ -37,7 +37,7 @@ export function Hero() {
           }`}
         >
           <div className="relative w-28 h-28 lg:w-44 lg:h-44 rounded-full overflow-hidden border-4 border-background shadow-sm">
-            <Image src="/real-kasumi.png" alt="かすみ" fill className="object-cover" priority />
+            <Image src="/Maneki_neko.png" alt="Maneki_neko" fill className="object-cover" priority />
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@ export function Hero() {
           {/* Name & title */}
           <div className={`${isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"}`}>
             <p className="text-[11px] tracking-[0.4em] uppercase text-jp-sakura mb-2">AI・フルスタックエンジニア</p>
-            <h1 className="text-4xl lg:text-6xl font-black tracking-tighter">かすみ</h1>
+            <h1 className="text-4xl lg:text-6xl font-black tracking-tighter">Maneki_neko</h1>
           </div>
 
           {/* Description */}

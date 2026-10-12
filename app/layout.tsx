@@ -4,8 +4,8 @@ import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "かすみ | AI・フルスタックエンジニア",
-  description: "かすみのポートフォリオ - AI・フルスタックエンジニア",
+  title: "Maneki_neko | AI・フルスタックエンジニア",
+  description: "Maneki_nekoのポートフォリオ - AI・フルスタックエンジニア",
 };
 
 export default function RootLayout({

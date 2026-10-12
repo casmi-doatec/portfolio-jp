@@ -111,7 +111,7 @@ export function Navigation() {
         {/* Footer */}
         <div className="px-8 py-6 border-t border-border">
           <p className="text-[9px] tracking-[0.3em] uppercase text-muted-foreground/60">
-            &copy; 2026 かすみ
+            &copy; 2026 Maneki_neko
           </p>
         </div>
       </div>
