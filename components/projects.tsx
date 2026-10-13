@@ -63,12 +63,12 @@ export function Projects() {
     {
       id: 26,
       title: "with.is",
-      category: "マッチングアプリWebサイト",
-      type: "website",
+      category: "マッチングWebシステム",
+      type: "system",
       client: "",
       description:
-        "恋活・婚活マッチングアプリのコーポレートサイトの開発に携わりました。診断コンテンツや料金プラン、恋愛コラムなど複数の導線を整理し、アプリダウンロードへの転換を意識したランディング構成に対応しています。",
-      tags: ["Bubble", "WordPress", "UI/UXデザイン", "レスポンシブ", "マッチングアプリ"],
+        "恋活・婚活マッチングアプリのWebシステム・プラットフォームの開発に携わりました。恋愛スタイル診断などの独自機能、マッチング実績の集計・表示、料金プラン、コンテンツ配信といった複数の機能を一つのプラットフォームとして整理し、ユーザーがアプリ利用へスムーズにつながる導線設計に対応しています。",
+      tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "Bubble", "UI/UXデザイン", "レスポンシブ", "マッチングアプリ"],
       image: "/with-is/1.png",
       gallery: [
         { src: "/with-is/1.png", caption: "トップページ。マッチング実績No.1を訴求するメインビジュアルで構成しています。" },

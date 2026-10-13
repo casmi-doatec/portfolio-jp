@@ -45,6 +45,12 @@ const categories = [
     en: "Machine Learning Ops",
     skills: ["PyTorch", "TensorFlow", "OpenCV", "vLLM", "Model Deployment"],
   },
+  {
+    id: "08",
+    title: "ノーコード・ローコード",
+    en: "No-code / Low-code",
+    skills: ["Bubble"],
+  },
 ];
 
 export function Skills() {
