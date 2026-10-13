@@ -16,10 +16,10 @@ export function Hero() {
       {/* ── Banner + Avatar ── */}
       <div className="relative w-full">
         <Image
-          src="/dream-high-pastel-blossom-utopia.png"
-          alt="Dream High Pastel Blossom Utopia"
-          width={2190}
-          height={718}
+          src="/Puzzled Cat in a Hidden-Character Valley.png"
+          alt="Puzzled cat in a hidden-character valley"
+          width={2172}
+          height={724}
           className="w-full h-auto block"
           priority
         />
@@ -30,26 +30,26 @@ export function Hero() {
         {/* Bottom fade */}
         <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-background/70 to-transparent pointer-events-none" />
 
-        {/* Avatar — right side, vertically centered in banner */}
+        {/* Avatar — bottom-left, overlapping the banner edge (keeps the cat on the right visible) */}
         <div
-          className={`absolute right-6 lg:right-16 top-1/2 -translate-y-1/2 z-10 ${
+          className={`absolute left-6 lg:left-16 bottom-0 translate-y-1/2 z-10 ${
             isVisible ? "animate-fade-in" : "opacity-0"
           }`}
         >
           <div className="relative w-28 h-28 lg:w-44 lg:h-44 rounded-full overflow-hidden border-4 border-background shadow-sm">
-            <Image src="/Maneki_neko.png" alt="Maneki_neko" fill className="object-cover" priority />
+            <Image src="/neko.png" alt="NekoMaki" fill className="object-cover" priority />
           </div>
         </div>
       </div>
 
       {/* ── Profile content (below banner) ── */}
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="pt-6 lg:pt-8 pb-10 lg:pb-16 space-y-6">
+        <div className="pt-16 lg:pt-24 pb-10 lg:pb-16 space-y-6">
 
           {/* Name & title */}
           <div className={`${isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"}`}>
             <p className="text-[11px] tracking-[0.4em] uppercase text-jp-sakura mb-2">AI・フルスタックエンジニア</p>
-            <h1 className="text-4xl lg:text-6xl font-black tracking-tighter">Maneki_neko</h1>
+            <h1 className="text-4xl lg:text-6xl font-black tracking-tighter">NekoMaki</h1>
           </div>
 
           {/* Description */}

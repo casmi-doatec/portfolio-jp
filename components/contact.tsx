@@ -274,7 +274,7 @@ export function Contact() {
           <div className="flex items-center justify-center gap-3">
             <span className="text-jp-sakura font-display">&#x300C;</span>
             <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
-              &copy; 2026 Maneki_neko
+              &copy; 2026 NekoMaki
             </p>
             <span className="text-jp-sakura font-display">&#x300D;</span>
           </div>

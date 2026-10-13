@@ -68,8 +68,8 @@ export function About() {
             <div className="relative group">
               <div className="relative aspect-[4/5] w-full overflow-hidden">
                 <Image
-                  src="/Maneki_neko.png"
-                  alt="Maneki_neko"
+                  src="/neko.png"
+                  alt="NekoMaki"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
