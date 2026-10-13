@@ -61,6 +61,22 @@ export function Projects() {
       ],
     },
     {
+      id: 26,
+      title: "with.is",
+      category: "マッチングアプリWebサイト",
+      type: "website",
+      client: "",
+      description:
+        "恋活・婚活マッチングアプリのコーポレートサイトの開発に携わりました。診断コンテンツや料金プラン、恋愛コラムなど複数の導線を整理し、アプリダウンロードへの転換を意識したランディング構成に対応しています。",
+      tags: ["Bubble", "WordPress", "UI/UXデザイン", "レスポンシブ", "マッチングアプリ"],
+      image: "/with-is/1.png",
+      gallery: [
+        { src: "/with-is/1.png", caption: "トップページ。マッチング実績No.1を訴求するメインビジュアルで構成しています。" },
+        { src: "/with-is/2.png", caption: "実績紹介セクション。マッチング組数や恋愛スタイル診断など独自機能を強調しています。" },
+        { src: "/with-is/3.png", caption: "成婚・カップル紹介セクション。「withが選ばれる3つの理由」で信頼感を訴求しています。" },
+      ],
+    },
+    {
       id: 3,
       title: "LA・JOLLA HALE",
       category: "ECサイト",
@@ -313,22 +329,6 @@ export function Projects() {
         { src: "/loreal/1.png", caption: "トップページ。新商品キャンペーンをメインビジュアルに据えた構成にしています。" },
         { src: "/loreal/2.png", caption: "商品ラインナップセクション。カラーバリエーションを一覧で見せる構成にしています。" },
         { src: "/loreal/3.png", caption: "ブランドの取り組み紹介セクション。サステナビリティに関するメッセージを打ち出しています。" },
-      ],
-    },
-    {
-      id: 26,
-      title: "with.is",
-      category: "マッチングアプリWebサイト",
-      type: "website",
-      client: "",
-      description:
-        "恋活・婚活マッチングアプリのコーポレートサイトの開発に携わりました。診断コンテンツや料金プラン、恋愛コラムなど複数の導線を整理し、アプリダウンロードへの転換を意識したランディング構成に対応しています。",
-      tags: ["WordPress", "UI/UXデザイン", "レスポンシブ", "マッチングアプリ"],
-      image: "/with-is/1.png",
-      gallery: [
-        { src: "/with-is/1.png", caption: "トップページ。マッチング実績No.1を訴求するメインビジュアルで構成しています。" },
-        { src: "/with-is/2.png", caption: "実績紹介セクション。マッチング組数や恋愛スタイル診断など独自機能を強調しています。" },
-        { src: "/with-is/3.png", caption: "成婚・カップル紹介セクション。「withが選ばれる3つの理由」で信頼感を訴求しています。" },
       ],
     },
     {
