@@ -342,7 +342,7 @@ export function Projects() {
       description:
         "AIによる投資戦略を誰もが手軽に利用できる外国為替証拠金取引（FX）・暗号資産・CFDの自動売買CtoCプラットフォームです。PHP（Yiiフレームワーク）で構築された堅牢なバックエンドと、AWS ALB配下のApache環境で安定稼働。プラットフォーム上の売買ロボットをAIが自動採点する仕組みにより、ユーザーが質の高いbotを簡単に選定できる設計になっています。",
       tags: ["PHP", "Yii Framework", "jQuery", "AWS", "Apache", "FX", "AI自動売買"],
-      image: "/quorea.png",
+      image: "/quorea/1.png",
       gallery: [
         { src: "/quorea/1.png", caption: "トップページ。AIによる自動売買戦略とロボット選定の価値訴求を行っています。" },
         { src: "/quorea/2.png", caption: "課題訴求セクション。FXトレーダーが抱える悩みを整理し、サービスへの導線を設計しています。" },
@@ -404,7 +404,7 @@ export function Projects() {
       description:
         "受発注・在庫集計・帳票自動化を軸とした基幹データ連携型のExcel VBA業務システムの開発リーダーを担当しました。Access・SQL ServerとのADO/ODBC連携、月次約50万行の大量データ高速処理、既存マクロのリファクタリング、AIコーディング支援ツールの導入まで対応。5部門・約120名が利用するシステムを4名チームで構築・運用しています。",
       tags: ["VBA", "Excel", "Access", "SQL Server", "ADO", "Power Query", "SQL", "VBScript", "Git", "GitHub Copilot"],
-      image: "",
+      image: "/excel-vba-system.svg",
       gallery: [],
     },
     {

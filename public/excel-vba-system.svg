@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1600" height="1000" fill="#f5f1ec"/>
+  <rect x="40" y="40" width="1520" height="920" fill="#fbf9f6" stroke="#e3dcd3" stroke-width="2"/>
+
+  <text x="100" y="140" font-size="28" letter-spacing="8" fill="#c4343b">EXCEL VBA SYSTEM</text>
+  <text x="100" y="210" font-size="54" font-weight="800" fill="#2a2522">基幹データ連携型 業務システム</text>
+  <rect x="100" y="240" width="90" height="4" fill="#c4343b"/>
+
+  <!-- Flow -->
+  <g font-size="34" font-weight="700" text-anchor="middle">
+    <rect x="100" y="350" width="360" height="220" fill="#fff" stroke="#2a2522" stroke-width="3"/>
+    <text x="280" y="445" fill="#2a2522">Excel VBA</text>
+    <text x="280" y="500" font-size="24" font-weight="400" fill="#7a6f66">受発注・在庫集計・帳票</text>
+
+    <rect x="620" y="350" width="360" height="220" fill="#fff" stroke="#2a2522" stroke-width="3"/>
+    <text x="800" y="445" fill="#2a2522">Access</text>
+    <text x="800" y="500" font-size="24" font-weight="400" fill="#7a6f66">SQL Server</text>
+
+    <rect x="1140" y="350" width="360" height="220" fill="#fff" stroke="#2a2522" stroke-width="3"/>
+    <text x="1320" y="445" fill="#2a2522">帳票・集計出力</text>
+    <text x="1320" y="500" font-size="24" font-weight="400" fill="#7a6f66">自動化</text>
+  </g>
+
+  <!-- Arrows -->
+  <g stroke="#c4343b" stroke-width="4" fill="#c4343b">
+    <line x1="470" y1="460" x2="605" y2="460"/>
+    <polygon points="620,460 596,448 596,472" stroke="none"/>
+    <line x1="990" y1="460" x2="1125" y2="460"/>
+    <polygon points="1140,460 1116,448 1116,472" stroke="none"/>
+  </g>
+  <text x="540" y="430" font-size="22" text-anchor="middle" fill="#c4343b">ADO / ODBC</text>
+  <text x="1060" y="430" font-size="22" text-anchor="middle" fill="#c4343b">VBA</text>
+
+  <!-- Facts -->
+  <g text-anchor="middle">
+    <text x="300" y="760" font-size="64" font-weight="800" fill="#2a2522">約50万行</text>
+    <text x="300" y="810" font-size="24" fill="#7a6f66">月次の大量データを高速処理</text>
+    <text x="800" y="760" font-size="64" font-weight="800" fill="#2a2522">約120名</text>
+    <text x="800" y="810" font-size="24" fill="#7a6f66">5部門が利用</text>
+    <text x="1300" y="760" font-size="64" font-weight="800" fill="#2a2522">4名</text>
+    <text x="1300" y="810" font-size="24" fill="#7a6f66">開発リーダーとしてチーム構築・運用</text>
+  </g>
+</svg>
