@@ -34,7 +34,9 @@ export function Projects() {
       ([entry]) => {
         if (entry.isIntersecting) setIsVisible(true);
       },
-      { threshold: 0.05 }
+      // threshold 0: the section is very tall on mobile, so any ratio > 0 can
+      // exceed the viewport height and never fire (projects stay invisible).
+      { threshold: 0 }
     );
     if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
