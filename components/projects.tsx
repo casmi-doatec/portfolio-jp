@@ -64,7 +64,7 @@ export function Projects() {
     },
     {
       id: 26,
-      title: "CoCome（ококomi）",
+      title: "ココミー",
       category: "恋活マッチングアプリ",
       type: "system",
       client: "",
