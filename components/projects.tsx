@@ -64,18 +64,18 @@ export function Projects() {
     },
     {
       id: 26,
-      title: "with.is",
-      category: "マッチングWebシステム",
+      title: "CoCome（ококomi）",
+      category: "恋活マッチングアプリ",
       type: "system",
       client: "",
       description:
-        "恋活・婚活マッチングアプリのWebシステム・プラットフォームの開発に携わりました。恋愛スタイル診断などの独自機能、マッチング実績の集計・表示、料金プラン、コンテンツ配信といった複数の機能を一つのプラットフォームとして整理し、ユーザーがアプリ利用へスムーズにつながる導線設計に対応しています。",
-      tags: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Supabase", "Bubble", "UI/UXデザイン", "レスポンシブ", "マッチングアプリ"],
-      image: "/with-is/1.png",
+        "恋活・恋人探しに特化したマッチングアプリにおいて、1対1の匿名音声通話機能「CoCo通話」の開発を担当しました。WebRTCを用いてリアルタイムの音声通話を実装し、ユーザーが身元を明かさずに会話できる匿名性を確保した設計に対応しています。iOS・Android両プラットフォームへのリリースも担当しました。",
+      tags: ["WebRTC", "iOS", "Android", "音声通話", "匿名通話", "リアルタイム通信", "マッチングアプリ"],
+      image: "/cocome/1.jpg",
       gallery: [
-        { src: "/with-is/1.png", caption: "トップページ。マッチング実績No.1を訴求するメインビジュアルで構成しています。" },
-        { src: "/with-is/2.png", caption: "実績紹介セクション。マッチング組数や恋愛スタイル診断など独自機能を強調しています。" },
-        { src: "/with-is/3.png", caption: "成婚・カップル紹介セクション。「withが選ばれる3つの理由」で信頼感を訴求しています。" },
+        { src: "/cocome/1.jpg", caption: "サービスのメインビジュアル。ストレスフリーな恋活をコンセプトに、自然体のカップルイメージで世界観を表現しています。" },
+        { src: "/cocome/2.jpg", caption: "サービスのブランドイメージ。日常のひとときを切り取ったビジュアルで、気軽な出会いの雰囲気を演出しています。" },
+        { src: "/cocome/3.jpg", caption: "サービスビジュアル。プライバシー保護と安心感を重視したマッチング体験を訴求するビジュアルです。" },
       ],
     },
     {
@@ -361,22 +361,6 @@ export function Projects() {
       image: "/comorebi.png",
       gallery: [
         { src: "/comorebi/1.png", caption: "ログイン画面。訪問看護ステーションのスタッフ・管理者向けの認証画面です。" },
-      ],
-    },
-    {
-      id: 30,
-      title: "Hotels.com（日本版）",
-      category: "旅行予約プラットフォーム",
-      type: "system",
-      client: "",
-      description:
-        "Expedia Group が運営するグローバル旅行予約サービスの日本版サイト開発に携わりました。フロントエンドはReact・TypeScriptで構築し、目的地・チェックイン日・人数を条件に宿泊施設をリアルタイム検索できる検索フォーム、会員向け割引バッジ付きのホテルカード一覧、写真ギャラリー・周辺ガイド・レビュースコアを統合したホテル詳細ページを実装。バックエンドはNode.jsで構築し、在庫・料金データのリアルタイム取得APIや会員ステータスに応じた動的価格表示ロジックを担当しました。",
-      tags: ["React", "TypeScript", "Node.js", "React Router", "AWS", "Google Sign-In", "REST API", "レスポンシブ"],
-      image: "/jp-hotels/jp-hotels-1.png",
-      gallery: [
-        { src: "/jp-hotels/jp-hotels-1.png", caption: "トップページ。目的地・日程・人数で宿泊施設をリアルタイム検索できる導線を実装しています。" },
-        { src: "/jp-hotels/jp-hotels-2.png", caption: "ホテル一覧画面。会員特典バッジ付きの価格カードと、アプリダウンロード誘導を組み込んでいます。" },
-        { src: "/jp-hotels/jp-hotels-3.png", caption: "ホテル詳細ページ。写真ギャラリー・料金比較・周辺ガイド・レビュースコアを1画面に統合しています。" },
       ],
     },
     {

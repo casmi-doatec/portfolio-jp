@@ -48,7 +48,7 @@ export function Hero() {
 
           {/* Name & title */}
           <div className={`${isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"}`}>
-            <p className="text-[11px] tracking-[0.4em] uppercase text-jp-sakura mb-2">AI・フルスタックエンジニア</p>
+            <p className="text-[11px] tracking-[0.4em] uppercase text-jp-sakura mb-2">Infra Engineer</p>
             <h1 className="text-4xl lg:text-6xl font-black tracking-tighter">NekoMaki</h1>
           </div>
 

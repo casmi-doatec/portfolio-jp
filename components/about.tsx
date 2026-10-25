@@ -111,21 +111,28 @@ export function About() {
                   isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"
                 }`}
               >
-                フルスタック・AIエンジニアとして、設計から実装・テスト・運用まで一通り担当してきました。ただコードを書くだけじゃなく、ビジネス要件や現場の制約もちゃんと踏まえた上で、長く使えるプロダクトを作ることを大切にしています。
+                AWS を用いたインフラ設計・構築・運用保守に約 8 年携わってきました。Web サービスの新規立ち上げから既存システムの保守まで、ネットワーク、コンピューティング、データベース、監視、デプロイ基盤を横断して担当しています。
               </p>
               <p
                 className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-400" : "opacity-0"
                 }`}
               >
-                バックエンドをメインに、Java・Python・PHP（Laravel）・Node.jsでのAPI設計・実装の経験が豊富です。AI分野ではLLMやOpenAI APIを活用したチャットボット・AIツールの開発に力を入れており、RAGやLangChainを使ったワークフロー設計、業界特化型のLLMモデル構築、OCR特化サービスまで実務ベースで幅広く対応しています。
+                2025 年には、月間 PV 約 800 万の EC 系 Web サービスで AWS インフラの運用保守を担当し、Terraform のコードと実環境の差分解消、GitHub Actions の OIDC 連携によるデプロイ改善、本番障害の復旧と再発防止に取り組みました。また、GCP 上の本番環境を 1 名体制で構築・運用し、要件定義から稼働後の障害対応まで一貫して担当しています。
               </p>
               <p
                 className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"
                 }`}
               >
-                フロントエンドはReact・Next.jsをメインに、保守しやすいUI設計と使い勝手のいいUX作りが得意です。インフラはAWSでの設計・構築・運用に対応しており、スケーラビリティ・可用性・コストのバランスを取りながら、安定したプロダクト運用を支えています。
+                Terraform による構成管理（約 5 年、新規構築 3 件・既存保守 4 件）、Docker によるコンテナ化、CI/CD パイプラインの構築、CloudWatch を用いた監視の整備など、チームが安全にリリースを続けられる仕組みづくりを重視しています。障害対応では、アプリケーションの内部まで理解していることを強みに、インフラとアプリケーションの両面から原因を切り分けてきました。
+              </p>
+              <p
+                className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
+                  isVisible ? "animate-slide-up animation-delay-800" : "opacity-0"
+                }`}
+              >
+                バックエンドを中心に、React／Next.js によるフロントエンドまで含めたフルスタックな開発経験があり、設計から実装まで一貫して手がけた Web アプリケーションをポートフォリオに掲載しています。近年は、LLM を活用した業務ツールの開発にも取り組んでいます。
               </p>
             </div>
 
