@@ -111,28 +111,28 @@ export function About() {
                   isVisible ? "animate-slide-up animation-delay-200" : "opacity-0"
                 }`}
               >
-                AWS を用いたインフラ設計・構築・運用保守に約 8 年携わってきました。Web サービスの新規立ち上げから既存システムの保守まで、ネットワーク、コンピューティング、データベース、監視、デプロイ基盤を横断して担当しています。
+                AI エンジニア・フルスタックエンジニアとして、LLM を活用したプロダクト開発と Web アプリケーションの設計・実装を行っています。Next.js と Python を中心に、フロントエンドからバックエンド、AI 連携まで一貫して手がけることができます。
               </p>
               <p
                 className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-400" : "opacity-0"
                 }`}
               >
-                2025 年には、月間 PV 約 800 万の EC 系 Web サービスで AWS インフラの運用保守を担当し、Terraform のコードと実環境の差分解消、GitHub Actions の OIDC 連携によるデプロイ改善、本番障害の復旧と再発防止に取り組みました。また、GCP 上の本番環境を 1 名体制で構築・運用し、要件定義から稼働後の障害対応まで一貫して担当しています。
+                フロントエンドは Next.js（App Router）を主軸に、TypeScript・Tailwind CSS を用いたコンポーネント設計と UX を重視した実装を行っています。バックエンドは Python（FastAPI・LangChain）を使い、RAG パイプラインや外部 API との連携、業務自動化ツールの構築を得意としています。
               </p>
               <p
                 className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-600" : "opacity-0"
                 }`}
               >
-                Terraform による構成管理（約 5 年、新規構築 3 件・既存保守 4 件）、Docker によるコンテナ化、CI/CD パイプラインの構築、CloudWatch を用いた監視の整備など、チームが安全にリリースを続けられる仕組みづくりを重視しています。障害対応では、アプリケーションの内部まで理解していることを強みに、インフラとアプリケーションの両面から原因を切り分けてきました。
+                AI 領域では、OpenAI・Claude・Dify などの LLM を活用したチャットボット、業務効率化ツール、LINE 連携システムの開発実績があります。プロンプト設計からシステム統合まで、実用レベルのプロダクトとして仕上げることを意識しています。
               </p>
               <p
                 className={`text-sm lg:text-base text-muted-foreground font-light leading-[2.2] ${
                   isVisible ? "animate-slide-up animation-delay-800" : "opacity-0"
                 }`}
               >
-                バックエンドを中心に、React／Next.js によるフロントエンドまで含めたフルスタックな開発経験があり、設計から実装まで一貫して手がけた Web アプリケーションをポートフォリオに掲載しています。近年は、LLM を活用した業務ツールの開発にも取り組んでいます。
+                要件定義・設計から実装・リリースまでを 1 名で完結できる体制を強みとしており、スタートアップや中小企業の新規プロダクト立ち上げを中心に支援しています。スピード感を持ちながら、拡張しやすい設計を心がけています。
               </p>
             </div>
 
