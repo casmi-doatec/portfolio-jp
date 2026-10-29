@@ -1,10 +1,9 @@
 "use client";
 
 import type React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 
 export function Contact() {
-  const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -14,18 +13,6 @@ export function Contact() {
   const [status, setStatus] = useState<
     "idle" | "sending" | "success" | "error"
   >("idle");
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) setIsVisible(true);
-      },
-      { threshold: 0.15 }
-    );
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => observer.disconnect();
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -62,224 +49,98 @@ export function Contact() {
   };
 
   return (
-    <section
-      ref={sectionRef}
-      id="contact"
-      className="py-32 lg:py-44 px-6 lg:px-12 relative"
-    >
-      {/* Background decorative */}
-      <div className="absolute bottom-20 left-10 text-[12rem] font-display text-foreground/[0.02] select-none pointer-events-none leading-none">
-        連絡
-      </div>
+    <section id="contact">
+      <h2>お問い合わせ (Contact)</h2>
+      <p>開発のご相談やお見積もりなど、お気軽にご連絡ください。</p>
 
-      <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-12 gap-16 lg:gap-20">
-          {/* Left info */}
-          <div
-            className={`lg:col-span-5 space-y-10 ${
-              isVisible ? "animate-slide-in-left" : "opacity-0"
-            }`}
-          >
-            <div className="space-y-4">
-              <div className="flex items-center gap-4">
-                <div className="h-px w-8 bg-jp-sakura/60" />
-                <span className="text-[10px] tracking-[0.4em] uppercase text-muted-foreground">
-                  Contact
-                </span>
-                <span className="text-xs text-jp-sakura/40 font-display">
-                  お問い合わせ
-                </span>
-              </div>
-              <h2 className="text-4xl lg:text-6xl font-black tracking-tighter">
-                お問い合わせ
-              </h2>
-              <div className="h-[2px] w-16 bg-gradient-to-r from-jp-sakura/60 to-transparent" />
-            </div>
+      <h3>強み</h3>
+      <ul>
+        <li>丁寧なコミュニケーションと確実な納品を心がけています。</li>
+        <li>要件を的確に汲み取り、最適な技術選定でご提案します。</li>
+        <li>Claude Code等を活用した開発自動化・API連携に対応。</li>
+      </ul>
 
-            <p className="text-sm lg:text-base text-muted-foreground font-light leading-[2.2] font-serif">
-              開発のご相談やお見積もりなど、お気軽にご連絡ください。
-            </p>
+      <h3>連絡先・稼働条件</h3>
+      <ul>
+        <li>
+          メール: <a href="mailto:ddreamhhigh@gmail.com">ddreamhhigh@gmail.com</a>
+        </li>
+        <li>連絡ツール: Google Meet / Slack / Chatwork / LINE</li>
+        <li>稼働: 週30〜40時間（平日9:00〜18:00）</li>
+        <li>週末勤務可能</li>
+      </ul>
 
-            {/* Strengths */}
-            <div className="space-y-4 pt-2">
-              <div className="flex items-center gap-3">
-                <div className="h-px w-6 bg-jp-sakura/40" />
-                <span className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
-                  強み
-                </span>
-              </div>
-              <div className="space-y-3">
-                <div className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-jp-sakura/40 rounded-full mt-1.5 shrink-0" />
-                  <p className="text-sm text-muted-foreground leading-[1.9]">
-                    丁寧なコミュニケーションと確実な納品を心がけています。
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-jp-sakura/40 rounded-full mt-1.5 shrink-0" />
-                  <p className="text-sm text-muted-foreground leading-[1.9]">
-                    要件を的確に汲み取り、最適な技術選定でご提案します。
-                  </p>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-1.5 h-1.5 bg-jp-sakura/40 rounded-full mt-1.5 shrink-0" />
-                  <p className="text-sm text-muted-foreground leading-[1.9]">
-                    Claude Code等を活用した開発自動化・API連携に対応。
-                  </p>
-                </div>
-              </div>
-            </div>
+      <h3>フォーム</h3>
+      <form onSubmit={handleSubmit}>
+        <p>
+          <label htmlFor="name">お名前</label>
+          <br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            value={formData.name}
+            onChange={handleChange}
+          />
+        </p>
+        <p>
+          <label htmlFor="email">メールアドレス</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            value={formData.email}
+            onChange={handleChange}
+          />
+        </p>
+        <p>
+          <label htmlFor="subject">件名</label>
+          <br />
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            value={formData.subject}
+            onChange={handleChange}
+          />
+        </p>
+        <p>
+          <label htmlFor="message">メッセージ</label>
+          <br />
+          <textarea
+            id="message"
+            name="message"
+            required
+            rows={5}
+            value={formData.message}
+            onChange={handleChange}
+          />
+        </p>
+        <p>
+          <button type="submit" disabled={status === "sending"}>
+            {status === "sending"
+              ? "送信中..."
+              : status === "success"
+              ? "送信しました"
+              : "送信する"}
+          </button>
+        </p>
 
-            {/* Contact info */}
-            <div className="space-y-5 pt-2">
-              <div className="flex items-center gap-4 group">
-                <div className="w-10 h-10 border border-foreground/10 flex items-center justify-center group-hover:border-jp-sakura/30 transition-colors duration-500">
-                  <svg className="w-4 h-4 text-muted-foreground" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <a
-                  href="mailto:ddreamhhigh@gmail.com"
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
-                >
-                  ddreamhhigh@gmail.com
-                </a>
-              </div>
-            </div>
+        {status === "success" && (
+          <p>メッセージを受け付けました。折り返しご連絡いたします。</p>
+        )}
+        {status === "error" && (
+          <p>送信できませんでした。お手数ですが、もう一度お試しください。</p>
+        )}
+      </form>
 
-            {/* Communication tools & working conditions */}
-            <div className="space-y-3 pt-2 border-t border-border">
-              <div className="flex flex-wrap items-center gap-2 pt-4">
-                {["Google Meet", "Slack", "Chatwork", "LINE"].map((tool) => (
-                  <span key={tool} className="text-[10px] tracking-wide px-2.5 py-1 border border-foreground/8 text-muted-foreground">
-                    {tool}
-                  </span>
-                ))}
-              </div>
-              <div className="flex flex-wrap items-center gap-4 text-xs text-muted-foreground pt-1">
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-jp-sakura/40 rounded-full" />
-                  <span>週30〜40時間（平日9:00〜18:00）</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-1.5 h-1.5 bg-jp-sakura/40 rounded-full" />
-                  <span>週末勤務可能</span>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          {/* Right form */}
-          <div
-            className={`lg:col-span-7 ${
-              isVisible ? "animate-slide-in-right" : "opacity-0"
-            }`}
-          >
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground">
-                    お名前
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-0 py-3 bg-transparent border-b border-border focus:border-jp-sakura focus:outline-none transition-colors duration-300 text-sm"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground">
-                    メールアドレス
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-0 py-3 bg-transparent border-b border-border focus:border-jp-sakura focus:outline-none transition-colors duration-300 text-sm"
-                  />
-                </div>
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="subject" className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground">
-                  件名
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  required
-                  value={formData.subject}
-                  onChange={handleChange}
-                  className="w-full px-0 py-3 bg-transparent border-b border-border focus:border-jp-sakura focus:outline-none transition-colors duration-300 text-sm"
-                />
-              </div>
-
-              <div className="space-y-2">
-                <label htmlFor="message" className="text-[11px] tracking-[0.15em] uppercase text-muted-foreground">
-                  メッセージ
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  required
-                  rows={5}
-                  value={formData.message}
-                  onChange={handleChange}
-                  className="w-full px-0 py-3 bg-transparent border-b border-border focus:border-jp-sakura focus:outline-none transition-colors duration-300 text-sm resize-none"
-                />
-              </div>
-
-              <div className="pt-4">
-                <button
-                  type="submit"
-                  disabled={status === "sending"}
-                  className="group relative text-[11px] tracking-[0.25em] uppercase border border-foreground px-10 py-3.5 hover:bg-foreground hover:text-background transition-all duration-500 disabled:opacity-40 disabled:cursor-not-allowed overflow-hidden"
-                >
-                  <span className="relative z-10">
-                    {status === "sending"
-                      ? "送信中..."
-                      : status === "success"
-                      ? "送信しました"
-                      : "送信する"}
-                  </span>
-                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-jp-sakura transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
-                </button>
-              </div>
-
-              {status === "success" && (
-                <p className="text-xs text-muted-foreground font-serif">
-                  メッセージを受け付けました。折り返しご連絡いたします。
-                </p>
-              )}
-              {status === "error" && (
-                <p className="text-xs text-destructive">
-                  送信できませんでした。お手数ですが、もう一度お試しください。
-                </p>
-              )}
-            </form>
-          </div>
-        </div>
-
-        {/* Footer */}
-        <div className="mt-32 pt-8 border-t border-border">
-          <div className="flex items-center justify-center gap-3">
-            <span className="text-jp-sakura font-display">&#x300C;</span>
-            <p className="text-[10px] tracking-[0.3em] uppercase text-muted-foreground">
-              &copy; 2026 NekoMaki
-            </p>
-            <span className="text-jp-sakura font-display">&#x300D;</span>
-          </div>
-        </div>
-      </div>
+      <footer>
+        <p>&copy; 2026 NekoMaki</p>
+      </footer>
     </section>
   );
 }
