@@ -1,12 +1,9 @@
 import Link from "next/link";
-import { Navigation } from "@/components/navigation";
 import { GraphDashboard } from "@/components/graph-dashboard";
 
 export default function GraphPage() {
   return (
     <main>
-      <Navigation />
-
       <p>
         <Link href="/">← Back to Home</Link>
       </p>
