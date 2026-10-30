@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/* === Kawaii pastel theme — palette sampled from the hero image ===
+   sky blue / cherry-blossom pink / fluffy white / cocoa-brown text / coral sticker headline */
+@theme {
+  --font-sans: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Hiragino Sans", "Meiryo", system-ui, sans-serif;
+
+  --color-cocoa: #4a3b3b;
+  --color-cocoa-soft: #7d6b6b;
+  --color-coral: #f4607a;
+  --color-coral-deep: #d9405f;
+  --color-blush: #ffe3e8;
+  --color-peach: #fff1ec;
+  --color-cream: #fffaf7;
+  --color-sky-soft: #e6f2ff;
+  --color-sky-deep: #5b9bd5;
+  --color-lavender: #9a82d6;
+  --color-butter: #f6d365;
+  --color-leaf: #6aa84f;
+
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-fade-up: fade-up 0.9s ease-out both;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4.5rem;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-cocoa);
+  font-weight: 500;
+}
+
+::selection {
+  background: var(--color-blush);
+  color: var(--color-coral-deep);
+}
+
+/* Puffy sticker lettering: thick white outline + soft pink extrusion */
+.sticker-text {
+  -webkit-text-stroke: 12px #fff;
+  paint-order: stroke fill;
+  text-shadow: 0 5px 0 #ffd3dc, 0 12px 22px rgba(244, 96, 122, 0.3);
+  letter-spacing: 0.04em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}

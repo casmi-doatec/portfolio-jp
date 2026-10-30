@@ -1,3 +1,6 @@
+import { Section, cardClass } from "@/components/section";
+import { accentAt } from "@/components/accents";
+
 const categories = [
   {
     title: "AI・LLM",
@@ -43,22 +46,32 @@ const categories = [
 
 export function Skills() {
   return (
-    <section id="skills">
-      <h2>技術スタック (Skills)</h2>
-      <p>AIからインフラまで一気通貫で対応</p>
-
-      {categories.map((cat) => (
-        <div key={cat.title}>
-          <h3>
-            {cat.title} ({cat.en})
-          </h3>
-          <ul>
-            {cat.skills.map((skill) => (
-              <li key={skill}>{skill}</li>
-            ))}
-          </ul>
-        </div>
-      ))}
-    </section>
+    <Section id="skills" tone="blush" label="Skills" title="技術スタック" intro="AIからインフラまで一気通貫で対応">
+      <div className="grid gap-6 md:grid-cols-2">
+        {categories.map((cat, i) => {
+          const accent = accentAt(i);
+          return (
+            <article key={cat.title} className={cardClass}>
+              <div className="mb-4 flex items-center gap-3">
+                <span className={`${accent.badge} inline-flex size-10 items-center justify-center rounded-full text-sm font-black`}>
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div>
+                  <h3 className="font-black leading-tight text-cocoa">{cat.title}</h3>
+                  <p className="text-[11px] font-bold tracking-wider text-cocoa-soft">{cat.en}</p>
+                </div>
+              </div>
+              <ul className="flex flex-wrap gap-2">
+                {cat.skills.map((skill) => (
+                  <li key={skill} className={`${accent.chip} rounded-full px-3 py-1 text-xs font-bold`}>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </article>
+          );
+        })}
+      </div>
+    </Section>
   );
 }

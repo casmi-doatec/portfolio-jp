@@ -1,3 +1,6 @@
+import { Section, cardClass } from "@/components/section";
+import { accentAt } from "@/components/accents";
+
 const expertiseAreas = [
   {
     title: "LLM・RAG・AIエージェント",
@@ -23,18 +26,26 @@ const expertiseAreas = [
 
 export function Experience() {
   return (
-    <section id="experience">
-      <h2>得意分野 (Expertise)</h2>
-      <p>
-        AIを絡めたプロダクト開発を、設計からリリースまでまるっと見れるのが強みです。「こういうのAIでできないかな？」という段階から一緒に考えます。
-      </p>
-
-      {expertiseAreas.map((area) => (
-        <article key={area.title}>
-          <h3>{area.title}</h3>
-          <p>{area.description}</p>
-        </article>
-      ))}
-    </section>
+    <Section
+      id="experience"
+      tone="sky"
+      label="Expertise"
+      title="得意分野"
+      intro="AIを絡めたプロダクト開発を、設計からリリースまでまるっと見れるのが強みです。「こういうのAIでできないかな？」という段階から一緒に考えます。"
+    >
+      <div className="grid gap-6 md:grid-cols-2 lg:gap-8">
+        {expertiseAreas.map((area, i) => (
+          <article key={area.title} className={cardClass}>
+            <span
+              className={`${accentAt(i).badge} mb-4 inline-flex size-12 items-center justify-center rounded-full text-lg font-black`}
+            >
+              {String(i + 1).padStart(2, "0")}
+            </span>
+            <h3 className="text-lg font-black text-cocoa md:text-xl">{area.title}</h3>
+            <p className="mt-3 text-sm leading-8 text-cocoa/80">{area.description}</p>
+          </article>
+        ))}
+      </div>
+    </Section>
   );
 }

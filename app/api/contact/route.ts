@@ -5,7 +5,7 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { name, email, subject, message } = body;
 
-    const mailtoLink = `mailto:windmansmart0101@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:ddreamhhigh@gmail.com?subject=${encodeURIComponent(
       `[Portfolio Contact] ${subject}`
     )}&body=${encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`

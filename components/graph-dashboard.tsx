@@ -1,3 +1,6 @@
+import { cardClass } from "@/components/section";
+import { accentAt } from "@/components/accents";
+
 const charts = [
   {
     title: "工程別 進捗件数の推移（30日間）",
@@ -39,17 +42,23 @@ const charts = [
 
 export function GraphDashboard() {
   return (
-    <section>
-      <h2>サンプル実装グラフ一覧</h2>
-      <p>グラフ描画（Recharts）は削除し、各グラフの内容説明のみ掲載しています。</p>
+    <div>
+      <h2 className="mb-2 text-center text-2xl font-black text-cocoa md:text-3xl">
+        <span className="bg-[linear-gradient(transparent_62%,#ffd3dc_62%)] px-2">サンプル実装グラフ一覧</span>
+      </h2>
+      <p className="mb-10 text-center text-xs leading-6 text-cocoa-soft">
+        グラフ描画（Recharts）は削除し、各グラフの内容説明のみ掲載しています。
+      </p>
 
-      {charts.map((chart) => (
-        <article key={chart.title}>
-          <h3>{chart.title}</h3>
-          <p>種類: {chart.type}</p>
-          <p>{chart.description}</p>
-        </article>
-      ))}
-    </section>
+      <div className="grid gap-6 md:grid-cols-2">
+        {charts.map((chart, i) => (
+          <article key={chart.title} className={cardClass}>
+            <p className={`${accentAt(i).chip} inline-block rounded-full px-3 py-1 text-[11px] font-bold`}>{chart.type}</p>
+            <h3 className="mt-3 text-lg font-black text-cocoa">{chart.title}</h3>
+            <p className="mt-3 text-sm leading-8 text-cocoa/80">{chart.description}</p>
+          </article>
+        ))}
+      </div>
+    </div>
   );
 }
