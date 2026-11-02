@@ -99,7 +99,7 @@
 
     ---
 
-    ### 05. JoBins（ジョビンズ）
+    ### 05. JoBins
     **カテゴリ:** 人材紹介SaaS
     **技術スタック:** Next.js / TypeScript / C# / .NET / SQL Server / Entity Framework / Azure / REST API / 多言語対応
 

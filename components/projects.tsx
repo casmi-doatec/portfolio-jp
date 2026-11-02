@@ -37,7 +37,7 @@ const projects: Project[] = [
   },
   {
     id: 9,
-    title: "JoBins（ジョビンズ）",
+    title: "JoBins",
     category: "人材紹介SaaS",
     type: "system",
     description:
@@ -65,8 +65,8 @@ const projects: Project[] = [
   },
   {
     id: 32,
-    title: "onlinelogistics.jp",
-    category: "物流業務管理Webシステムの開発",
+    title: "物流業務管理Webシステムの開発",
+    category: "タイヤ保管・入出庫管理システム",
     type: "system",
     description:
       "物流事業者向けに、自動車ディーラー店舗と倉庫・事務が共通で利用するタイヤ保管・入出庫管理のBtoB業務システムを開発しています。店舗からの入出庫依頼、保管タイヤの在庫管理、倉庫への作業指示書の作成・印刷、配送希望日・依頼ステータスの管理、料金管理と請求明細データの作成、Excel・CSV出力をWeb上に一元化し、複数法人・店舗ごとの権限管理で情報を店舗単位に分けて扱えるようにしています。技術設計・データベース設計からフロント／バックエンド開発、AI生成コードのレビュー・修正、セキュリティ対策、テスト、本番環境構築までを担い、ChatGPT・Codex等のAIツールを活用して少人数で効率的に開発を進めています。",
@@ -127,13 +127,12 @@ const projects: Project[] = [
     category: "業務自動化",
     type: "system",
     description:
-      "Google Apps Scriptを使った検索順位のスクレイピング・レポーティングツールです。対象URLの検索順位を定期的にスクレイピングしてスプレッドシートに自動集計し、週次のランキング推移をグラフ化。手作業での順位チェック・レポート作成の工数を削減しています。",
-    tags: ["Google Apps Script", "Webスクレイピング", "Google Sheets", "業務自動化"],
+      "Google Apps Scriptで、メディアサイトの記事URLごとの検索順位を取得して自動集計するレポーティングツールを作りました。データはGoogleスプレッドシートに日付・URL単位で定期的に蓄積し、週ごとの平均掲載順位を米国・カナダ・イギリス・オーストラリアの国別シートにまとめています。順位帯に応じてセルを色分けし、トップ20の平均掲載順位の推移は週次グラフで自動更新。国別の週間ランキングやサマリーダッシュボードも用意して、全体の傾向をひと目で確認できます。手作業で行っていた順位チェックとレポート作成の工数を削減しました。",
+    tags: ["Google Apps Script", "Webスクレイピング", "Google Sheets", "業務自動化", "レポート自動化"],
     cover: "/GAS/1.png",
     screens: [
-      { src: "/GAS/1.png", caption: "Google Apps Scriptによるスクレイピング結果の集計シート。" },
-      { src: "/GAS/2.png", caption: "Google Sheets上での週次データ集計。" },
-      { src: "/GAS/3.png", caption: "自動生成されたランキング推移グラフ。" },
+      { src: "/GAS/1.png", caption: "URL別の平均掲載順位シート。週ごとの順位を順位帯で色分けし、トップ20の推移グラフを自動で作成します。" },
+      { src: "/GAS/2.png", caption: "国別（米国）の平均掲載順位シート。カナダ・イギリス・オーストラリアなど国ごとにシートを分けて集計しています。" },
     ],
   },
   {
