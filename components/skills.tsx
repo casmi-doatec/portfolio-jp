@@ -40,7 +40,7 @@ const categories = [
   {
     title: "ノーコード・ローコード",
     en: "No-code / Low-code",
-    skills: ["Bubble"],
+    skills: ["FlutterFlow", "Bubble"],
   },
 ];
 

@@ -1,4 +1,4 @@
-    # Kawaii Neko — 開発実績・スキルプロフィール
+    # NekoMaki — 開発実績・スキルプロフィール
 
     フリーランスITエンジニア。フロントエンドからバックエンド・モバイル・業務システムまで一貫して対応できるフルスタックエンジニアとして、Webシステム・ECサイト・モバイルアプリ・業務自動化など幅広い領域で開発実績を持つ。要件定義・設計・実装・テスト・リリースまで一人称で進められることが強み。
 
@@ -13,7 +13,10 @@
     Node.js / Express / Python / PHP（Yii Framework）/ C# / .NET / Google Apps Script / VBA
 
     ### モバイル
-    Flutter / React Native
+    Flutter / React Native / Firebase / FCM（プッシュ通知）
+
+    ### ノーコード・ローコード
+    FlutterFlow / Bubble
 
     ### データベース
     PostgreSQL / SQL Server / Supabase / Firebase / Prisma
@@ -169,7 +172,7 @@
 
     ---
 
-    ### 11. Re:Stock
+    ### 11. 在庫管理システム
     **カテゴリ:** 在庫管理システム
     **技術スタック:** Next.js / TypeScript / 在庫管理 / ダッシュボード設計
 

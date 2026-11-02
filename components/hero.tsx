@@ -18,7 +18,7 @@ export function Hero() {
           INFRA ENGINEER
         </p>
         <h1 className="mt-2 text-3xl font-black tracking-tight text-cocoa md:mt-3 md:text-4xl leading-tight">
-          Kawaii Neko <span className="text-coral">♥</span>
+          NekoMaki <span className="text-coral">♥</span>
         </h1>
         <p className="mt-2 text-sm leading-7 text-cocoa/80 md:mt-3 md:text-base md:leading-8">
           AI・Web・SaaS・モバイルまで、要件を的確に汲み取り最適な技術で形にします。

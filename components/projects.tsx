@@ -36,18 +36,17 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 3,
-    title: "LA・JOLLA HALE",
-    category: "ECサイト",
-    type: "website",
+    id: 9,
+    title: "JoBins（ジョビンズ）",
+    category: "人材紹介SaaS",
+    type: "system",
     description:
-      "Shopifyで構築したグローバル対応ECサイトのデザイン・実装を担当しました。ブランドイメージを反映したカスタムテーマを設計し、Stripeによる決済機能を組み込んで安全・スムーズな購入フローを実現。価格帯フィルタリング、ウィッシュリスト、商品比較機能を実装し、Revolution SliderやFotoramaによるリッチな商品ギャラリー、画像ズーム機能、年齢確認ポップアップ、サブスクリプション通知なども組み込んでコンバージョン率の向上につなげています。日本円対応で、レスポンシブデザインによりモバイル・タブレット・デスクトップすべてに最適化しています。",
-    tags: ["Shopify", "Liquid", "JavaScript", "Stripe", "ECサイト設計", "Fotorama", "レスポンシブ"],
-    cover: "/lajollahale.png",
+      "エージェント・採用企業・求職者をつなぐ人材紹介マネジメントプラットフォームのバックエンド改修に参画しました。C# / .NETで構築されたAPIサーバーのバグ調査・エラー修正を担当し、候補者管理・選考進捗管理・紹介料分配などの機能における不具合を特定して修正。ログ解析やデバッグを通じてシステムの安定性向上に貢献しました。",
+    tags: ["Next.js", "TypeScript", "C# / .NET", "SQL Server", "Entity Framework", "Azure", "REST API", "多言語対応"],
+    cover: "/jobins.png",
     screens: [
-      { src: "/shopify/1.png", caption: "トップページ。ブランドイメージを反映したカスタムテーマを設計しています。" },
-      { src: "/shopify/2.png", caption: "商品一覧・価格帯フィルタリング画面。Fotoramaによるリッチな商品ギャラリーを実装しています。" },
-      { src: "/shopify/3.png", caption: "商品詳細・購入フロー。Stripeによる決済を組み込み、安全でスムーズな購入体験を実現しています。" },
+      { src: "/jobins-site/1.png", caption: "トップページ。求人データベースや候補者管理など、人材紹介に必要な機能を訴求しています。" },
+      { src: "/jobins-site/2.png", caption: "機能紹介セクション。求人データベース・選考管理・候補者管理・求人管理の4機能をタブで整理しています。" },
     ],
   },
   {
@@ -62,6 +61,137 @@ const projects: Project[] = [
     screens: [
       { src: "/online-lecture/2.png", caption: "コース選択画面。一般講習・介護講習・介護基礎研修（特定）を月額料金とともに案内しています。" },
       { src: "/online-lecture/3.png", caption: "利用ガイド画面。チケットシステム・コース学習・学習教材までの流れを案内しています。" },
+    ],
+  },
+  {
+    id: 32,
+    title: "onlinelogistics.jp",
+    category: "タイヤ保管・入出庫管理システム",
+    type: "system",
+    description:
+      "ディーラー店舗と物流事業者が共通で利用する、タイヤ保管・入出庫管理のBtoB業務システムです。店舗からの入出庫依頼、保管中タイヤの在庫管理、保管申込情報の登録、請求管理までを一つの画面体系で扱えるようにしました。ホームでは未処理・進行中の依頼、本日の出庫予定、保管中のタイヤ数、保管場所の未登録、請求書の発行待ち、受領確認待ちをカードで表示し、直近の依頼・お知らせ・今後7日間の依頼予定もひと目で確認できます。FAX・電話で受けた依頼を店舗に代わって登録でき、保管申込の詳細では保管場所の登録、追加梱包料金などの料金明細、途中解約時の返金、申込書・荷札の印刷に対応。Excelからのデータ取込、料金設定、ユーザー管理、店舗・顧客管理も備えています。",
+    tags: ["在庫管理", "入出庫管理", "請求管理", "権限管理", "Excelデータ取込", "帳票印刷", "BtoB業務システム"],
+    cover: "/logistics/Screenshot_8.png",
+    screens: [
+      { src: "/logistics/Screenshot_8.png", caption: "ホーム画面。未処理・進行中の依頼、本日の出庫予定、保管中タイヤ数、請求書の発行待ちなどをひと目で確認できます。" },
+      { src: "/logistics/Screenshot_9.png", caption: "入出庫依頼画面。FAX・電話で受けた依頼を店舗に代わって登録でき、保管中タイヤを一覧から選んで依頼に反映できます。" },
+      { src: "/logistics/Screenshot_10.png", caption: "申込履歴・保管タイヤ詳細。保管場所の登録、料金明細、途中解約時の返金、申込書・荷札の印刷に対応しています。" },
+    ],
+  },
+  {
+    id: 33,
+    title: "Limora（リモラ）",
+    category: "会話・予約マッチングサービス",
+    type: "system",
+    description:
+      "女性ユーザーが本人確認済みの男性キャストを選び、ビデオ通話や対面での会話を楽しめる、対話型の予約マッチングサービスの開発に携わりました。電話番号・LINEによる会員登録、エリア・タグで絞り込めるキャスト検索とプロフィール・評価の閲覧、空き枠から日時を選ぶ予約、ポイントを事前購入して支払う料金体系（Stripeによるカード決済）、利用後の相互評価までを一貫したフローで提供しています。「今すぐ呼ぶ」と「指名予約」の2つの利用方法に対応し、通報・ブロックなどの安全対策も備えています。",
+    tags: ["マッチング", "予約管理", "ポイント課金", "Stripe", "LINEログイン", "キャスト検索", "本人確認"],
+    cover: "/limora/1.png",
+    screens: [
+      { src: "/limora/1.png", caption: "トップページ。女性が選ぶ側になる対話型サービスとして、コンセプトと新規登録・ログイン導線を訴求しています。" },
+      { src: "/limora/2.png", caption: "ご利用の流れ。無料登録・キャスト検索・予約の3ステップで始められるよう案内しています。" },
+    ],
+  },
+  {
+    id: 34,
+    title: "おりこうAIコンシェルジュ",
+    category: "生成AIチャットボット",
+    type: "system",
+    description:
+      "Webサイトに設置できる生成AIチャットボット「おりこうAIコンシェルジュ」で、AIチャットボット機能の実装を担当しました。AIアバターがサイトの内容をもとに訪問者の自由な質問へ24時間自動で回答し、ChatGPTを介した自然な会話で問い合わせ対応を支援します。URL・PDFなどからのAI学習、回答の確認・修正、質問履歴の分析、多言語対応といった機能を備えたサービスで、導入企業の電話・メール対応の負荷軽減や顧客体験の向上を目的としています。",
+    tags: ["生成AI", "ChatGPT", "AIチャットボット", "AIアバター", "24時間自動応答", "多言語対応"],
+    cover: "/ai-chatbot/Screenshot_5.png",
+    screens: [
+      { src: "/ai-chatbot/Screenshot_5.png", caption: "AIチャット画面。AIアバターが挨拶し、よくある質問のボタンや自由入力の質問に自動で回答します。" },
+      { src: "/ai-chatbot/Screenshot_4.png", caption: "トップページ。右下に「チャット受付中」のAIアバターを設置し、クリックでチャットが開きます。" },
+    ],
+  },
+  {
+    id: 31,
+    title: "notteco",
+    category: "相乗りマッチングプラットフォーム",
+    type: "system",
+    description:
+      "ドライバーと乗客をつなぐ相乗りマッチングサービスの開発に携わりました。ドライバーが出発地・目的地・経由地・日程・座席数を登録すると、システムが燃料費と高速道路通行料を合算して許容価格範囲を自動算定。利益目的の料金設定を防ぐ法的コンプライアンス要件をビジネスロジックとして実装し、白タク規制への対応を組み込んでいます。ユーザー登録にはSMS認証と本人確認フローを導入し、乗車リクエスト→ドライバー承認→成立→乗降記録→相互レビューまでの一連のフローを実装。カスタマーサポートはZendeskと連携し、キャンセルや通報の処理にも対応しています。",
+    tags: ["SMS認証", "Zendesk", "経路・通行料API", "RDB", "本人確認", "両面マーケットプレイス", "法的コンプライアンス"],
+    cover: "/notteco/1.png",
+    screens: [
+      { src: "/notteco/1.png", caption: "トップページ。出発地・目的地・出発日でドライブを検索できる導線と、リクエスト掲載機能を配置しています。" },
+      { src: "/notteco/2.png", caption: "おすすめコンテンツセクション。利用シーン別の使い方案内と提携広告（楽天Car・レンタカー）を配置しています。" },
+      { src: "/notteco/3.png", caption: "フッターセクション。サービス概要・運営会社（adish plus）の情報を整理しています。" },
+    ],
+  },
+  {
+    id: 21,
+    title: "検索順位スクレイピング自動化",
+    category: "業務自動化",
+    type: "system",
+    description:
+      "Google Apps Scriptを使った検索順位のスクレイピング・レポーティングツールです。対象URLの検索順位を定期的にスクレイピングしてスプレッドシートに自動集計し、週次のランキング推移をグラフ化。手作業での順位チェック・レポート作成の工数を削減しています。",
+    tags: ["Google Apps Script", "Webスクレイピング", "Google Sheets", "業務自動化"],
+    cover: "/GAS/1.png",
+    screens: [
+      { src: "/GAS/1.png", caption: "Google Apps Scriptによるスクレイピング結果の集計シート。" },
+      { src: "/GAS/2.png", caption: "Google Sheets上での週次データ集計。" },
+      { src: "/GAS/3.png", caption: "自動生成されたランキング推移グラフ。" },
+    ],
+  },
+  {
+    id: 12,
+    title: "おかわりマップ",
+    category: "Webアプリ",
+    type: "system",
+    description:
+      "「ごはんおかわり無料」の飲食店だけを地図から探せるグルメマップアプリです。OpenStreetMapを使った地図上での店舗検索に加え、Supabase Authによるユーザー認証、Supabase Database（PostgreSQL）での店舗データ・投稿管理、Supabase Storage での画像アップロード、タイムラインのリアルタイム更新を実装。GPSによる現在地取得、マイページ機能、PWA対応でスマホからワンタップで起動でき、Cookie同意バナー・オンボーディングモーダルなど細かなUX設計にもこだわっています。",
+    tags: ["Next.js", "Supabase", "PostgreSQL", "OpenStreetMap", "PWA", "GPS", "Microsoft Clarity"],
+    cover: "/okawari.png",
+    screens: [
+      { src: "/map/1.png", caption: "地図画面。OpenStreetMapを使ってGPSによる現在地から近隣店舗を検索できます。" },
+      { src: "/map/2.png", caption: "店舗投稿・マイページ画面。Supabase Storageで画像をアップロードできます。" },
+      { src: "/map/3.png", caption: "店舗一覧・検索画面。カテゴリ別に絞り込み、オンボーディングモーダルで使い方を案内しています。" },
+    ],
+  },
+  {
+    id: 11,
+    title: "ソウルシンク",
+    category: "相性診断サービス",
+    type: "system",
+    description:
+      "OpenAI APIを活用したAI駆動型の恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、詳細な性格分析の回答データをLLMに渡し、ユーザーごとにパーソナライズされた相性レポートを自然言語で自動生成。プロンプトエンジニアリングにより占星術・心理学の知見を組み込んだ精度の高い分析結果を返すようチューニングしています。",
+    tags: ["Next.js","Python", "OpenAI API", "LLM", "Tailwind CSS", "SQL"],
+    cover: "/matching.png",
+    screens: [
+      { src: "/matching/2.png", caption: "診断入力画面。あなたとお相手の星座・血液型・MBTI・干支・エニアグラムなどを入力します。" },
+    ],
+  },
+  {
+    id: 20,
+    title: "在庫管理システム",
+    category: "リユース・買取事業者向け業務システム",
+    type: "system",
+    description:
+      "リユース・買取事業者向けの在庫統合管理システムです。買取査定の登録から在庫管理、売上分析までを一元化。品目ごとのカテゴリ・状態管理、買取履歴の一覧・ステータス管理、査定サマリーの自動集計を実装し、複数店舗での在庫状況をリアルタイムに把握できるようにしています。",
+    tags: ["Next.js", "TypeScript", "在庫管理", "ダッシュボード設計"],
+    cover: "/stock/1.png",
+    screens: [
+      { src: "/stock/1.png", caption: "買取査定画面。商品登録と査定サマリーの自動集計を行います。" },
+      { src: "/stock/2.png", caption: "在庫管理画面。品目・カテゴリ別の在庫状況を一覧で確認できます。" },
+      { src: "/stock/3.png", caption: "売上分析ダッシュボード画面です。" },
+    ],
+  },
+  {
+    id: 3,
+    title: "LA・JOLLA HALE",
+    category: "ECサイト",
+    type: "website",
+    description:
+      "Shopifyで構築したグローバル対応ECサイトのデザイン・実装を担当しました。ブランドイメージを反映したカスタムテーマを設計し、Stripeによる決済機能を組み込んで安全・スムーズな購入フローを実現。価格帯フィルタリング、ウィッシュリスト、商品比較機能を実装し、Revolution SliderやFotoramaによるリッチな商品ギャラリー、画像ズーム機能、年齢確認ポップアップ、サブスクリプション通知なども組み込んでコンバージョン率の向上につなげています。日本円対応で、レスポンシブデザインによりモバイル・タブレット・デスクトップすべてに最適化しています。",
+    tags: ["Shopify", "Liquid", "JavaScript", "Stripe", "ECサイト設計", "Fotorama", "レスポンシブ"],
+    cover: "/lajollahale.png",
+    screens: [
+      { src: "/shopify/1.png", caption: "トップページ。ブランドイメージを反映したカスタムテーマを設計しています。" },
+      { src: "/shopify/2.png", caption: "商品一覧・価格帯フィルタリング画面。Fotoramaによるリッチな商品ギャラリーを実装しています。" },
+      { src: "/shopify/3.png", caption: "商品詳細・購入フロー。Stripeによる決済を組み込み、安全でスムーズな購入体験を実現しています。" },
     ],
   },
   {
@@ -81,20 +211,6 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 9,
-    title: "JoBins（ジョビンズ）",
-    category: "人材紹介SaaS",
-    type: "system",
-    description:
-      "エージェント・採用企業・求職者をつなぐ人材紹介マネジメントプラットフォームのバックエンド改修に参画しました。C# / .NETで構築されたAPIサーバーのバグ調査・エラー修正を担当し、候補者管理・選考進捗管理・紹介料分配などの機能における不具合を特定して修正。ログ解析やデバッグを通じてシステムの安定性向上に貢献しました。",
-    tags: ["Next.js", "TypeScript", "C# / .NET", "SQL Server", "Entity Framework", "Azure", "REST API", "多言語対応"],
-    cover: "/jobins.png",
-    screens: [
-      { src: "/jobins-site/1.png", caption: "トップページ。求人データベースや候補者管理など、人材紹介に必要な機能を訴求しています。" },
-      { src: "/jobins-site/2.png", caption: "機能紹介セクション。求人データベース・選考管理・候補者管理・求人管理の4機能をタブで整理しています。" },
-    ],
-  },
-  {
     id: 10,
     title: "mimi HAIR SALON",
     category: "美容室Webサイト",
@@ -106,34 +222,6 @@ const projects: Project[] = [
     screens: [
       { src: "/mimi/1.png", caption: "トップページ。スタイリッシュなビジュアルで世界観を表現しています。" },
       { src: "/mimi/2.png", caption: "MENUページ。カット・カラー・パーマ・トリートメントなど施術メニューをカテゴリ別に整理しています。" },
-    ],
-  },
-  {
-    id: 11,
-    title: "ソウルシンク",
-    category: "相性診断サービス",
-    type: "system",
-    description:
-      "OpenAI APIを活用したAI駆動型の恋愛相性診断プラットフォームです。12星座の特性に基づく星座相性診断、16タイプのMBTI性格マッチング、詳細な性格分析の回答データをLLMに渡し、ユーザーごとにパーソナライズされた相性レポートを自然言語で自動生成。プロンプトエンジニアリングにより占星術・心理学の知見を組み込んだ精度の高い分析結果を返すようチューニングしています。",
-    tags: ["Next.js","Python", "OpenAI API", "LLM", "Tailwind CSS", "SQL"],
-    cover: "/matching.png",
-    screens: [
-      { src: "/matching/2.png", caption: "診断入力画面。あなたとお相手の星座・血液型・MBTI・干支・エニアグラムなどを入力します。" },
-    ],
-  },
-  {
-    id: 12,
-    title: "おかわりマップ",
-    category: "Webアプリ",
-    type: "system",
-    description:
-      "「ごはんおかわり無料」の飲食店だけを地図から探せるグルメマップアプリです。OpenStreetMapを使った地図上での店舗検索に加え、Supabase Authによるユーザー認証、Supabase Database（PostgreSQL）での店舗データ・投稿管理、Supabase Storage での画像アップロード、タイムラインのリアルタイム更新を実装。GPSによる現在地取得、マイページ機能、PWA対応でスマホからワンタップで起動でき、Cookie同意バナー・オンボーディングモーダルなど細かなUX設計にもこだわっています。",
-    tags: ["Next.js", "Supabase", "PostgreSQL", "OpenStreetMap", "PWA", "GPS", "Microsoft Clarity"],
-    cover: "/okawari.png",
-    screens: [
-      { src: "/map/1.png", caption: "地図画面。OpenStreetMapを使ってGPSによる現在地から近隣店舗を検索できます。" },
-      { src: "/map/2.png", caption: "店舗投稿・マイページ画面。Supabase Storageで画像をアップロードできます。" },
-      { src: "/map/3.png", caption: "店舗一覧・検索画面。カテゴリ別に絞り込み、オンボーディングモーダルで使い方を案内しています。" },
     ],
   },
   {
@@ -161,36 +249,6 @@ const projects: Project[] = [
       { src: "/other-apps/2.png", caption: "美容系コンテンツアプリ「BU」。動画フィードとマイページでのお気に入り管理機能です。" },
       { src: "/other-apps/3.png", caption: "マッチングアプリ。Flutter・WebSocketによるユーザー一覧とリアルタイムチャット画面です。" },
       { src: "/other-apps/4.png", caption: "愚痴投稿アプリ「呪PANDA」。投稿機能とガチャ要素を組み込んだオンボーディング画面です。" },
-    ],
-  },
-  {
-    id: 20,
-    title: "Re:Stock",
-    category: "在庫管理システム",
-    type: "system",
-    description:
-      "リユース・買取事業者向けの在庫統合管理システムです。買取査定の登録から在庫管理、売上分析までを一元化。品目ごとのカテゴリ・状態管理、買取履歴の一覧・ステータス管理、査定サマリーの自動集計を実装し、複数店舗での在庫状況をリアルタイムに把握できるようにしています。",
-    tags: ["Next.js", "TypeScript", "在庫管理", "ダッシュボード設計"],
-    cover: "/stock/1.png",
-    screens: [
-      { src: "/stock/1.png", caption: "買取査定画面。商品登録と査定サマリーの自動集計を行います。" },
-      { src: "/stock/2.png", caption: "在庫管理画面。品目・カテゴリ別の在庫状況を一覧で確認できます。" },
-      { src: "/stock/3.png", caption: "売上分析ダッシュボード画面です。" },
-    ],
-  },
-  {
-    id: 21,
-    title: "検索順位スクレイピング自動化",
-    category: "業務自動化",
-    type: "system",
-    description:
-      "Google Apps Scriptを使った検索順位のスクレイピング・レポーティングツールです。対象URLの検索順位を定期的にスクレイピングしてスプレッドシートに自動集計し、週次のランキング推移をグラフ化。手作業での順位チェック・レポート作成の工数を削減しています。",
-    tags: ["Google Apps Script", "Webスクレイピング", "Google Sheets", "業務自動化"],
-    cover: "/GAS/1.png",
-    screens: [
-      { src: "/GAS/1.png", caption: "Google Apps Scriptによるスクレイピング結果の集計シート。" },
-      { src: "/GAS/2.png", caption: "Google Sheets上での週次データ集計。" },
-      { src: "/GAS/3.png", caption: "自動生成されたランキング推移グラフ。" },
     ],
   },
   {
@@ -268,21 +326,6 @@ const projects: Project[] = [
       { src: "/loreal/1.png", caption: "トップページ。新商品キャンペーンをメインビジュアルに据えた構成にしています。" },
       { src: "/loreal/2.png", caption: "商品ラインナップセクション。カラーバリエーションを一覧で見せる構成にしています。" },
       { src: "/loreal/3.png", caption: "ブランドの取り組み紹介セクション。サステナビリティに関するメッセージを打ち出しています。" },
-    ],
-  },
-  {
-    id: 31,
-    title: "notteco",
-    category: "相乗りマッチングプラットフォーム",
-    type: "system",
-    description:
-      "ドライバーと乗客をつなぐ相乗りマッチングサービスの開発に携わりました。ドライバーが出発地・目的地・経由地・日程・座席数を登録すると、システムが燃料費と高速道路通行料を合算して許容価格範囲を自動算定。利益目的の料金設定を防ぐ法的コンプライアンス要件をビジネスロジックとして実装し、白タク規制への対応を組み込んでいます。ユーザー登録にはSMS認証と本人確認フローを導入し、乗車リクエスト→ドライバー承認→成立→乗降記録→相互レビューまでの一連のフローを実装。カスタマーサポートはZendeskと連携し、キャンセルや通報の処理にも対応しています。",
-    tags: ["SMS認証", "Zendesk", "経路・通行料API", "RDB", "本人確認", "両面マーケットプレイス", "法的コンプライアンス"],
-    cover: "/notteco/1.png",
-    screens: [
-      { src: "/notteco/1.png", caption: "トップページ。出発地・目的地・出発日でドライブを検索できる導線と、リクエスト掲載機能を配置しています。" },
-      { src: "/notteco/2.png", caption: "おすすめコンテンツセクション。利用シーン別の使い方案内と提携広告（楽天Car・レンタカー）を配置しています。" },
-      { src: "/notteco/3.png", caption: "フッターセクション。サービス概要・運営会社（adish plus）の情報を整理しています。" },
     ],
   },
   {
