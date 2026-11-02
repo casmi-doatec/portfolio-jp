@@ -84,12 +84,13 @@ const projects: Project[] = [
     category: "会話・予約マッチングサービス",
     type: "system",
     description:
-      "女性ユーザーが本人確認済みの男性キャストを選び、ビデオ通話や対面での会話を楽しめる、対話型の予約マッチングサービスの開発に携わりました。電話番号・LINEによる会員登録、エリア・タグで絞り込めるキャスト検索とプロフィール・評価の閲覧、空き枠から日時を選ぶ予約、ポイントを事前購入して支払う料金体系（Stripeによるカード決済）、利用後の相互評価までを一貫したフローで提供しています。「今すぐ呼ぶ」と「指名予約」の2つの利用方法に対応し、通報・ブロックなどの安全対策も備えています。",
-    tags: ["マッチング", "予約管理", "ポイント課金", "Stripe", "LINEログイン", "キャスト検索", "本人確認"],
+      "女性ユーザーが本人確認済みの男性キャストを選び、ビデオ通話や対面での会話を楽しめる、対話型の予約マッチングサービスの開発に携わりました。電話番号・LINEによる会員登録、エリア・タグで絞り込めるキャスト検索とプロフィール・評価の閲覧、空き枠から日時を選ぶ予約、ポイントを事前購入して支払う料金体系（Stripeによるカード決済）、利用後の相互評価までを一貫したフローで提供しています。エリアと希望時間を送るだけでAIが条件に合うキャストを選ぶ「今すぐ会う」のAIマッチングと、指名予約の2つの利用方法に対応し、通報・ブロックや24時間体制の監視など安全面の機能も備えています。",
+    tags: ["AIマッチング", "予約管理", "ポイント課金", "Stripe", "LINEログイン", "キャスト検索", "本人確認"],
     cover: "/limora/1.png",
     screens: [
       { src: "/limora/1.png", caption: "トップページ。女性が選ぶ側になる対話型サービスとして、コンセプトと新規登録・ログイン導線を訴求しています。" },
-      { src: "/limora/2.png", caption: "ご利用の流れ。無料登録・キャスト検索・予約の3ステップで始められるよう案内しています。" },
+      { src: "/limora/2.png", caption: "メイン機能。エリアと希望時間を送るだけでAIが条件に合うキャストを選ぶ「今すぐ会う」AIマッチングと、オファー送信のステップを案内しています。" },
+      { src: "/limora/3.png", caption: "安心・安全の取り組みとよくある質問。キャストの審査、公的書類による本人確認、通報・ブロック機能、24時間体制の監視を案内しています。" },
     ],
   },
   {
@@ -201,12 +202,12 @@ const projects: Project[] = [
     description:
       "FlutterとTwilio SendGrid・Prismaを使ったヘルスケア系のモバイルアプリです。Firebaseでリアルタイムのデータ管理と認証を行い、SalesforceをCRMとして顧客情報を一元管理。Twilio SendGridによるメール通知配信とFCMでのプッシュ通知を実装して、ユーザーにタイムリーに情報を届けられるようにしました。",
     tags: ["Flutter", "Firebase", "Prisma", "Salesforce", "Twilio SendGrid", "FCM"],
-    cover: "/moshikatsu.png",
+    cover: "/moshikatsu/4.png",
     screens: [
+      { src: "/moshikatsu/4.png", caption: "マイページ画面。Salesforceと連携した顧客情報を一元管理しています。" },
       { src: "/moshikatsu/1.png", caption: "アプリのホーム画面。Firebaseでユーザー認証とリアルタイムデータ管理を行っています。" },
       { src: "/moshikatsu/2.png", caption: "ヘルスケア情報の入力・管理画面です。" },
       { src: "/moshikatsu/3.png", caption: "通知設定画面。Twilio SendGridでのメール配信とFCMでのプッシュ通知に対応しています。" },
-      { src: "/moshikatsu/4.png", caption: "マイページ画面。Salesforceと連携した顧客情報を一元管理しています。" },
     ],
   },
   {
@@ -346,10 +347,10 @@ const projects: Project[] = [
     description:
       "発酵科学スキンケアブランドのECサイトにて、フロントエンド開発を担当しました。Next.js・Reactでの実装に加え、CMSと連携した商品情報・ジャーナル記事の管理を行い、更新のしやすさと表示速度を両立したサイト構築に対応しています。",
     tags: ["Next.js", "React", "CMS"],
-    cover: "/fas.png",
+    cover: "/fas/2.png",
     screens: [
-      { src: "/fas/1.png", caption: "ブランドトップページ。「FAS」のロゴタイプに商品ビジュアルを重ねた演出です。" },
       { src: "/fas/2.png", caption: "トップページ。Product・About・Storeなど、EC導線となるナビゲーションを構成しています。" },
+      { src: "/fas/1.png", caption: "ブランドトップページ。「FAS」のロゴタイプに商品ビジュアルを重ねた演出です。" },
       { src: "/fas/3.png", caption: "Topicsセクション。新商品・限定商品やイベント情報を一覧で発信しています。" },
     ],
   },
