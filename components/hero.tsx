@@ -14,8 +14,8 @@ export function Hero() {
 
       {/* Sits at the bottom-left over the desk and flowers so the artwork's headline and the cat stay visible */}
       <div className="absolute inset-x-4 bottom-16 animate-fade-up rounded-[28px] bg-white/80 p-5 shadow-[0_18px_40px_-14px_rgba(244,96,122,0.45)] ring-2 ring-white backdrop-blur-md md:inset-x-auto md:bottom-16 md:left-10 md:max-w-md md:p-6">
-        <p className="inline-block rounded-full bg-blush px-3 py-1 text-xs font-bold tracking-[0.2em] text-coral-deep">
-          INFRA ENGINEER
+        <p className="inline-block rounded-full bg-blush px-3 py-1 text-xs font-bold tracking-[0.1em] text-coral-deep">
+          AI・フルスタックエンジニア
         </p>
         <h1 className="mt-2 text-3xl font-black tracking-tight text-cocoa md:mt-3 md:text-4xl leading-tight">
           NekoMaki <span className="text-coral">♥</span>

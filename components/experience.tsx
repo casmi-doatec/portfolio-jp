@@ -3,24 +3,24 @@ import { accentAt } from "@/components/accents";
 
 const expertiseAreas = [
   {
-    title: "LLM・RAG・AIエージェント",
+    title: "LLM・AIチャットボット",
     description:
-      "OpenAI・Claude APIを使ったチャットボットや社内ドキュメント検索（RAG）、要約・分類・レポート自動生成など幅広く実装してきました。LangChainやPinecone・pgvectorと組み合わせながらプロンプトを調整して精度を上げ、現場で実際に使えるレベルに仕上げるのが得意です。",
+      "おりこうAIコンシェルジュでは、Webサイトに設置する生成AIチャットボットの機能を実装しました。ソウルシンクではOpenAI APIで相性診断のレポートを自動生成し、プロンプトの調整で精度を上げています。オンライン講義では、試験時のAI顔認証と自動採点も組み込みました。",
   },
   {
-    title: "AIを組み込んだプロダクト開発",
+    title: "業務システム・SaaS",
     description:
-      "WebアプリにAI機能をそのまま組み込みます。AI顔認証・自動採点・画像認識・相性診断レポートなど、UIからバックエンドの推論APIまで一人でまとめて設計・実装してきました。OpenCV・PyTorch・Whisperを使った画像・音声処理の経験もあります。",
+      "出張買取プラスでは要件定義から運用まで担当し、本部・加盟店・スタッフの権限管理や、WebSocketによる予約のリアルタイム同期を実装しました。物流向けのタイヤ保管・入出庫管理や在庫管理システムも手がけています。Excel VBAの基幹システムでは、約120名が使う仕組みを4名のチームでリードしました。",
   },
   {
-    title: "Webシステム・SaaS・EC",
+    title: "EC・Webサイト",
     description:
-      "Next.js・FastAPI・Node.js・Laravelを使ったフルスタック開発が得意です。予約管理・在庫管理・ECサイト・SaaSなど、Supabase（認証・DB・Storage）・Stripe決済・WebSocket/WebRTCリアルタイム通信・PWAまで、必要な機能をまとめて実装します。",
+      "LA・JOLLA HALEではShopifyでテーマを組んでStripe決済を導入し、FASではNext.jsとCMSでECサイトのフロントエンドを担当しました。tomoLinksやL'Oréal Paris Japanなど、デザインからWordPressでの構築まで行ったコーポレートサイトも多数あります。",
   },
   {
     title: "モバイル・外部サービス連携",
     description:
-      "FlutterでのiOS/Androidアプリ開発をはじめ、Salesforce・Kintone・ShopifyなどのSaaS連携、REST API設計、Firebase認証・FCMプッシュ通知まで対応しています。既存の業務システムとAI・Webサービスをつなぐ統合開発も得意です。",
+      "もし活ではFlutterとFirebaseでアプリを作り、SalesforceのCRM連携、SendGridのメール配信、FCMのプッシュ通知までつなげました。マッチングアプリではWebSocketのリアルタイムチャットとStripe課金を担当しています。FlutterFlowなどのローコードも使います。",
   },
 ];
 

@@ -7,8 +7,8 @@ import { Footer } from "@/components/footer";
 import { SITE_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: `${SITE_NAME} | Infra Engineer`,
-  description: `${SITE_NAME}のポートフォリオ - Infra Engineer`,
+  title: `${SITE_NAME} | AI・フルスタックエンジニア`,
+  description: `${SITE_NAME}のポートフォリオ - AI・フルスタックエンジニア`,
 };
 
 export default function RootLayout({

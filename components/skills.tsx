@@ -5,17 +5,27 @@ const categories = [
   {
     title: "AI・LLM",
     en: "Artificial Intelligence",
-    skills: ["OpenAI API", "Anthropic Claude API", "Google Gemini API", "LangChain", "LangGraph", "RAG", "AI Agent開発", "MCP"],
+    skills: ["OpenAI API", "Anthropic Claude API", "Google Gemini API", "Dify", "LangChain", "LangGraph", "RAG", "AI Agent開発", "MCP", "プロンプトエンジニアリング"],
   },
   {
     title: "フロントエンド",
     en: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Vue.js", "Tailwind CSS"],
+    skills: ["React", "Next.js", "TypeScript", "JavaScript", "Vue.js", "Tailwind CSS", "HTML / CSS", "PWA"],
   },
   {
     title: "バックエンド",
     en: "Backend",
-    skills: ["Python / FastAPI / Django", "Node.js / NestJS / Express", "PHP / Laravel", "Ruby on Rails"],
+    skills: ["Python / FastAPI / Django", "Node.js / NestJS / Express", "PHP / Laravel / Yii", "Ruby on Rails", "C# / .NET", "REST API", "WebSocket / WebRTC"],
+  },
+  {
+    title: "データベース",
+    en: "Database",
+    skills: ["PostgreSQL", "MySQL", "SQL Server", "Redis", "Supabase", "Firebase Firestore", "Prisma", "Entity Framework"],
+  },
+  {
+    title: "クラウド・インフラ",
+    en: "Cloud / Infrastructure",
+    skills: ["AWS (EC2 / ECS / Lambda / S3 / RDS)", "GCP", "Azure", "Docker", "Terraform", "Vercel", "Apache"],
   },
   {
     title: "モバイルアプリ",
@@ -23,14 +33,24 @@ const categories = [
     skills: ["Flutter", "Dart", "React Native", "Firebase", "FCM"],
   },
   {
-    title: "クラウド・インフラ",
-    en: "Cloud / Infrastructure",
-    skills: ["AWS (EC2 / ECS / Lambda / S3 / RDS)", "GCP", "Docker", "Terraform", "Vercel"],
+    title: "ノーコード・ローコード",
+    en: "No-code / Low-code",
+    skills: ["FlutterFlow", "Bubble"],
   },
   {
-    title: "データベース",
-    en: "Database",
-    skills: ["PostgreSQL", "MySQL", "Redis", "Supabase", "Firebase Firestore"],
+    title: "EC・CMS・決済",
+    en: "E-commerce / CMS / Payment",
+    skills: ["WordPress", "Shopify / Liquid", "Stripe"],
+  },
+  {
+    title: "外部サービス連携",
+    en: "Integrations",
+    skills: ["Salesforce", "Twilio SendGrid", "Zendesk", "LINE連携", "Google Sign-In", "OpenStreetMap"],
+  },
+  {
+    title: "業務自動化",
+    en: "Automation",
+    skills: ["Google Apps Script", "Excel VBA", "Access", "Power Query", "ADO / ODBC", "Webスクレイピング"],
   },
   {
     title: "AI・MLOps",
@@ -38,9 +58,9 @@ const categories = [
     skills: ["PyTorch", "TensorFlow", "OpenCV", "vLLM", "Model Deployment"],
   },
   {
-    title: "ノーコード・ローコード",
-    en: "No-code / Low-code",
-    skills: ["FlutterFlow", "Bubble"],
+    title: "デザイン・開発ツール",
+    en: "Design / Dev Tools",
+    skills: ["Figma", "UI/UXデザイン", "Git / GitHub", "GitHub Copilot", "Microsoft Clarity"],
   },
 ];
 
