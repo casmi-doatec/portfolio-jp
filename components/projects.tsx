@@ -29,26 +29,10 @@ const projects: Project[] = [
     cover: "/reservation.png",
     screens: [
       { src: "/reservation/Screenshot_1.png", caption: "ログイン画面。本部・加盟店・査定スタッフそれぞれの権限でアクセスします。" },
-      { src: "/reservation/Screenshot_2.png", caption: "予約カレンダー画面。日／週／月のマルチビューでリアルタイムに予約状況を確認できます。" },
-      { src: "/reservation/Screenshot_3.png", caption: "予約詳細・編集画面。査定スタッフの割り当てやステータス管理を行います。" },
-      { src: "/reservation/Screenshot_4.png", caption: "レポート集計画面。店舗別・期間別の実績を自動集計します。" },
-      { src: "/reservation/Screenshot_5.png", caption: "権限管理画面。本部・加盟店・スタッフの多階層アクセス制御を設定します。" },
-      { src: "/reservation/Screenshot_6.png", caption: "ブラックリスト・重複予約検知画面。トラブル防止のための管理機能です。" },
-    ],
-  },
-  {
-    id: 26,
-    title: "ココミー",
-    category: "恋活マッチングアプリ",
-    type: "system",
-    description:
-      "恋活・恋人探しに特化したマッチングアプリにおいて、1対1の匿名音声通話機能「CoCo通話」の開発を担当しました。WebRTCを用いてリアルタイムの音声通話を実装し、ユーザーが身元を明かさずに会話できる匿名性を確保した設計に対応しています。iOS・Android両プラットフォームへのリリースも担当しました。",
-    tags: ["WebRTC", "iOS", "Android", "音声通話", "匿名通話", "リアルタイム通信", "マッチングアプリ"],
-    cover: "/cocome/1.jpg",
-    screens: [
-      { src: "/cocome/1.jpg", caption: "サービスのメインビジュアル。ストレスフリーな恋活をコンセプトに、自然体のカップルイメージで世界観を表現しています。" },
-      { src: "/cocome/2.jpg", caption: "サービスのブランドイメージ。日常のひとときを切り取ったビジュアルで、気軽な出会いの雰囲気を演出しています。" },
-      { src: "/cocome/3.jpg", caption: "サービスビジュアル。プライバシー保護と安心感を重視したマッチング体験を訴求するビジュアルです。" },
+      { src: "/reservation/Screenshot_2.png", caption: "ダッシュボード画面。本日の予約件数・月間予約トレンド・アラートを一覧で確認できます。" },
+      { src: "/reservation/Screenshot_4.png", caption: "レポート集計画面。店舗別・期間別の実績を自動集計し、CSV出力にも対応しています。" },
+      { src: "/reservation/Screenshot_5.png", caption: "店舗管理画面。本部が加盟店・店舗情報を登録・管理します。" },
+      { src: "/reservation/Screenshot_6.png", caption: "予約復元画面。キャンセル・削除された予約を一覧から復元できます。" },
     ],
   },
   {
@@ -76,9 +60,8 @@ const projects: Project[] = [
     tags: ["React", "Node.js", "Express", "WebSocket", "WebRTC", "Stripe", "AI顔認証"],
     cover: "/manabou.png",
     screens: [
-      { src: "/online-lecture/1.png", caption: "ライブ配信画面。WebRTCによる双方向の講義配信を実装しています。" },
-      { src: "/online-lecture/2.png", caption: "チケット購入・受講進捗トラッキング画面。Stripe決済と連携しています。" },
-      { src: "/online-lecture/3.png", caption: "AI顔認証による受験画面。不正防止と自動採点・修了証発行までを一貫して実装しています。" },
+      { src: "/online-lecture/2.png", caption: "コース選択画面。一般講習・介護講習・介護基礎研修（特定）を月額料金とともに案内しています。" },
+      { src: "/online-lecture/3.png", caption: "利用ガイド画面。チケットシステム・コース学習・学習教材までの流れを案内しています。" },
     ],
   },
   {
@@ -135,8 +118,7 @@ const projects: Project[] = [
     tags: ["Next.js","Python", "OpenAI API", "LLM", "Tailwind CSS", "SQL"],
     cover: "/matching.png",
     screens: [
-      { src: "/matching/1.png", caption: "診断入力画面。星座・MBTI・性格分析の回答を入力します。" },
-      { src: "/matching/2.png", caption: "相性レポート画面。OpenAI APIでパーソナライズされた分析結果を自然言語で生成しています。" },
+      { src: "/matching/2.png", caption: "診断入力画面。あなたとお相手の星座・血液型・MBTI・干支・エニアグラムなどを入力します。" },
     ],
   },
   {
@@ -289,34 +271,6 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 28,
-    title: "QUOREA FX",
-    category: "AI自動売買プラットフォーム",
-    type: "system",
-    description:
-      "AIによる投資戦略を誰もが手軽に利用できる外国為替証拠金取引（FX）・暗号資産・CFDの自動売買CtoCプラットフォームです。PHP（Yiiフレームワーク）で構築された堅牢なバックエンドと、AWS ALB配下のApache環境で安定稼働。プラットフォーム上の売買ロボットをAIが自動採点する仕組みにより、ユーザーが質の高いbotを簡単に選定できる設計になっています。",
-    tags: ["PHP", "Yii Framework", "jQuery", "AWS", "Apache", "FX", "AI自動売買"],
-    cover: "/quorea/1.png",
-    screens: [
-      { src: "/quorea/1.png", caption: "トップページ。AIによる自動売買戦略とロボット選定の価値訴求を行っています。" },
-      { src: "/quorea/2.png", caption: "課題訴求セクション。FXトレーダーが抱える悩みを整理し、サービスへの導線を設計しています。" },
-      { src: "/quorea/3.png", caption: "デモトレード・料金セクション。登録不要で自動売買ロボットを体験できる導線を設けています。" },
-    ],
-  },
-  {
-    id: 29,
-    title: "comorebi",
-    category: "訪問看護スケジュール管理システム",
-    type: "system",
-    description:
-      "訪問看護ステーション向けのスケジュール管理プラットフォームです。Next.js（App Router・Turbopack）とReact Server Componentsで構築し、本部・事業所スタッフがログインしてスケジュールを一元管理できるB2B SaaSとして設計しています。Vercel上でのホスティングにより高速な表示とスムーズな認証フローを実現しています。",
-    tags: ["Next.js", "React", "TypeScript", "Turbopack", "Vercel"],
-    cover: "/comorebi.png",
-    screens: [
-      { src: "/comorebi/1.png", caption: "ログイン画面。訪問看護ステーションのスタッフ・管理者向けの認証画面です。" },
-    ],
-  },
-  {
     id: 31,
     title: "notteco",
     category: "相乗りマッチングプラットフォーム",
@@ -365,7 +319,7 @@ const projects: Project[] = [
     description:
       "コニカミノルタが提供する学校向けAI学習プラットフォーム「tomoLinks」の公式サイトにて、デザインからWordPressでの構築・リリースまで一貫して担当しました。ドメイン設定や公開後の不具合修正にも対応しています。",
     tags: ["WordPress", "UI/UXデザイン", "サイトリリース", "ドメイン設定"],
-    cover: "/tomolinks.png",
+    cover: "/tomolinks/1.png",
     screens: [
       { src: "/tomolinks/1.png", caption: "トップページ。AIと教育データで学びをサポートする製品コンセプトを訴求しています。" },
       { src: "/tomolinks/2.png", caption: "機能紹介セクション。生成AI活用支援機能とAIドリル機能を並べて紹介しています。" },
@@ -380,7 +334,7 @@ const projects: Project[] = [
     description:
       "化粧品・ホビーブランドを展開するライフスタイルカンパニー株式会社のコーポレートサイトにて、デザインからWordPressでのコーディング、ドメイン設定、デプロイまで一貫して担当しました。",
     tags: ["WordPress", "UI/UXデザイン", "サイトリリース", "ドメイン設定"],
-    cover: "/lifestyle-co.png",
+    cover: "/lifestyle-co/1.png",
     screens: [
       { src: "/lifestyle-co/1.png", caption: "トップページ。「世界のトレンドをもっと身近に」をコンセプトにしたメインビジュアルです。" },
       { src: "/lifestyle-co/2.png", caption: "COSMETICSセクション。自社化粧品ブランドと店舗展開を紹介しています。" },

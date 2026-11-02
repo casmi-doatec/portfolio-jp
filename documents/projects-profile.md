@@ -239,39 +239,7 @@
 
     ---
 
-    ### 18. ココミー
-    **カテゴリ:** 恋活マッチングアプリ
-    **技術スタック:** WebRTC / iOS / Android / 音声通話 / リアルタイム通信
-
-    恋活・恋人探しに特化したマッチングアプリにおいて、1対1の匿名音声通話機能「CoCo通話」の開発を担当した。WebRTCを用いてリアルタイムの音声通話を実装し、ユーザーが身元を明かさずに会話できる匿名性を確保した設計に対応。iOS・Android両プラットフォームへのリリースも担当した。
-
-    ---
-
-    ### 19. QUOREA FX
-    **カテゴリ:** AI自動売買プラットフォーム
-    **技術スタック:** PHP / Yii Framework / jQuery / AWS / Apache / FX / AI自動売買
-
-    AIによる投資戦略を誰もが手軽に利用できるFX・暗号資産・CFDの自動売買CtoCプラットフォーム。
-
-    - PHP（Yiiフレームワーク）で構築した堅牢なバックエンド
-    - AWS ALB配下のApache環境での安定稼働
-    - プラットフォーム上の売買ロボットをAIが自動採点する仕組みにより、ユーザーが質の高いbotを簡単に選定できる設計
-
-    ---
-
-    ### 20. comorebi
-    **カテゴリ:** 訪問看護スケジュール管理システム
-    **技術スタック:** Next.js / React / TypeScript / Turbopack / Vercel
-
-    訪問看護ステーション向けのスケジュール管理プラットフォーム。
-
-    - Next.js（App Router・Turbopack）とReact Server Componentsで構築
-    - 本部・事業所スタッフがログインしてスケジュールを一元管理できるB2B SaaSとして設計
-    - Vercelホスティングによる高速表示とスムーズな認証フロー
-
-    ---
-
-    ### 21. Hotels.com（日本版）
+    ### 18. Hotels.com（日本版）
     **カテゴリ:** 旅行予約プラットフォーム
     **技術スタック:** React / TypeScript / Node.js / React Router / AWS / Google Sign-In / REST API / レスポンシブ
 
@@ -285,7 +253,7 @@
 
     ---
 
-    ### 22. 基幹データ連携型 Excel VBA 業務システム
+    ### 19. 基幹データ連携型 Excel VBA 業務システム
     **カテゴリ:** 業務システム開発
     **技術スタック:** VBA / Excel / Access / SQL Server / ADO / Power Query / SQL / VBScript / Git / GitHub Copilot
 
@@ -299,7 +267,7 @@
 
     ---
 
-    ### 23. FAS
+    ### 20. FAS
     **カテゴリ:** ECサイト
     **技術スタック:** Next.js / React / CMS
 
@@ -307,7 +275,7 @@
 
     ---
 
-    ### 24. tomoLinks
+    ### 21. tomoLinks
     **カテゴリ:** 教育プラットフォームWebサイト
     **技術スタック:** WordPress / UI/UXデザイン / サイトリリース / ドメイン設定
 
@@ -315,7 +283,7 @@
 
     ---
 
-    ### 25. ライフスタイルカンパニー
+    ### 22. ライフスタイルカンパニー
     **カテゴリ:** コーポレートサイト
     **技術スタック:** WordPress / UI/UXデザイン / サイトリリース / ドメイン設定
 
