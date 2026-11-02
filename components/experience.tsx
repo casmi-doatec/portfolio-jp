@@ -5,22 +5,22 @@ const expertiseAreas = [
   {
     title: "LLM・AIチャットボット",
     description:
-      "おりこうAIコンシェルジュでは、Webサイトに設置する生成AIチャットボットの機能を実装しました。ソウルシンクではOpenAI APIで相性診断のレポートを自動生成し、プロンプトの調整で精度を上げています。オンライン講義では、試験時のAI顔認証と自動採点も組み込みました。",
+      "Webサイトに設置する生成AIチャットボットの機能実装や、OpenAI APIを使った診断レポートの自動生成を手がけてきました。プロンプトを調整しながら回答の精度を上げています。オンライン講義の試験でのAI顔認証や自動採点など、AIをサービスの機能として組み込む開発も経験しています。",
   },
   {
     title: "業務システム・SaaS",
     description:
-      "出張買取プラスでは要件定義から運用まで担当し、本部・加盟店・スタッフの権限管理や、WebSocketによる予約のリアルタイム同期を実装しました。物流向けのタイヤ保管・入出庫管理や在庫管理システムも手がけています。Excel VBAの基幹システムでは、約120名が使う仕組みを4名のチームでリードしました。",
+      "予約管理、在庫管理、物流の入出庫管理といった業務システムを、要件定義から設計・実装・運用保守まで担当してきました。Next.js・TypeScript・PostgreSQLを中心に、本部・加盟店・スタッフの多階層の権限管理、WebSocketによるリアルタイム同期、レポート集計や請求明細の出力などを実装しています。Excel VBAでは、約120名が使う基幹データ連携システムを4名のチームでリードしました。",
   },
   {
     title: "EC・Webサイト",
     description:
-      "LA・JOLLA HALEではShopifyでテーマを組んでStripe決済を導入し、FASではNext.jsとCMSでECサイトのフロントエンドを担当しました。tomoLinksやL'Oréal Paris Japanなど、デザインからWordPressでの構築まで行ったコーポレートサイトも多数あります。",
+      "ShopifyではLiquidでカスタムテーマを作ってStripe決済を組み込み、Next.jsとCMSを組み合わせたECサイトではフロントエンドを担当しました。美容室、クリニック、パーソナルジムなどのサイトも、デザインからWordPressでの構築、ドメイン設定、公開まで一貫して対応しています。",
   },
   {
     title: "モバイル・外部サービス連携",
     description:
-      "もし活ではFlutterとFirebaseでアプリを作り、SalesforceのCRM連携、SendGridのメール配信、FCMのプッシュ通知までつなげました。マッチングアプリではWebSocketのリアルタイムチャットとStripe課金を担当しています。FlutterFlowなどのローコードも使います。",
+      "FlutterでiOS/Androidアプリを開発し、Firebaseの認証・データ管理、FCMのプッシュ通知、SalesforceのCRM連携、SendGridのメール配信までつなげてきました。マッチングアプリでは、WebSocketのリアルタイムチャットとStripeの課金機能も担当しています。FlutterFlowなどのローコードも使います。",
   },
 ];
 
