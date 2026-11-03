@@ -17,6 +17,11 @@ export function Hero() {
         <p className="inline-block rounded-full bg-blush px-3 py-1 text-xs font-bold tracking-[0.1em] text-coral-deep">
           AI・フルスタックエンジニア
         </p>
+        <p className="mt-3 font-display text-2xl font-bold uppercase leading-tight tracking-wide md:text-3xl">
+          <span className="text-coral">Aim High!</span>
+          <br />
+          <span className="text-sky-deep">Fly High!</span>
+        </p>
         <h1 className="mt-2 text-3xl font-black tracking-tight text-cocoa md:mt-3 md:text-4xl leading-tight">
           NekoMaki <span className="text-coral">♥</span>
         </h1>

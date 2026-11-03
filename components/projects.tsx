@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { cookies } from "next/headers";
-import { AUTH_COOKIE, AUTH_TOKEN } from "@/lib/auth";
 import { Section, cardClass } from "@/components/section";
 import { ProjectGallery } from "@/components/project-gallery";
 
@@ -218,10 +215,11 @@ const projects: Project[] = [
     description:
       "美容室向けのWebサイトをデザインから実装まで一貫して担当しました。スタイリッシュなビジュアルを重視したレイアウトで、メニュー・コンセプト・スタイルギャラリー・ブログ・採用・アクセスの各ページを構築。予約ボタンの固定表示やレスポンシブデザインにより、スマホからの予約導線もスムーズに設計しています。",
     tags: ["HTML", "CSS", "JavaScript", "WordPress", "レスポンシブ", "UI/UXデザイン"],
-    cover: "/mimi-salon.png",
+    cover: "/mimi/1.png",
     screens: [
-      { src: "/mimi/1.png", caption: "トップページ。スタイリッシュなビジュアルで世界観を表現しています。" },
-      { src: "/mimi/2.png", caption: "MENUページ。カット・カラー・パーマ・トリートメントなど施術メニューをカテゴリ別に整理しています。" },
+      { src: "/mimi/1.png", caption: "CONCEPTセクション。サロンの空間とスタイルを、余白を活かしたレイアウトで紹介しています。" },
+      { src: "/mimi/2.png", caption: "MENUセクション。Hot Pepper Beautyへの導線と、施術シーンのビジュアルを配置しています。" },
+      { src: "/mimi/3.png", caption: "STYLEセクション。スタイル写真をグリッドで一覧表示し、詳細ページへ誘導します。" },
     ],
   },
   {
@@ -396,27 +394,6 @@ const categoryGroups: { key: string; jp: string; en: string; chip: string; tag: 
 ];
 
 export function Projects() {
-  const isAuthed = cookies().get(AUTH_COOKIE)?.value === AUTH_TOKEN;
-
-  if (!isAuthed) {
-    return (
-      <Section id="projects" tone="sky" label="Projects" title="開発実績">
-        <div className={`${cardClass} mx-auto max-w-xl text-center`}>
-          <div className="flex items-center justify-center gap-5">
-            <p className="text-5xl" aria-hidden>🔒</p>
-          </div>
-          <p className="mt-4 font-bold text-cocoa">開発実績はログイン後に閲覧できます。</p>
-          <Link
-            href="/login"
-            className="mt-6 inline-flex rounded-full bg-gradient-to-r from-[#ff7e95] to-coral px-8 py-3 text-sm font-bold text-white shadow-[0_8px_20px_-6px_rgba(244,96,122,0.6)] transition hover:-translate-y-0.5"
-          >
-            ログイン
-          </Link>
-        </div>
-      </Section>
-    );
-  }
-
   return (
     <Section id="projects" tone="sky" label="Projects" title="開発実績" intro={INTRO}>
       <div className="space-y-20">

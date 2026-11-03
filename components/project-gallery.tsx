@@ -21,7 +21,6 @@ export function ProjectGallery({
     : [{ src: cover, caption: "" }, ...screens];
   const [index, setIndex] = useState(0);
   const current = slides[index];
-  const isCover = current.src === cover;
   const multiple = slides.length > 1;
 
   const go = (step: number) => setIndex((i) => (i + step + slides.length) % slides.length);
@@ -39,7 +38,7 @@ export function ProjectGallery({
             alt={current.caption || `${title} のイメージ`}
             fill
             sizes="(min-width: 768px) 40vw, 90vw"
-            className={isCover ? "object-cover object-top" : "object-contain"}
+            className="object-contain"
           />
         </div>
 
