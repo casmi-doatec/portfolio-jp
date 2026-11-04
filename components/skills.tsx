@@ -45,7 +45,7 @@ const categories = [
   {
     title: "外部サービス連携",
     en: "Integrations",
-    skills: ["Salesforce", "Twilio SendGrid", "Zendesk", "LINE連携", "Google Sign-In", "OpenStreetMap"],
+    skills: ["Salesforce", "Twilio SendGrid", "Zendesk", "LINE Messaging API", "LINEログイン", "Google Sign-In", "OpenStreetMap"],
   },
   {
     title: "業務自動化",

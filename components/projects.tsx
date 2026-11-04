@@ -33,6 +33,22 @@ const projects: Project[] = [
     ],
   },
   {
+    id: 35,
+    title: "COMSBI（コムスビ）",
+    category: "LINE CRMツール",
+    type: "system",
+    description:
+      "LINE公式アカウントの顧客管理と集客を支援するLINE CRMツール「COMSBI」の開発に携わり、LINE Messaging APIを利用した機能開発を担当しました。タグや行動履歴に応じたセグメント配信・ステップ配信、ユーザーごとのリッチメニューの出しわけ、ポイントカードやクーポン、フレンドシェアなどのキャンペーン機能、複数のLINEアカウントを一つの顧客台帳で管理するマルチアカウント機能を備えたサービスで、店舗や企業のLINE活用を支えています。",
+    tags: ["LINE Messaging API", "LINE CRM", "セグメント配信", "ステップ配信", "リッチメニュー", "マルチアカウント"],
+    cover: "/comsbi/1.png",
+    screens: [
+      { src: "/comsbi/1.png", caption: "トップページ。顧客管理・デジタル会員証・ポイントカード・セグメント機能など、LINE CRMの主な機能を案内しています。" },
+      { src: "/comsbi/2.png", caption: "サービス紹介。LINEアカウントへの多機能の実装、マルチアカウント対応、行動履歴をもとにしたLINE配信の3つの特長を整理しています。" },
+      { src: "/comsbi/3.png", caption: "機能一覧。リッチメニューの出しわけ、タグ付与、流入・流出経路の計測、各種CSV出力などの機能を紹介しています。" },
+      { src: "/comsbi/4.png", caption: "活用事例。友だち追加時のアンケート回答を顧客属性として管理画面に蓄積し、施策に活かす流れを紹介しています。" },
+    ],
+  },
+  {
     id: 9,
     title: "JoBins",
     category: "人材紹介SaaS",
