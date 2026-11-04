@@ -7,7 +7,6 @@ const navItems = [
   { href: "/#experience", label: "得意分野" },
   { href: "/#skills", label: "技術スタック" },
   { href: "/#projects", label: "開発実績" },
-  { href: "/graph", label: "図表デモ" },
   { href: "/#contact", label: "お問い合わせ" },
 ];
 
