@@ -150,6 +150,17 @@ const projects: Project[] = [
     ],
   },
   {
+    id: 36,
+    title: "GMail添付PDF自動選別・アップロードツール",
+    category: "業務自動化",
+    type: "system",
+    description:
+      "GMailで受信したメールの添付PDFファイルを自動で選別し、Google DriveへアップロードするツールをGoogle Apps Scriptで開発しました。設定したメールアドレスに届いたメールにPDFが添付されていた場合、OCR（光学文字認識）を適用し、スプレッドシート上で事前に設定したキーワードがPDF内の文章に含まれていれば、そのPDFファイルをGoogle Drive上へ自動アップロードします。毎回メールを確認し、印刷が必要なPDFを手動でダウンロードしていた業務を自動化し、作業負荷を大幅に軽減しました。",
+    tags: ["Google Apps Script", "Gmail API", "OCR", "Google Drive", "Google Sheets", "業務自動化", "PDF処理"],
+    cover: "/gas-automation.svg",
+    screens: [],
+  },
+  {
     id: 12,
     title: "おかわりマップ",
     category: "Webアプリ",

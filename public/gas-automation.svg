@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1600" height="1000" fill="#f5f1ec"/>
+  <rect x="40" y="40" width="1520" height="920" fill="#fbf9f6" stroke="#e3dcd3" stroke-width="2"/>
+
+  <text x="100" y="140" font-size="28" letter-spacing="8" fill="#0f9d58">GAS AUTOMATION</text>
+  <text x="100" y="210" font-size="50" font-weight="800" fill="#2a2522">GMail添付PDF 自動選別・アップロード</text>
+  <rect x="100" y="240" width="90" height="4" fill="#0f9d58"/>
+
+  <!-- Flow -->
+  <g font-size="34" font-weight="700" text-anchor="middle">
+    <rect x="60" y="350" width="320" height="220" fill="#fff" stroke="#2a2522" stroke-width="3"/>
+    <text x="220" y="430" fill="#2a2522">Gmail</text>
+    <text x="220" y="485" font-size="24" font-weight="400" fill="#7a6f66">メール受信</text>
+    <text x="220" y="525" font-size="24" font-weight="400" fill="#7a6f66">PDF添付を検出</text>
+
+    <rect x="450" y="350" width="320" height="220" fill="#fff" stroke="#2a2522" stroke-width="3"/>
+    <text x="610" y="430" fill="#2a2522">OCR解析</text>
+    <text x="610" y="485" font-size="24" font-weight="400" fill="#7a6f66">PDF内テキスト抽出</text>
+    <text x="610" y="525" font-size="24" font-weight="400" fill="#7a6f66">キーワード照合</text>
+
+    <rect x="840" y="350" width="320" height="220" fill="#fff" stroke="#2a2522" stroke-width="3"/>
+    <text x="1000" y="430" fill="#2a2522">Spreadsheet</text>
+    <text x="1000" y="485" font-size="24" font-weight="400" fill="#7a6f66">キーワード設定</text>
+    <text x="1000" y="525" font-size="24" font-weight="400" fill="#7a6f66">フィルタ条件管理</text>
+
+    <rect x="1230" y="350" width="320" height="220" fill="#fff" stroke="#2a2522" stroke-width="3"/>
+    <text x="1390" y="430" fill="#2a2522">Google Drive</text>
+    <text x="1390" y="485" font-size="24" font-weight="400" fill="#7a6f66">該当PDFを</text>
+    <text x="1390" y="525" font-size="24" font-weight="400" fill="#7a6f66">自動アップロード</text>
+  </g>
+
+  <!-- Arrows -->
+  <g stroke="#0f9d58" stroke-width="4" fill="#0f9d58">
+    <line x1="390" y1="460" x2="435" y2="460"/>
+    <polygon points="450,460 426,448 426,472" stroke="none"/>
+    <line x1="780" y1="460" x2="825" y2="460"/>
+    <polygon points="840,460 816,448 816,472" stroke="none"/>
+    <line x1="1170" y1="460" x2="1215" y2="460"/>
+    <polygon points="1230,460 1206,448 1206,472" stroke="none"/>
+  </g>
+  <text x="420" y="430" font-size="20" text-anchor="middle" fill="#0f9d58">GAS</text>
+  <text x="810" y="430" font-size="20" text-anchor="middle" fill="#0f9d58">照合</text>
+  <text x="1200" y="430" font-size="20" text-anchor="middle" fill="#0f9d58">保存</text>
+
+  <!-- Facts -->
+  <g text-anchor="middle">
+    <text x="300" y="760" font-size="58" font-weight="800" fill="#2a2522">OCR自動解析</text>
+    <text x="300" y="810" font-size="24" fill="#7a6f66">PDFの文字認識でキーワード判定</text>
+    <text x="800" y="760" font-size="58" font-weight="800" fill="#2a2522">完全自動化</text>
+    <text x="800" y="810" font-size="24" fill="#7a6f66">メール確認・ダウンロードの手作業を削減</text>
+    <text x="1300" y="760" font-size="58" font-weight="800" fill="#2a2522">柔軟な設定</text>
+    <text x="1300" y="810" font-size="24" fill="#7a6f66">スプレッドシートでキーワードを管理</text>
+  </g>
+</svg>

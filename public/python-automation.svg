@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" font-family="'Noto Sans JP','Hiragino Sans','Yu Gothic',Meiryo,sans-serif">
+  <rect width="1600" height="1000" fill="#f5f1ec"/>
+  <rect x="40" y="40" width="1520" height="920" fill="#fbf9f6" stroke="#e3dcd3" stroke-width="2"/>
+
+  <text x="100" y="140" font-size="28" letter-spacing="8" fill="#306998">PYTHON AUTOMATION</text>
+  <text x="100" y="210" font-size="54" font-weight="800" fill="#2a2522">PDF自動印刷ツール</text>
+  <rect x="100" y="240" width="90" height="4" fill="#306998"/>
+
+  <!-- Flow -->
+  <g font-size="34" font-weight="700" text-anchor="middle">
+    <rect x="100" y="350" width="360" height="220" fill="#fff" stroke="#2a2522" stroke-width="3"/>
+    <text x="280" y="430" fill="#2a2522">Google Drive</text>
+    <text x="280" y="485" font-size="24" font-weight="400" fill="#7a6f66">GASツールで保存済みの</text>
+    <text x="280" y="525" font-size="24" font-weight="400" fill="#7a6f66">PDFファイル群</text>
+
+    <rect x="620" y="350" width="360" height="220" fill="#fff" stroke="#2a2522" stroke-width="3"/>
+    <text x="800" y="430" fill="#2a2522">Python</text>
+    <text x="800" y="485" font-size="24" font-weight="400" fill="#7a6f66">フォルダ内PDF一括読込</text>
+    <text x="800" y="525" font-size="24" font-weight="400" fill="#7a6f66">印刷ジョブ生成</text>
+
+    <rect x="1140" y="350" width="360" height="220" fill="#fff" stroke="#2a2522" stroke-width="3"/>
+    <text x="1320" y="430" fill="#2a2522">プリンター</text>
+    <text x="1320" y="485" font-size="24" font-weight="400" fill="#7a6f66">既定プリンターで</text>
+    <text x="1320" y="525" font-size="24" font-weight="400" fill="#7a6f66">自動印刷実行</text>
+  </g>
+
+  <!-- Arrows -->
+  <g stroke="#306998" stroke-width="4" fill="#306998">
+    <line x1="470" y1="460" x2="605" y2="460"/>
+    <polygon points="620,460 596,448 596,472" stroke="none"/>
+    <line x1="990" y1="460" x2="1125" y2="460"/>
+    <polygon points="1140,460 1116,448 1116,472" stroke="none"/>
+  </g>
+  <text x="540" y="430" font-size="22" text-anchor="middle" fill="#306998">読込</text>
+  <text x="1060" y="430" font-size="22" text-anchor="middle" fill="#306998">出力</text>
+
+  <!-- Facts -->
+  <g text-anchor="middle">
+    <text x="300" y="760" font-size="58" font-weight="800" fill="#2a2522">一括印刷</text>
+    <text x="300" y="810" font-size="24" fill="#7a6f66">フォルダ内の全PDFをまとめて処理</text>
+    <text x="800" y="760" font-size="58" font-weight="800" fill="#2a2522">GAS連携</text>
+    <text x="800" y="810" font-size="24" fill="#7a6f66">メール選別から印刷まで完全自動化</text>
+    <text x="1300" y="760" font-size="58" font-weight="800" fill="#2a2522">提案型開発</text>
+    <text x="1300" y="810" font-size="24" fill="#7a6f66">業務フロー全体を見渡し自ら提案</text>
+  </g>
+</svg>
